@@ -1,0 +1,129 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Investire in crittovalute
+Il mercato delle criptovalute è il “far west della finanza”, è una terra di frontiera, ai più sconosciuta, ricca di insidie, popolata da tante brave persone, ma non mancano di certo i truffatori [line-through]*quelli non mancano mai*. La maggior parte delle persone che si avventurano in questo mondo spesso lo fanno senza cognizione di causa, attratti dai guadagni facili. Le competenze tecniche di base per capire le crittovalute sono state descritte nei precedenti capitoli, l’obiettivo di questa sezione è fornire delle lezioni di educazione finanziaria di base, per approcciarsi in modo corretto a questo incredibile mercato. 
+
+A differenza di molti altri mercati, qui non c'è alcun tipo di regolamentazione, di conseguenza non c'è alcun tipo di autorità che vigila su di esso. Come abbiamo visto gli exchange sono a rischio fallimento, possono subire un attacco informatico con relativo furto di crittovalute e di dati dei “correntisti”. Poche persone con grandi capitali possono lucrare sul prezzo, investendo e disinvestendo grandissimi somme (pump and dump). Pochi grandi miner detengono oltre il 75% del hashpower mondiale, e sono quasi tutti fisicamente collocati in Cina. Basterebbe un cambio di legislazione in Cina per chiudere, bloccare o peggio ancora sequestrare queste aziende, creando un fortissimo calo di hashpower, con conseguente rallentamento nella produzione dei blocchi, che potrebbe durare mesi su tutta la rete Bitcoin. Occorrerebbero molti retarget del livello di difficoltà prima che i tempi di produzione dei blocchi tornino stabili uno ogni 10 minuti circa.
+Esiste inoltre un altro grande pericolo per un nostro ipotetico investimento in questo settore, legato a nuove leggi che potrebbero vietare l'uso delle crittovalute. Se ad esempio, in tutta Europa o negli Stati Uniti, venissero messe al bando, il prezzo molto probabilmente registrerebbe un crollo importante. 
+Aleggia inoltre, come una spada di Damocle, il pericolo concreto che vengano scoperti bug informatici che permettano di attaccare la sicurezza del sistema, o comunque ne compromettano l'usabilità. Bisogna ammettere che, ad oggi, questo pericolo su Bitcoin è abbastanza remoto, il software ha quasi 10 anni di anzianità, e si può definire abbastanza maturo. Non possiamo però scongiurare del tutto questo rischio, ad esempio ad inizio 2018 sono stati individuati due gravi falle di sicurezza, presenti in quasi tutte le CPU commercializzate negli ultimi 20 anni. La stragrande maggioranza dei nostri PC e dei nostri smartphone ne era affetta. (per approfondire: https://attivissimo.blogspot.it/2018/01/panico-per-meltdown-e-spectre-le-cose.html )
+
+=== Tecnologia innovativa o bolla speculativa
+Il Bitcoin è solo uno dei tanti prodotti o servizi che possono sfruttare la tecnologia blockchain. Approfitto per chiarire che la blockchain senza una moneta non può esistere. Il Bitcoin, infatti è fondamentale per gestire il sistema di ricompense, e a garantire la sicurezza stessa delle transazioni. Molti servizi che si appoggiano sulla blockchain sono già realtà, altri sono in corso di implementazione e saranno disponibili nei prossimi anni.
+
+A mio avviso il mercato NON è ancora maturo, nonostante ciò stanno confluendo quantità sempre maggiori di denaro. La stragrande maggioranza delle transazioni viene eseguita da chi compra e trasferisce Bitcoin da e verso i wallet come forma di investimento e non per utilizzarlo come mezzo di pagamento.
+
+Durante tutto il 2017 il prezzo è salito di oltre 20 volte, passando da 1.000 $ a 20.000 $ mentre il numero delle transazioni è stato più o meno stabile, anche per via della capacità del sistema di processare transazioni. Un utilizzo in massa di Bitcoin come mezzo di pagamento vedrebbe aumentare a dismisura il numero di transazioni e potrebbe far incrementare le fee di transazione a valori altissimi, disincentivandone quindi l’uso.
+
+TIP: Con l’implementazione attuale, non è possibile ipotizzare un utilizzo in massa di Bitcoin come mezzo di pagamento. Spesso vengono usati come termine di paragone i volumi di transazioni gestiti dalla rete di pagamenti elettronici per carte di credito Visa. Questo circuito riesce ad eseguire oltre 1.600 transazioni al secondo, mentre la rete Bitcoin con un blocco da 1 MB, ogni 10 minuti può arrivare non oltre le 5 transazioni al secondo. Gli ordini di grandezza sono veramente molto distanti fra loro; anche aumentando la dimensione del blocco a 10 MB, potremmo portare le transizioni a 50 al secondo; dovremmo quindi dimezzare i tempi di ogni blocco a 5 minuti, per raddoppiarle ulteriormente e raggiungere le circa 100 transazioni al secondo. La distanza con Visa resterebbe comunque incolmabile, inoltre la modifica di questi parametri potrebbe creare ulteriori problemi. Per risolvere queste problematiche gli sviluppatori stanno lavorando a nuove soluzioni tecnologiche, come Lightning Network ( vedi approfondimenti a fine libro sulla guerra per la dimensione del blocco e su Lightning Network).
+
+Ritorna ciclicamente la fake news che Amazon starebbe per adottare Bitcoin come mezzo di pagamento. Allo stato attuale, personalmente la ritengo la notizia poco credibile. Un e-commerce di questo tipo probabilmente, da solo saturerebbe la capacità di effettuare transazioni di Bitcoin. 
+
+In ultima analisi il numero di esercenti che accettano Bitcoin come mezzo di pagamento nel mondo reale non è cresciuto, almeno in Italia, a pari passo di quanto sia cresciuto il prezzo. Quindi la domanda non è composta da persone che acquistano Bitcoin per usarlo, ma da persone che lo acquistano come riserva di valore, nella speranza che aumenti il suo prezzo nel tempo.
+
+=== La bolla delle DOT COM
+Spesso si paragona l'impennata del prezzo del Bitcoin alla bolla delle Dotcom. Sicuramente anche in questo caso i ragazzi degli anni 90 non se la ricorderanno. Personalmente lavoravo già nel settore, quindi l'ho seguita sia dal punto di vista tecnologico che finanziario. Con la diffusione di internet, già nel 1998 nacquero e si diffusero molte aziende che proponevano servizi online di ogni genere. I più conosciuti divennero in breve tempo i provider che offrivano connettività gratuitamente, al solo costo di una telefonata urbana. All'epoca infatti, per collegarsi a internet occorreva avere un modem analogico che fisicamente effettuava una telefonata vera e propria con tanto di composizione di numero di telefono. Ci si connetteva a un server che forniva l'accesso ad internet. Questo abbonamento era a pagamento. Nacquero quindi una serie di provider nazionali, che permettevano di chiamare un numero della rete urbana al costo di una singola chiamata, senza prevedere alcun tipo di abbonamento. I più famosi sopravvissuti fino ai giorni nostri sono Libero e Tiscali, ma ad un certo punto ci fu una vera proliferazione di questi servizi anche a livello locale. Le azioni di queste ed altre società che lavoravano sul web raggiunsero nel giro di un anno valori spropositati, rispetto ai fatturati che realizzavano. Ricordo che ai TG venivano intervistati i pensionati, che fuori dagli istituti bancari, consultavano i monitor con i prezzi del mercato azionario. 
+Si creò un circolo vizioso in cui più la gente acquistava azioni più il prezzo saliva, e più il prezzo saliva più la gente era incentivata ad acquistare azioni sperando di arricchirsi in modo semplice, ignorando i rischi presenti nel mercato azionario. La maggior parte degli investitori erano comunque persone poco avvezze a questo tipo di operazioni finanziarie; la gestione di alcune acquisizioni aziendali, pagate con azioni della società acquirente e altri stratagemmi finanziari simili spinsero ulteriormente i prezzi al rialzo. Arrivati ad un certo punto però, il prezzi incominciarono a scendere senza freno fino a tornare ai livelli di un paio d’anni prima. Il mercato azionario di riferimento, il Nasdaq, impiegò circa 16 anni per tornare a raggiungere i picchi raggiunti nel 2000. Per approfondire https://it.wikipedia.org/wiki/Bolla_delle_dot-com
+
+[.text-center]
+image:images/graficoNasdaq.png[Grafico NASDAQ]
+[.text-center]
+Trato da: https://finance.yahoo.com/chart/%5EIXIC/
+
+A seguito dell’esplosione della bolla, moltissime aziende fallirono. Chi non aveva basi solide, progetti concreti, non resse l’urto, altre sopravvissero anche se fortemente ridimensionate nella capitalizzazione, altre ancora subirono un forte calo di capitalizzazione, ma essendo costruite su progetti validi nel giro di diversi anni riuscirono comunque a recuperare e crescere moltissimo diventando oggi dei leader nei loro settori di riferimento; per fare alcuni esempi parliamo di Amazon, Apple, ecc. 
+
+Se nonostante tutte queste premesse volete ancora investire in Bitcoin, ecco alcuni consigli per non commettere gli errori più comuni e muoversi nel mercato delle criptovalute con le dovute precauzioni.
+
+Molte persone mi chiedono spesso quali monete comprare, su quali investire, ecc. Tendo a non fornire mai indicazioni precise o consigli finanziari. Non lo faccio sostanzialmente per due semplici ragioni:
+
+1. nessuno può avere una certezza sull'andamento di questo mercato o sull'andamento di una singola moneta, le incognite, come abbiamo visto, sono troppe per poter fare una previsione sensata soprattutto sul medio lungo periodo
+
+2. se a seguito di un mio consiglio finanziario qualcuno riuscisse a guadagnare moltissimi soldi, probabilmente mi stringerebbe la mano e mi direbbe grazie,[line-through]*alcuni neppure quello,* se invece perdessero anche solo una piccola parte dell’investimento mi accuserebbero di averli consigliati male
+
+In ogni caso per me sarebbe un fallimento, quindi non mi interessa partecipare a questo tipo di gioco dove la migliore delle mie prospettive è la sconfitta.
+
+Se non sapete cosa state facendo, non investite in questo mercato. Grandi possibilità di profitto si accompagnano sempre con grandi possibilità di perdita. Non esistono investimenti iper sicuri che garantiscano percentuali di ritorno da capogiro. Dove ci sono grandi interessi obbligatoriamente ci sono anche grandi rischi. Questo non vale solo per le crittovalute, ma per tutti i settori della vita.
+
+=== Money management e gestuione del rischio
+Consiglio sempre a chiunque volesse investire in criptovalute di non investire una quota del proprio portafoglio investimenti superiore al 5%. Se c’è consapovelezza dei rischi del settore, e della gestione del proprio portafoglio, si può salire al 10%. Se non avete un portafoglio investimenti è meglio che non investiate nulla in crittovalute, ma iniziate a creare un portafoglio di risparmi in prodotti finanziari tradizionali, anche se con rendimenti bassissimi. Alcuni youtuber del settore, consigliano di investire in crittovalute solo ciò che si è disposti a perdere, personalmente concordo. Quando dico perdere intendo perdere completamente. Investite quindi una cifra che, anche in caso di crollo completo del mercato, non destabilizzi la vostra vita.
+
+Chiariamo subito che parliamo di guadagni e di perdite solo quando queste si concretizzano. Ciò avviene, in entrambi i casi, solo vendendo le nostre crittovalute e riconvertendole quindi in monete FIAT. Solamente in quel momento potete affermare con certezza di aver portato a casa un utile o una perdita. Diversamente possiamo parlare di valore del nostro investimento o di potenziali perdite o guadagni. 
+
+Questo mercato ci ha abituati ad avere una grande volatilità, può subire sbalzi nell’ordine del 30% o più al giorno. Se si investono ad esempio 1.000 € oggi, domani ci si potrebbe trovare con 700 € o meno. Potreste anche ritrovarvi con 2.000 € dopo una settimana, ma questo non credo sia un problema. Nel mercato delle crittovalute, questo tipo di fluttuazioni è normale. Capisco che a prima vista può sembrare un’affermazione forte, ma se andate ad analizzare l’andamento storico dei prezzi, vi accorgerete che eventi del genere si verificano diverse volte all’anno sia con segno più che con segno meno.
+
+Se investite in crittovalute una percentuale del vostro portafoglio investimenti troppo elevata, e vi ritrovate con delle potenziali perdite del 60%, potreste perdere la lucidità mentale per fare le scelte corrette e peggiorare ulteriormente la vostra situazione finanziaria. 
+
+E’ fondamentale investire una percentuale di denaro di cui non abbiate bisogno in tempi brevi, ciò vi consente di uscire dal mercato in un momento in cui potete trarre profitto. Se invece vi serve assolutamente quel denaro, sarete costretti a disinvestire, trasformando quindi delle potenziali perdite in perdite concrete. Se viceversa non avete fretta di disinvestire, potete attendere che le potenziali perdite si trasformino con il tempo in potenziali guadagni, e quindi al quel punto vendere e realizzare un guadagno vero e proprio.
+
+Ipotizziamo una persona che decide di investire 10.000 $ acquistando dei Bitcoin, immaginiamo che ciò avvenga a metà dicembre 2017 quando il BTC veniva quotato 18.000 $ (tocco dei massimi a 20.000 $).
+Il 6 febbraio 2018, meno di due mesi dopo, lo stesso investitore si sarebbe ritrovato con l'equivalente di 3.300 € in Bitcoin ed un prezzo in caduta libera da circa due settimane. Inserite al posto dei 10.000 $ iniziali, la cifra che volete investire in Bitcoin o crittovalute e calcolate, una potenziale perdita del 66% circa in due mesi scarsi. Psicologicamente come vi sentireste? Se non riuscite a reggere questo tipo di pressioni è meglio che riduciate la quota investita fino a un livello che vi permette di vivere bene anche una situazione di questo tipo, con forti cali del prezzo, perchè certamente continueranno ad accadere.
+
+=== Due ipotesi concrete
+Ipotizzando di avere un portafoglio d’investimento di 10.000 € di cui un 95% impegnato in investimenti tradizionali, con un rendimento medio annuale del 2% e un 5% impegnato in crittovalute.
+
+[.text-center]
+image:images/esempi_investimenti.png[Due portafogli investimento]
+
+In questo scenario, facciamo quindi due ipotesi sull’andamento annuo del prezzo del Bitcoin.
+
+Scenario positivo: il prezzo è cresciuto del 35% da quando siamo entrati nel mercato. Abbiamo un rendimento totale di tutto il portafoglio di investimento pari a circa 3,65 percento.
+Scenario negativo: il mercato delle crypto perde il 35% in un anno, porteremo a casa un rendimento prossimo allo zero più precisamente lo 0,15% di interesse. 
+
+L’indicazione del più o meno 35% è da intendersi non come una previsione, ma come un puro esempio. Il 2017 ha chiuso con un rendimento del 1400%. E’ difficile fare previsioni sul 2018, possiamo però affermare con certezza che difficilmente potranno essere ripetute le medesime performance dell’anno precedente (vorrebbe dire moltiplicare di 14 volte il marketcap). Questo tipo di performance si possono ottenere probabilmente su monete con una bassa capitalizzazione. Si tratta però di scovare quella giusta, che farà il botto nei prossimi anni, e credetemi, scovarla in mezzo a 1500 non è affatto facile.
+
+=== Le ICO
+Le Initial Coin Offering (offerta di moneta iniziale), sono uno strumento di raccolta fondi per finanziare nuovi progetti. Possiamo paragonarle in tutto e per tutto ai progetti di crowdfunding che trovate su https://www.kickstarter.com/ con la principale differenza che, le ICO si basano quasi esclusivamente sulla donazione di crittovalute. Ho usato il termine donazione non a caso, infatti chi versa il denaro sta eseguendo tecnicamente una donazione. Pagando NON si ottengono in cambio azioni, obbligazioni o alcun tipo di diritto societario, NON si stanno acquistando azioni, NON si avrà diritto di voto, nè alcun tipo di tutela. Per questa ragione, dietro a molte ICO si sono nascosti molti truffatori, che hanno realizzato progetti fantastici sulla carta, ma dopo aver raccolto il denaro, sono spariti e il progetto è rimasto irrealizzato, spesso senza neppure distribuire i token. A settembre 2017, Cina e Korea del Sud, hanno vietato l’utilizzo di questi strumenti di raccolta fondi, proprio per il dilagare di questi progetti truffa. Altri stati stanno vagliando la possibilità di regolamentare le ICO; in molti stati, come l’Italia ad esempio, realizzare una ICO infrange una serie di normative; per questa ragione, alcuni progetti italiani hanno dovuto realizzare la propria ICO in Svizzera.
+
+Trovate maggiori informazioni qui: https://it.wikipedia.org/wiki/Initial_coin_offering
+
+La prima ICO, Mastercoin, è stata realizzata a Giugno del 2013, la prima di grande successo è stata Ethereum nel 2014, che ha raccolto 19 milioni di dollari circa, il vero boom c’è stato però nel 2017, dove è scattata una vera e propria “ICOmania”. Potete vedere un bel video che dà l’idea della portata del fenomeno a questo indirizzo: https://upload.wikimedia.org/wikipedia/commons/8/8e/This_is_what_4_years_of_ICO_activity_looks_like.webm
+
+Le prime ICO raccoglievano fondi con l’obiettivo di realizzare delle nuove crittovalute come Mastercoin ed Ethereum, IOTA e molte altre. Successivamente ne sono nate per finanziare progetti più disparati, che avevano come oggetto, la creazione di business tradizionali, diventando di fatto un metodo innovativo per finanziare start-up emergenti. 
+Abbiamo visto, nei capitoli precedenti, la differenza tra coin e token; nella stragrande maggioranza dei casi, bisognerebbe infatti definirle ITO cioè Initial Token Offering (offerta di Token iniziale), infatti, dopo aver raccolto una determinata somma di crittovalute, gli ideatori del progetto distribuiscono un token a chi ha partecipato alla ICO.
+
+TIP: Ricordo che le Coin sono progetti complessi che richiedono la presenza di una rete P2P autonoma, dei nodi, dei miner, ecc. I Token, sono invece l’equivalente dei punti del supermercato, vengono accettati solo dall’emittente e tecnicamente si appoggiano sull’infrastruttura di una Coin, nella stragrande maggioranza dei casi su Ethereum.
+
+Andiamo ora ad riepilogare le varie fasi che caratterizzano una ICO. Purtroppo non c’è uno standard, e ogni raccolta fondi può presentare caratteristiche anche molto diverse da quelle che andrò ad elencare. 
+Se decidete di partecipare ad una di queste ICO, dovete armarvi di santa pazienza e leggere con la massima attenzione tutta la documentazione relativa al progetto e alle modalità di rilascio dei token.
+
+Alla base di una ICO ci dovrebbero quindi essere: 
+-un progetto, spesso descritto a grandi linee sul sito internet della ICO
+-un white paper, che dovrebbe essere un documento tecnico approfondito, ma si sta trasformando sempre più spesso, in un documento commerciale alla portata di tutti, fornendo quindi sempre meno indicazioni tecniche su come sarà realizzato il progetto
+-l’indicazione del softcap, cioè la quantità minima di fondi che dovranno essere raccolti, affinchè il progetto possa essere realizzato
+-l’indicazione dell’hardcap, cioè la quantità massima di fondi prima che la ICO venga chiusa
+-una scadenza, entro la quale termina la raccolta di denaro
+
+Dopo aver terminato la raccolta fondi, vengono distribuiti i token, rispettando le tempistiche previste dal progetto iniziale o quanto meno si spera che avvenga.
+
+Valutare una ICO dal punto di vista dell’investimento è un processo molto complesso, e non permette mai di avere un’idea chiarissima sui rischi a cui si sta andando incontro. Nonostante tutte le valutazioni, analisi e precauzioni, un investimento in questo tipo è da considerarsi decisamente più rischioso dell’investimento in crittovalute già realizzate e affermate. 
+
+Personalmente inizio a fare una valutazione dell’idea alla base della ICO:
+Quali problemi si pone di risolvere?
+La soluzione proposta porta effettivamente un vantaggio competitivo sugli attuali player di mercato?
+La tecnologia che viene adottata, porta dei vantaggi importanti? 
+
+Se il progetto sembra interessante, leggo il white paper, per trovare maggiori dettagli dal punto di vista tecnico. Mi è capitato diverse volte di non trovarne. Ultimamente molte ICO realizzano dei white paper “per tutti”. Questo dal mio punto di vista è un brutto segnale. Il white paper deve essere un documento tecnico, dove trovo risposte tecniche, a questioni concrete legate al funzionamento del progetto. Se queste informazioni mancano, la mia valutazione sul progetto tendenzialmente è negativa.
+
+Se invece il white paper mi soddisfa, proseguo l’analisi controllando la composizione del team di sviluppo: Chi sono?
+Che cosa facevano prima di iniziare questo progetto?
+Hanno esperienza di sviluppo nel settore specifico? 
+Hanno esperienza commerciale nel settore specifico?
+Sono presenti figure di spicco in vari settori cruciali per la ICO?
+
+La roadmap, cioè il piano di sviluppo che avrà il progetto, in che tempi si prevede che diventerà operativo?
+In questo caso faccio valutazioni tirando in ballo i dati analizzati nei paragrafi precedenti, ad esempio valutando a grandi linee la mole di lavoro e la dimensione del team di sviluppo. Se si tratta di realizzare un progetto molto complesso, ma mancano le risorse umane o le competenze, difficilmente si potrà avere un progetto operativo in 6 mesi. Se il progetto è troppo ambizioso e le tempistiche ridotte, probabilmente chi ha preparato la roadmap, non ha l’adeguata esperienza per gestire lo sviluppo di un progetto di questo tipo.
+
+L’analisi di una ICO, come avrete avuto modo di intuire, è un procedimento molto lungo e complesso, richiede competenze tecniche specifiche per valutare il progetto, esperienza in diverse discipline e spesso non è risolutivo; rimangono sempre dei grandi punti interrogativi sulle effettive potenzialità del progetto analizzato. Investire in ICO è quanto di più rischioso il mercato delle crittovalute possa offrire, infatti molti analisti stimano che il 90% falliranno. Trovate un video interessante di Marco Casario qui: https://www.youtube.com/watch?v=O2d0EelDb54
+
+Chi decide di investire nelle ICO adotta la strategia di investire su molti progetti, già sapendo che la maggior parte di questi fallirà, contando però di recuperare queste perdite, con il successo ottenuto sui pochi progetti che avranno un grandissimo successo. La scelta dei progetti diventa quindi cruciale, analizzarli in modo approfondito richiede molto tempo e risorse, per trovare dieci progetti interessanti, probabilmente dovrete analizzarne un centinaio o più. Questo processo vi porterà via moltissimo tempo, valutate se la cifra che avete intenzione di investire, giustifica questo tipo di investimento. 
+
+Trovate un altro video interessante, questa volta di Blockchain Caffè qui: https://www.youtube.com/watch?v=PFViiATVm0E

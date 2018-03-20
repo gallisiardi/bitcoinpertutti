@@ -1,0 +1,104 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Acquistare Bitcoin e crittovalute
+Nel capitolo precedente abbiamo visto come funzionano gli exchange. Certamente sono di gran lunga il metodo più utilizzato per acquistare e vendere Bitcoin e crittovalute, sono relativamente semplici da utilizzare, con le dovute attenzioni, possono rivelarsi anche poco costosi in termini di costi di commissione.
+
+Andiamo ora ad analizzare nel dettaglio come funziona l’acquisto di crittovalute su un exchange.
+Il primo step è certamente scegliere l’exchange giusto, sembra assurdo, ma non sono tutti uguali.
+Molti hanno particolarità e caratteristiche diverse.
+
+=== Coinbase
+La stragrande maggioranza delle persone che conosco è partita da uno dei più blasonati: Coinbase.com
+Coinbase è un sito statunitense,è molto semplice da utilizzare, ha una procedura di verifica dei documenti abbastanza rapida ed accetta pagamenti sia con carta di credito che tramite bonifico SEPA (ha un conto in Lituania). I versamenti con carta ve li sconsiglio per via delle commissioni di circa il 4% sui depositi. E’ preferibile utilizzare il bonifico perchè non costa nulla, a patto che la vostra banca non vi applichi dei costi extra per il bonifico SEPA all’estero. Su Coinbase sono allo stato attuali presenti solo 4 cittovalure, BTC, LTC, ETH e BCH. Le commissioni applicate sono riportate nella pagina fee. Oltre alle commissioni indicate, occorre monitorare il prezzo di vendita. Può capitare che sia leggermente superiore al prezzo medio presente su altri exchange. Questa differenza può essere trascurabile su acquisti per qualche centinaia di euro, ma diventa via via più importante con il crescere delle somme in gioco.
+L’interfaccia grafica è in italiano ed è veramente semplice ed intuitiva, probabilmente è l’exchange migliore per effettuare i primi acquisti. 
+
+Coinbase offre inoltre un bonus in Bitcoin per l’equivalente di 10 $ a tutti quelli che vengono invitati da un altro utente. Questo bonus viene inviato sia a voi che a me, in occasione del vostro primo acquisto di crittovalute superiore a 100 €.
+Se il contenuto di questo libro vi sta piacendo registratevi su Coinbase con il seguente link: 
+
+https://www.coinbase.com/join/59bb877aa422190108e6263a 
+
+qui in formato QR Code:
+
+[.text-center]
+image:images/qr_code_coinbase_referal.jpg[QRCODE referal coinbase, 200]
+
+WARNING: Il QR Code è da scansionare con un app per la lettura dei QR Code e non con un wallet.
+
+Con questo bonus, che non vi costa nulla, mi incentivate a scrivere ulteriori contenuti o altri libri simili a questo, da distribuire sempre in formato completamente gratuito.
+
+[.text-center]
+image:images/coinbase.png[Homepage Coinbase.com]
+[.text-center]
+Screenshot tratto da https://www.coinbase.com/join/59bb877aa422190108e6263a 
+
+=== Binance
+Binance.com è un exchange asiatico, a diffrenza di Coinbase tratta moltissime crittovalute, oltre 250, e ne vengono aggiunte di nuove in continuazione. A Febbraio 2018 risulta essere tra i maggiori exchange del mondo ed è in fortissima crescita. I prezzi sono in linea con il mercato e le commissioni sono buone. La verifica dei documenti richiede più tempo e l’interfaccia non è così intuitiva come per Coinbase. Può essere un po’ ostica per gli utenti alle prime armi.
+
+[.text-center]
+image:images/binance.png[Homepage Binance.com]
+[.text-center]
+Screenshot tratto da https://www.binance.com
+
+=== Bitfinex
+Bitfinex è uno dei maggiori exchange mondiali. Tratta molte crittovalute e offre un sistema di grafici per chi fa trading molto completo, con moltissimi strumenti di analisi. Ha delle commissioni molto basse, soprattutto per chi fa grandi volumi. L’interfaccia è un po’ più semplice di Binance, inoltre è disponibile una demo illustrata che spiega come completare gli acquisti. Anche in questo caso non semplicissima per chi è alle prime armi.
+
+[.text-center]
+image:images/bitfinex.png[Homepage Bitfinex.com]
+[.text-center]
+Screenshot tratto da https://www.bitfinex.com
+
+=== Gdax
+Gdax è la piattaforma di trading di Coinbase. Potete fare il login con le medesime credenziali, le monete presenti sono le stesse presenti su Coinbase.
+
+[.text-center]
+image:images/gdax.png[Homepage Gdax.com]
+[.text-center]
+Screenshot tratto da https://www.gdax.com/
+
+=== Altri Exchange
+Qui trovate una lista degli exchange più utilizzati, ordinati per volume di scambi: https://coinmarketcap.com/exchanges/volume/24-hour/
+
+=== Exchange decentralizzati
+Si stanno diffondendo dei nuovi exchange che hanno la caratteristica di essere decentralizzati e quindi non censurabili. A differenza di quelli tradizionali, che sono dei normalissimi siti web, gli exchange decentralizzati sono ospitati su reti P2P. 
+Un exchange decentralizzato è un mercato di scambio che NON si basa su un sito web classico, ma le negoziazioni avvengono direttamente tra gli utenti, attraverso un processo automatizzato. Questo sistema può essere ottenuto creando dei token proxy o attraverso un sistema di deposito in garanzia, decentrato e multi-firma. E’ un settore in forte sviluppo e garantirebbe agli utenti di scambiarsi in sicurezza le crittovalute anche in caso di divieti da parte delle autorità. Attualmente non esistono exchange decentralizzati che accettano versamenti in monete FIAT.
+
+=== Il miglior exchange
+Non esiste un migliore exchange in assoluto, vanno valutati diversi fattori come: la lingua dell’interfaccia (alcuni sono in coreano o giapponese ad esempio), la semplicità d’uso, le commissioni applicate, ma soprattutto le crittovalute trattate (BTC, LTC, BCH, IOTA, ecc.) e i mercati attivi per ogni singola moneta (ad esempio BTC può essere scambiato con dollari BTC/USD, euro BTC/EUR, Litecoin con BTC/LTC, ecc). Non tutti gli exchange trattano tutte le crittovalute e non tutti quelli che trattano una crittovaluta la scambiano con qualsiasi moneta. Ad esempio IOTA è, allo stato attuale, acquistabile su Bitfinex e su Binance. In entrambi gli exchange è possibile pagarla in BTC e ETH, in quanto esistono i mercati BTC/IOTA e ETH/IOTA, ma se desiderate pagarla in USD o EUR, potete farlo solo su BITFINEX, in quanto in mercati BTC/USD e BTC/EUR non esistono su Binance.
+ 
+Prima di acquistare una crittovaluta quindi, occorre capire su quali exchange è scambiata e quali sono i mercati attivi. Per fare ciò il sistema più pratico è utilizzare il sito Coinmarketcap (https://www.coinmarketcap.com), cliccando sulla crittovaluta a cui si è interessati, e successivamente sulla voce Market. Qui trovate tutti gli exchange e i relativi cambi, prezzi e volumi (totale di scambi nelle ultime 24 ore). Nel prossimo capitolo verranno descritte in modo approfondito tutte le principali funzionalità di questo sito, che è uno dei punti di riferimento fondamentali per chi opera sul mercato delle crittovalute.
+
+=== Procedura d'acquisto
+Dopo aver identificato l’exchange sul quale effettuare l’acquisto, la procedura che segue è più o meno la stessa per tutti i siti:
+1. registrazione sul sito e conferma dell’indirizzo email
+2. invio documenti e approvazione (che può arrivare a distanza di giorni/settimane)
+3. invio dei fondi in euro e attesa dell’accredito nel vostro conto online, sul sito dell’exchange degli euro
+4. acquisto con gli euro delle crittovalute
+
+A questo punto voi pensate di essere entrati in possesso delle crittovalute che avete pagato, ma non è esattamente così.
+Le crittovalute infatti non sono su una vostra chiave privata gestita dal vostro wallet, di cui possedete il pieno controllo, ma sono su un wallet software dell’exchange, dove è lui che detiene il controllo delle chiavi e quindi dei fondi. L’exchange si impegnerà ad inviarveli nel momento in cui voi glieli chiederete.
+
+E’ la stessa cosa che accade quando depositate i vostri soldi in banca. I soldi non sono più vostri sono di proprietà della banca, che si obbliga a restituirveli nel caso ne facciate richiesta [line-through]*, a meno che sia un giorno lavorativo, che non ne chiediate troppi tutti assieme e sempre che siano disponibili, altrimenti dovete ripassare più tardi o il giorno seguente*. Se la banca fallisce, i soldi non ve li potrà restituire. Per non creare instabilità nel sistema bancario, in accordo tra di loro, le banche italiane si sono impegnate a rimborsare tutti i possessori di conti correnti su cui erano depositati fino ad un massimo di 100.000 € nel caso in cui la loro banca fallisse. Va però sottolineato che questo rimborso sarà garantito solo fino a quando saranno disponibili dei soldi nel fondo di riserva appositamente creato dalle altre banche. In caso di fallimento di grandi banche con milioni di correntisti questi fondi non sarebbero sufficienti a rimborsare tutti i correntisti.
+
+Per gli exchange è la stessa cosa, a parte la presenza del fondo di garanzia. Qui nessuno garantisce nulla, e, come già successo in passato, alcuni exchange possono fallire da un giorno all’altro senza lanciare alcun tipo di avviso o segnale. Possono essere vittime di attacchi hacker o furti di dipendenti infedeli o degli stessi amministratori. Tutti questi scenari portano ad un unico risultato, le vostre crittovalute spariranno.
+
+Per disporre dei propri fondi in modo diretto e non accollarsi i rischi legati all’intermediazione dell’exchange, è buona norma, dopo aver acquistato le crittovalute trasferirle nell’apposito wallet, di cui voi e solo voi, disponete delle chiavi private. Ricorda, tu sei la tua banca.
+  
+=== Altri metodi per acquitare Bitcoin
+Esistono molti altri modi per acquistare crittovalute. Il più banale è acquistarle da parenti, amici o colleghi che già sono in possesso di crittovalute. In questo caso, è sufficiente scaricare un wallet, creare la propria chiave privata, mostrare all’amico il QR Code, e farsi inviare la quantità di Bitcoin concordata. 
+
+Sparsi per la penisola stanno spuntando come funghi dei Bancomat, o “compro euro”; sono delle macchine automatiche o dei punti vendita presidiati da addetti, che, in cambio di un versamento in euro vendono Bitcoin. In questi casi è fondamentale documentarsi sui costi di transazione che vengono applicati, che possono in alcuni casi arrivare addirittura al 12%. Anche in questi casi, come per gli exchange vi verranno richiesti tutta una serie di documenti, ed i vostri dati saranno salvati dalla società che vi vende i Bitcoin.
+
+Esistono siti che mettono in contatto direttamente acquirenti e venditori di crittovalute. Uno di questi è https://localbitcoins.com/it/ . Personalmente non l’ho mai usato, ma ne ho sentito parlare molto, soprattutto nelle chat italiane ed internazionali. Se siete interessati a questo tipo di servizio, vi consiglio di iniziare con piccole somme e di adottare sempre la massima prudenza, anche perché le truffe che hanno come oggetto Bitcoin si stanno moltiplicando e purtroppo i malintenzionati non mancano.
+
+Un altro metodo semplice per ottenere Bitcoin è quello di farsi pagare in crittovalute dai propri clienti, come già fanno molti esercizi commerciali. Questo sia chiaro, non vi esime dall’emettere una regolare fattura o ricevuta fiscale. Per accettarli basta creare una nuova chiave privata e relativo address in cui far confluire tutti i pagamenti. Per praticità è consigliabile tenere distinte le chiavi private e gli indirizzi personali da quelli aziendali, soprattutto per una miglior gestione della rendicontazione contabile. Per maggiori dettagli, vi consiglio di chiedere al vostro consulente fiscale.
+Nei capitoli successivi verrà approfondito l’argomento con relativi riferimenti normativi.

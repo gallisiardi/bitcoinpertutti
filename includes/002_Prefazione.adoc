@@ -1,0 +1,80 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Prefazione
+Questo libro è nato dopo ore ed ore passate a leggere libri, white paper, articoli, chat, forum che trattavano l’argomento crittovalute. 
+Ho deciso di fare un sunto, cercando di semplificare il più possibile i concetti complessi, aggiungendo molti esempi ed immagini esplicatve, per rendere questi contenuti alla portata di tutti. Credo di aver ottenuto un buon compromesso, se così non fosse segnalatemi le parti più ostiche da comprendere e proverò a riscriverle o ad integrarle con utleriori contenuti. E' possibile che alcuni capitoli più tecnici debbano essere riletti un paio di volte o magari integrati con qualche video esplicativo su un determinato argomento; è normale, non scoraggiatevi, ci sono passato anche io e come me molti altri.
+
+Se durante la lettura trovate degli errori, potete scrivermi qui {contatti}, proponendomi le correzioni da applicare. Sarà mia cura intervenire nel più breve tempo possibile, per porvi rimedio. Per chi ha dimestichezza con github, potete intervenire direttamente sul repository qui: {github}
+
+La stesura del libro ha richiesto molto lavoro, da parte mia, dei revisori e del grafico, nonostante ciò ho decisio di distribuirlo GRATUITAMENTE in formato elettronico, senza la presenza di alcun tipo di banner o di sponsorizzazioni dirette.
+Per accedere a questo documento NON è necessario registrarsi su alcun sito, nè pagare alcun tipo di costo o abbonamento. Se così non fosse segnalatemi eventuali abusi nel form di contatti: {contatti} provvederò a far [line-through]*loro del male* intervenire il legale.
+
+Una copia sempre aggiornata di questo libro è disponibile in diversi formati al seguente indirizzo: {download}. Se ciò che state leggendo, non è stato scaricato dal sito {sito}, vi consiglio di andare a scaricare l’ultima versione in quanto potrebbero essere stati corretti errori o aggiunti nuovi contenuti non presenti nella versione attualmente in vostro possesso. La versione corrente è riportata nella pagina successiva alla copertina.
+
+All’interno del libro sono presenti dei link a prodotti e servizi commerciali, che personalmente reputo validi. Tengo a precisare che non ho ricevuto alcun tipo di compenso diretto per l’inserimento di questi link.
+
+In alcuni casi, sempre chiaramente evidenziati, sono presenti link con relativo referal, che riconoscono al sottoscritto, un piccolo bonus o una piccola percentuale sugli acquisti di prodotti e servizi da voi eventualmente effettuati "passando" attraverso di essi. Questi acquisti non comportano per voi costi aggiuntivi. Consideratelo un modo come un altro per finanziare la realizzazione e la distribuzione di questo e di altri libri, senza dover aprire appositamente il portafoglio.
+
+Ho scelto di utilizzare il termine crittovalute perchè la sua radice, critto-, deriva da crittografia. Molti utlizzano il termine criptovalute, probabilmente è un italianizzazione del termine inglese cryptocurrency. Non sono un purista della lingua e devo ammettere anche io che parlando o nelle scrivendo in chat, tendo ad usare più la seconda.
+
+Il libro NON vuole essere un invito ad investire in Bitcoin o crittovalute, anzi, il mio consiglio è di NON investire in questo mercato, soprattuto se non avete le conoscenza tecniche per capire Bitcoin e tutto ciò che lo circonda. Il libro vuole essere il mio personale contributo alla diffusione della conoscenza su cosa sono e come funzionano le crittovalute.
+
+Il libro non ha nulla a che fare con l'azienda per la quale lavoro, è un progetto personale, non connesso alla mia attività professionale.
+
+=== Licenza
+Il libro può essere distribuito esclusivamente tramite il sito {sito}, se intendi promuoverlo, ti consigliamo di linkare il sito. Se decidi di distribuirlo in formato cartaceo, accertati di avere a disposizione l’ultima versione e non apportare modifiche al libro.
+E’ possibile realizzare copie per uso personale. E’ possibile utilizzare parti del libro citando sempre la fonte. E’ possibile distribuire interamente il libro a patto che venga fatto in forma gratuita e rispettando i divieti sotto riportati. 
+E’ vietato apportare modifiche di qualsiasi tipo al libro, per poi ridistribuirlo in qualsiasi forma, gratuita o a pagamento. Se sono presenti errori, segnalali, verranno corretti, così che tutti possano accedere ad una versione corretta. E’ vietato realizzare copie totali o parziali, per uso commerciale, anche se distribuite gratuitamente assieme ad un prodotto a pagamento.
+E’ vietato apporre loghi, marchi, ecc su una copia di questo libro. 
+E’ possibile, anzi, caldamento consigliato, linkare il sito ufficiale, in modo da fornire sempre una copia aggiornata del libro stesso.
+
+Per qualsiasi dubbio sulla licenza potete scrivermi a: {contatti}
+
+=== L’autore
+Gianmaria Allisiardi è nato, cresciuto e maturato in provincia di Cuneo, dove vive e lavora. Bazzica sul web da quando possedere uno “US ROBOTIS 56K” era un lusso. Lavorativamente parlando ha ricoperto ruoli diversi tra loro dal sistemista allo sviluppatore, passando per tutto ciò che è editoria on-line, posizionamento sui motori, ottimizzazione degli introiti pubblicitari, ecc. La sua vera passione sono sempre stati i database. Come molti informatici appassionati di nuove tecnologie, si avvicina a Bitcoin pochi anni dopo la sua nascita, ma non fu un colpo di fulmine e i due si persero di vista per almeno un altro paio d’anni, fino a quando il destino non decise di rifarli incontrare, i loro sguardi si incrociarono nuovamente e da allora non si lasciarono più. 
+
+=== Crediti
+Un ringraziamento particolare a Bruna che si sono occupata della revisione "linguistica" e a tutti quelli che leggendo il libro mi segnaleranno la presenza di errori.
+
+Un ringraziamento particolare a Fabio Ferrero che si è occupato della realizzazione del logo, della coperetina e della quarta di copertina[line-through]*, quelli realizzati da me erano pessimi*. Trovate altri suoi interessanti lavori qui: {graficolink}
+
+Un ringraziamento particolare al dottor Stefano Capaccioli, per chi non lo conoscesse, uno dei massimi esperti italiani in materia, che si è occupato della revisione del capitolo relativo agli aspetti legali, contabili e fiscali, trovate ulteriori informazioni sull’argomento sul sito: http://www.coinlex.it/ e sul blog: https://coinlexit.wordpress.com/ 
+
+Un grazie particolare a tutti quelli che volenti o nolenti hanno contribuito alla mia formazione in materia di Bitcoin e crittovalute, sui forum e sulle chat Telegram.
+
+Per finire un grazie a tutti quelli che renderanno questa fatica letteraria meno vana, diffondendo link al download di questo libro, rendendo così un po’ meno inutili le ore dedicate a scriverlo. 
+
+Se un editore volesse pubblicare questo libro può contattarmi tramite il form sul sito {contatti}
+
+Per chi volesse sostenere questo progetto ed incentivarmi a scrivere ulteriori libri da distribuire sempre in forma gratuita, può inviarmi qualche Bitcoin a questo indirizzo: {donazioneaddress} qui in formato QR Code:
+
+[.text-center]
+image:images/qrcode_donazione_btc.jpg[QRCODE donazione btc, 200]
+
+Probabilmente se state leggendo questo libro, non è una operazione attualmente alla vostra portata. Quasi certamente non sapete neppure da che parte iniziare. Il libro vi fornirà tutte le competenze necessarie per eseguire questa ed altre operazioni con Bitcoin in completa autonomia e sicurezza. Se lo riterrete opportuno, al termine della lettura, potrete tornare su questa pagina e donarmi un euro.
+
+=== Convenzioni adottate
+
+[line-through]*commenti dell'autore ironici o sacastici, leggere con cautela* 
+
+TIP: Nota, curiosità o breve approfondimento
+
+IMPORTANT: Contenuto importante
+
+WARNING: Avvertimento, avviso
+
+CAUTION: Massima attenzione, cautela e prudenza, le infomazioni così evidenziate richiedono il massimo grado di attenzione
+
+```
+In box come questi troverete parti di codice, risultati dell'esecuzione di un comando o calcoli matematici.
+```

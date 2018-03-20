@@ -1,0 +1,143 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Concetti informatici di base
+Per comprendere meglio il funzionamento del Bitcoin è necessario approfondire alcuni concetti informatici e crittografici a livello basilare. Come anticipato nell'introduzione, affronteremo in modo semplice questi argomenti senza scendere troppo nei dettagli.
+
+=== I QR Code
+Si tratta di codici a barre bidimensionali, possono contenere fino a 4.000 caratteri. Solitamente contengono link a siti internet e vengono utilizzati per permettere ad un lettore di accedere ad una pagina web senza dover digitare l’indirizzo, evitando quindi errori dovuti ad una errata digitazione. Per leggere il contenuto di questi codici sono disponibili moltissime app gratuite. Vengono utilizzati anche in altri ambiti, dove si deve trasmettere una stringa di caratteri in modo rapido e senza commettere errori. Quello che segue, ad esempio è il QR Code del mio indirizzo Bitcoin:
+
+[.text-center]
+image:images/qrcode_donazione_btc.jpg[QRCODE donazione btc, 200]
+
+=== Il protocollo
+Il protocollo è un insieme di regole condivise sulle quali si basa un'infrastruttura informatica. Chiunque voglia scrivere del software che interagisca con la rete Bitcoin ad esempio, può farlo senza chiedere il permesso a nessuno, però deve rispettare il protocollo altrimenti gli altri software che interagiscono con la rete ignoreranno queste comunicazioni.
+
+Un protocollo informatico è simile al Codice della Strada. Si tratta di un insieme di regole matematiche, che non lasciano spazio ad interpretazioni. Chi non rispetta le regole viene ignorato, nel codice della strada purtroppo non è così.
+
+Se ad esempio il protocollo stabilisce che un file non deve superare 1 MB (megabyte), se qualcuno prova a generare un file più grande del limite stabilito, questo viene ignorato in quanto non conforme al protocollo.
+
+=== Reti informatiche
+Una rete informatica è un insieme di server, computer, smartphone o più genericamente dispositivi interconnessi tra loro. Questi possono essere collegati in modi e forme differenti.
+
+[.text-center]
+image:images/rete.png[Confronto tra strutture reti informatiche]
+
+Una rete centralizzata, ad esempio, è un insieme di dispositivi che si connettono tutti con un server centrale. Questa struttura ha un grosso limite: una volta chiuso, censurato o distrutto il nodo centrale, crolla tutta la rete. Immaginato un sito internet con un solo server, se questo viene spento nessuno potrà più accedere ai contenuti.
+
+La seconda tipologia di rete è quella decentralizzata dove sono presenti più nodi centrali. Ad ognuno di essi sono connessi molti dispositivi. Questa tipologia di rete riesce a resistere in modo migliore a eventuali attacchi o guasti;alcune parti della rete saranno comunque tagliate fuori e quindi non potranno fruire del servizio su di essa erogato. Immaginiamo il caso di una banca con più filiali sul territorio, ognuna con i propri clienti. In caso di interruzione del servizio dentro una singola filiale, i clienti “connessi” a quel nodo saranno isolati, ma tutte le altre filiali non risentiranno del problema. 
+
+Nella rete distribuita o rete peer to peer (P2P), tutti i dispositivi sono interconnessi tra di loro, creando una sorta di rete da pesca, in cui ogni utente è un nodo della rete. Se uno o più dispositivi vengono spenti la rete non risente di alcun problema. I client connessi al singolo nodo spento possono riconnettersi ad altri nodi e continuare a usufruire del servizio. Questo tipo di rete si definisce il resiliente, cioè in grado di subire attacchi garantendo un’erogazione continua del servizio. Questa è la rete sulla quale è basato il protocollo Bitcoin. Probabilmente molti di voi conosceranno software come Torrent o eMule. Ormai sono oltre vent'anni che si cerca di contrastare la diffusione di queste reti P2P, perché su di esse transitano contenuti musicali, testuali e video coperti da copyright; nonostante lo sforzo delle major discografiche e dei governi non è stato possibile bloccare tecnicamente questi servizi. Non esiste un punto centrale da attaccare o da spegnere, dovrebbero essere spenti contemporaneamente tutti i nodi della rete; finché esisteranno anche solo due nodi, la rete continuerà a vivere. Sia ben chiaro, diffondere materiale coperto da copyright è un reato, indipendentemente da come questo materiale venga distribuito.
+
+=== Funzioni di hash
+Una funzione è un software che, dato in ingresso un testo o un file di qualsiasi dimensione, lo converte in una stringa alfanumerica composta da lettere e numeri come questa 34ae22f3cbaf0b0adfea0bc52ded6eb4a39c1b325c45c8283ffa04612ed3e273.
+
+Immaginate una lavatrice che, inserendo 10 volte il testo della Divina Commedia vi restituisca sempre la stessa una stringa di caratteri alfanumerici.
+
+[.text-center]
+image:images/funzione_di_hash_lavatrice.png[Funzione di hash]
+
+Cambiando anche solo un carattere, uno spazio, un punto, del testo inserito, la stringa generata sarà completamente differente.
+
+[.text-center]
+image:images/funzione_di_hash_lavatrice2.png[Funzione di hash]
+
+Esistono molte funzioni di hash differenti, quella utilizzata in bitcoin si chiama SHA256.
+Ad esempio, il testo: 
+“Nel mezzo del cammin di nostra vita, mi ritrovai per una selva oscura che la diritta via era smarrita.” genererà questa stringa alfanumerica composta dai numeri da 0 a 9 e dalle lettere da “a” a “f”: “5FC07EB06FA227DF205F475E9BD00633F84310FF976297FDCB79428205A974C1”. Potete verificarlo ad esempio qui: http://www.xorbin.com/tools/sha256-hash-calculator
+Se cambiate anche solo un carattere della stringa inserita e rigenerate l’hash, noterete che la stringa restituita è completamente diversa. Se aggiungiamo ad esempio una "o" dopo cammin, il testo in input sarà “Nel mezzo del cammino di nostra vita, mi ritrovai per una selva oscura che la diritta via era smarrita.” che genererà questo output: “14D883976131F60B2E3198CCC8B0EE752581F342735B7F1B11AE06926E1307FE”.
+
+Questa lavatrice può però eseguire il lavaggio in una sola direzione cioè dal testo completo verso la generazione della stringa e non viceversa. Dato l’hash della Divina Commedia, non è quindi possibile in nessun modo risalire al testo completo che l’ha generato.
+
+Il suo scopo principale è quello di permettere di avere una prova rapida e tangibile che il file o il testo inserito non abbia subito variazioni. Due persone possono quindi scambiarsi un file, ed entrambe possono generare la funzione di hash ed ottenere il medesimo risultato, avendo quindi la garanzia che il file sia esattamente lo stesso e non abbia subito variazioni o manomissioni durante la trasmissione.
+
+=== Proof of Work
+Svolgere un qualsiasi lavoro può richiedere moltissimo tempo, anche decenni; verificare che effettivamente sia stato svolto può richiedere meno di un secondo.
+Prendiamo ad esempio il caso delle piramidi: per essere costruite hanno richiesto decenni e lo sforzo di migliaia di persone; per verificare che effettivamente esistono e siano state completate basta un’occhiata data da una singola persona ed il tutto non richiede più di qualche decimo di secondo.
+
+[.text-center]
+image:images/piramide.jpg[Piramide di Cheope]
+
+Testiamo la prof of work con un semplice gioco.
+Immaginiamo una sala con 100 persone, ognuna di esse ha in mano 10 dadi.
+
+Lanciando 10 dadi contemporaneamente ogni partecipante può ottenere un numero compreso nell’intervallo tra 10 e 60:
+
+[.text-center]
+image:images/1111111111.png[1+1+1+1+1+1+1+1+1+1=10]
+[.text-center]
+1+1+1+1+1+1+1+1+1+1=10
+
+[.text-center]
+image:images/6666666666.png[6+6+6+6+6+6+6+6+6+6=60]
+[.text-center]
+6+6+6+6+6+6+6+6+6+6=60
+
+Immaginiamo quindi di impostare un obiettivo per la vittoria, ad esempio dover ottenere, sommando il risultato dei 10 dadi, un numero maggiore di 30. Sicuramente già al primo lancio molti dei presenti in sala riusciranno a raggiungere un punteggio maggiore a 30.
+
+[.text-center]
+image:images/3241265243.png[3+2+4+1+2+6+5+2+4+3=32]
+[.text-center]
+Nell’esempio sopra riportato: 3+2+4+1+2+6+5+2+4+3=32
+
+L'obiettivo in questo caso è semplice da raggiungere. Se però vogliamo rallentare questo processo e mettere in difficoltà i partecipanti, possiamo alzare il target a 40, a 50 o addirittura a 60. In quest'ultimo caso solo chi riuscirà a lanciare 10 dadi ottenendo contemporaneamente il punteggio di 6 con ognuno di essi riuscirà a vincere..
+
+[.text-center]
+image:images/6666666666.png[6+6+6+6+6+6+6+6+6+6=60]
+
+Le probabilità di questo lancio sono 1 su 60.000.000 milioni di lanci. Probabilmente queste 100 persone dovrebbero lanciare, ognuno i propri 10 dadi, per giorni e giorni prima che qualcuno di essi riesca a ottenere il punteggio di 60. Viceversa, chi deve verificare il risultato del lancio, impiegherà pochi secondi per accertarsi che tutti i dati mostrino il numero 6. Questo è un esempio di proof of work.
+
+=== Concetti base di crittografia
+Alice e Bob si devono scrivere una lettera e-mail, ma sono sicuri che questa comunicazione verrà intercettata. Per evitare che qualcuno legga il contenuto del messaggio concordano preventivamente una password che verrà usata per cifrare il messaggio e, una volta giunto a destinazione, decifrarlo.
+
+[.text-center]
+image:images/Crittografia.png[Esempio di crittografia simmetrica]
+
+Il testo verrà quindi convertito in un insieme di caratteri e numeri a prima vista senza alcun senso logico. Il messaggio sarà incomprensibile a chiunque non sia in possesso della password per decifrarlo.
+Questo sistema è semplice ed efficiente, a patto che Alice e Bob si conoscano, e abbiano concordato preventivamente la password da utilizzare. Come possono Alice e Bob scambiarsi un messaggio cifrato se non si sono mai visti e mai si vedranno o se neppure si conoscono?
+
+Per risolvere questo sistema è nata la crittografia a chiave pubblica e privata. La chiave pubblica e la chiave privata sono delle stringhe di testo alfanumerico come questa 3048024100C918FACF8DEB2DEFD5FD3789B9E069EA97FC205E3...
+
+La chiave privata, come si intuisce dal nome, deve essere mantenuta al sicuro e non comunicata a nessuno. Viceversa la chiave pubblica deve essere diffusa in più modi, chiunque deve avere la possibilità di accedervi. Le due chiavi sono strettamente correlate una all’altra e devono lavorare sempre in coppia. La chiave pubblica è generata dalla chiave privata, possiamo dire che sia sua “figlia”.
+
+Grazie alla crittografia a chiave pubblica e privata due persone che non si conoscono possono:
+Verificare con assoluta sicurezza che un file sia stato generato dal legittimo autore e che non sia stato alterato durante il tragitto
+
+Cifrare un file con la chiave pubblica del destinatario (disponibile a chiunque) rende il file decrittabile solo dal proprietario della relativa chiave privata. Solo il legittimo destinatario sarà l’unico che potrà leggere il contenuto
+
+Utilizzando entrambi i sistemi descritti precedentemente si può quindi essere certi che il contenuto non sia stato manomesso durante il tragitto, che sia stato generato da una persona specifica e che anche se intercettato non venga decifrato.
+
+Facciamo alcuni esempi pratici per ognuno dei tre punti esaminati in precedenza.
+
+==== Caso 1: garantire l'autenticità del contenuto e della fonte
+Alice cifra un file con la propria chiave privata ottenendo quindi un file firmato, il file transita nella rete in formato cifrato, ma tutti lo possono aprire e decodificare perché la chiave pubblica di Alice è per definizione a disposizione di tutti. Bob decifrando il file con la chiave pubblica di Alice è certo che il file sia stato generato proprio da Alice e non da altri. In questo caso l'obiettivo principale è verificare l'autenticità del contenuto e dell'autore. È il meccanismo usato per la firma digitale.
+
+[.text-center]
+image:images/Crittografia1.png[Crittografia asimmetrica caso 1]
+
+==== Caso 2: garantire la riservatezza del contenuto
+Bob cifra un file con la chiave pubblica di Alice e trasmette il file cifrato sulla rete dove nessuno può decifrare il contenuto a meno che non sia in possesso della chiave privata di Alice.
+Alice quindi con la sua chiave privata può decifrare il messaggio e leggere il contenuto, ma non può essere certa che il messaggio sia stato inviato proprio da Bob. Chiunque infatti può accedere alla sua chiave pubblica, che come ricorda il nome è disponibile a chiunque per definizione.
+
+[.text-center]
+image:images/Crittografia2.png[Crittografia asimmetrica caso 2]
+
+==== Caso 3: garantire l'autenticità del contenuto, la sua fonte e la certezza che non venga decifrato durante la trasmissione sulla rete
+
+Unendo le due funzionalità analizzate in precedenza, Alice può cifrare il messaggio con la chiave pubblica di Bob in modo che solo chi è in possesso della chiave privata di Bob possa aprire il contenuto del messaggio. Ottenuto il file cifrato, può quindi cifrarlo nuovamente con la propria chiave privata, in questo modo Bob potrà avere la certezza che sia stata Alice ad inviare il messaggio.
+
+Bob dovrà quindi eseguire i due passaggi inversi, cioè aprire il file utilizzando la chiave pubblica di Alice, verificando quindi che il contenuto sia stato generato effettivamente da lei e, successivamente, usare la propria chiave privata per decifrare il contenuto del messaggio.
+
+[.text-center]
+image:images/Crittografia3.png[Crittografia asimmetrica caso 3]
+
+In questo modo la sicurezza della comunicazione è garantita in ogni suo aspetto. Ogni giorno utilizziamo, senza saperlo, sistemi simili ad esempio quando navighiamo su un sito che adotta il protocollo HTTPS, il famoso lucchetto verde nei browser in alto accanto all’indirizzo internet. In questo caso la comunicazione tra client e server è garantita, nessuno tra noi ed il sito può intercettare la comunicazione, garantendo così la massima privacy e sicurezza dei dati che transitano sulla rete.

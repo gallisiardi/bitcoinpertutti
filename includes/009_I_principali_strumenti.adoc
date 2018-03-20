@@ -1,0 +1,114 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== I principali strumenti: wallet, explorer, exchange
+Per spiegare il funzionamento di Bitcoin abbiamo già visto che cos'è e come funziona un wallet, si tratta di un portachiavi, cioè un sistema per memorizzare le chiavi private da utilizzare per poter disporre dei Bitcoin. Più di una volta mi è stato sollevata la domanda: "Cosa succede se qualcuno genera le mie stesse 12 parole? Può accedere ai miei Bitcoin?" La risposta è SI, ma è altamente improbabile praticamente impossibile. La quantità di chiavi private generabili è di (2^256) si avvicina al numero di atomi presenti nell'universo conosciuto (stimato all’incirca in un numero che va da  2^240 e 2^280), sicuramente è più semplice per due persone trovare lo stesso granello di sabbia sul pianeta terra (che in base ad una stima molto approssimativa risulta essere 2^63), rispetto a trovare una chiave privata già utilizzata da qualcun altro. Per chi avesse poca dimestichezza con gli elementi potenza, in questo caso parliamo di un raddoppio ogni unità espressa nell’elevamento. 
+
+```
+2^1=2
+2^2=4
+2^3=8
+2^4=16
+2^5=32
+2^6=64
+…
+2^20=1.048.576
+…
+2^30=1.073.741.824
+…
+2^40=1.099.511.627.776 
+…
+2^256= 115.792.089.237.316.195.423.570.985.008.687.907.853.269.984.665.640.564.039.457.584.007.913.129.639.936
+```
+
+Esistono diversi tipi di wallet: software, hardware, cartacei. Analizziamoli ora uno ad uno evidenziando le rispettive caratteristiche.
+
+=== Wallet software
+[.text-center]
+image:images/wallet_software.png[Wallet software]
+[.text-center]
+In questa immagine, a sinistra vediamo uno screenshot di Electrum per DESKTOP e a destra GreenAddress per Android.
+Immagini tratte da: https://bitcoin.org/it/wallets/desktop/windows/ 
+
+I wallet software sono portachiavi installabili su smartphone, computer, tablet, ecc. Sono i wallet più utilizzati, pratici da usare, possiamo installarli nel nostro smartphone e averli sempre con noi. Hanno però il rischio, in quanto prodotti informatici, di essere compromessi da virus o malware. La loro sicurezza va a pari passo con la sicurezza del device informatico sul quale sono installati. Va da sé se sul vostro computer, ogni mese, vi ritrovate un virus nuovo, è altamente sconsigliabile installare un wallet software. Lo stesso discorso vale per gli altri dispositivi che utilizzate, ad esempio lo smartphone.  
+
+Trovate una lista dei wallet software per le varie piattaforme e sistemi operativi a questi indirizzi:
+
+*DESKTOP*:
+Windows: https://bitcoin.org/it/wallets/desktop/windows/
+Linux: https://bitcoin.org/it/wallets/desktop/linux/
+Mac: https://bitcoin.org/it/wallets/desktop/mac/
+
+*MOBILE*:
+Android: https://bitcoin.org/it/wallets/mobile/android/
+IOS: https://bitcoin.org/it/wallets/mobile/ios/
+Windows Phone: https://bitcoin.org/it/wallets/mobile/windowsphone/ 
+Blackberry: https://bitcoin.org/it/wallets/mobile/blackberry/
+
+Per ogni software/app è disponibile una scheda dettagliata che ne elenca pregi e difetti.
+
+==== Wallet web
+Si tratta sempre di wallet software su cui però l’utente ha meno controllo, in quanto il codice di programmazione è pubblicato su un server, può subire modifiche dai titolari del sito, senza che voi ne siate informati, o subire attacchi informatici anch’essi volti a modificare il codice.
+Fanno parte di questa categoria, tutti i wallet presenti nei siti degli exchange.
+
+Trovate una lista di wallet web (esclusi gli exchange) a questo indirizzo: https://bitcoin.org/it/wallets/web/
+
+=== Wallet hardware
+[.text-center]
+image:images/wallet_hardware.png[Wallet hardware]
+[.text-center]
+In questa immagine, a sinistra vediamo il Ledger Nano S, e a destra il Trezor
+Immagini tratte da: https://bitcoin.org/it/wallets/hardware/
+
+I wallet hardware sono dei dispositivi fisici simili a delle chiavette USB su cui vengono memorizzate le chiavi private. Questi permettono la gestione di un numero limitato di monete, il loro utilizzo richiede sempre una conferma fisica, cioè la pressione di un pulsante presente sul dispositivo per autorizzare l’operazione. Questi dispositivi si devono comunque connettere al pc per funzionare. Anche in questo caso è meglio utilizzarli su computer sicuri e liberi da virus o malware.
+
+Trovate una lista aggiornata dei wallet hardware a questi indirizzo: https://bitcoin.org/it/wallets/hardware/
+
+=== Paper Wallet
+[.text-center]
+image:images/front-back-sample-big.jpg[Paper wallet]
+[.text-center]
+In questa immagine un paper wallet generato sul sito bitcoinpaperwallet.com
+
+Nella parte superiore (fronte), a sinistra la chiave pubblica sia in formato QR CODE che in formato testuale, nella parte destra la chiave privata anche lei nei due formati. Nella parte inferiore (retro), sono presenti delle linee in cui è possibile tenere traccia delle transazioni effettuate. Ho censurato in rosso parti delle chiavi, per evitare che chi leggesse il libro provasse ad utilizzarle.
+Immagini tratte da: https://bitcoinpaperwallet.com/
+
+I paper wallet sono portachiavi cartacei su cui vengono salvate le vostre chiavi private. Sono ideali per chi decide di comprare Bitcoin e tenerli per un certo numero di anni. In questo caso potete stamparli e metterli in cassaforte o in un altro luogo sicuro, magari avendo l'accortezza di plastificarli o comunque sostituirli dopo un certo numero di anni. La carta si può scolorare o venire mangiata da animali o insetti. Con lei sparirebbe anche la possibilità di recuperare i vostri Bitcoin. Inoltre, va ricordato, che se qualcuno entra in possesso del pezzo di carta dove è riportata la vostra chiave privata può entrare in possesso dei vostri Bitcoin.
+
+La generazione del paper wallet è un’operazione molto delicata e deve essere eseguita con le dovute accortezze, in modo da garantire che i dati in esso contenuti non possano essere intercettati da qualche malintenzionato. Qui trovate due video che approfondiscono l’argomento:
+https://www.youtube.com/watch?v=SqRES9uGlok
+https://www.youtube.com/watch?v=R-Pa2boRLfM
+
+TIP: BlockChain Caffè è un ottimo canale Youtube, dove trovare spiegazioni semplici di gran parte delle tematiche trattate in questo libro. Il mio consiglio è di partire dal primo video proseguendo in ordine cronologico, in modo da acquisire via via tutte le competenze necessarie per comprendere i vari argomenti trattati.
+
+=== Brain wallet
+Per brain wallet si intende qualsiasi metodo per memorizzare e successivamente ricordare la propria chiave privata. Ricordare 12 parole inglesi in un determinato ordine non è un’impresa così impossibile dopo tutto. L'uso dei brainwallet è ovviamente sconsigliato, ho voluto citarlo appositamente per disincentivare l'uso. E’ sconsigliato anche adottare frasi celebri, o parti di canzoni, al posto delle chiavi private. Hanno già realizzato dei software che testano queste frasi, e se utilizzate, si appropriano dei relativi Bitcoin.
+
+=== Explorer
+Gli explorer permettono a chiunque, tramite una semplice interfaccia web, di accedere a tutte le informazioni pubbliche presenti nella blockchain. Tramite questi siti è possibile visualizzare gli ultimi blocchi generati, oppure cercare un determinato blocco, una transazione o un address. 
+Cliccando di address in address è possibile risalire alla provenienza dei Bitcoin, fino alla loro creazione da parte di un miner. Ricordiamo come già fatto nelle pagine precedenti che tutte le transazioni eseguite in Bitcoin sono visualizzabili nella blockchain e quindi tramite gli explorer.
+A questa pagina  https://blockchain.info/address/13t6zL7Z7pqoW3wL3jpbqKUMWYNVduX118 ad esempio, è possibile vedere quanti hanno dimostrato di apprezzare questo libro, inviando l’equivalente di 1 € all’address riportato nelle pagine precedenti. E’ inoltre possibile seguire le transazioni per verificare dove questi Bitcoin si sono spostati.
+
+=== Exchange
+Gli exchange sono dei semplici cambiavalute, come quelli che trovate all’aeroporto. Negli exchange online però, si crea un vero e proprio mercato tra chi vende e chi acquista crittovalute; ovviamente questa intermediazione ha un costo. Gli exchange non fanno parte della rete bitcoin, se non come uno dei tanti nodi della rete. Non hanno alcun ruolo specifico, semplicemente offrono un servizio di cambio, comodo rapido e sempre attivo, 24 su 24, 7 giorni su 7. Qualcuno li definisce come “...un male necessario...” secondo me sono semplicemente un servizio che in questa fase storica, permette di acquistare e vendere in modo rapido crittovalute. Quando ci registriamo su un exchange possiamo:
+
+- depositare euro per comprare crittovalute
+
+- depositare crittovalute per ottenere euro
+
+- depositare crittovalute per comprare altre crittovalute
+
+Per i primi due casi, tutti gli exchange richiedono una copia dei documenti d’identità, un numero di telefono e una bolletta di (acqua, luce, gas, telefono, ecc), per verificare che effettivamente l’indirizzo di residenza indicato sia corretto. La procedura di registrazione e validazione dei documenti richiede da un paio di giorni a diverse settimane, dipende dal singolo exchange e dalla coda di lavoro (tra dicembre e gennaio 2017, alcuni exchange hanno chiuso la possibilità di registrazione per nuovi utenti). 
+
+Tutti questi dati restano in mano agli exchange, dove, come già successo in passato, i governi possono richiedere chi, come e quando ha utilizzato i loro servizi (vedi ad esempio https://www.scribd.com/document/365896015/Coinbase-IRS ).
+
+Per il terzo caso, cioè depositare crittovalute per acquistare altre crittovalute, solitamente non sono richiesti documenti e l’attivazione degli account è immediata.

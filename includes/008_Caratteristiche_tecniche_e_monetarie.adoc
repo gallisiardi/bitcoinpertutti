@@ -1,0 +1,38 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Caratteristiche tecniche e monetarie
+In questo capitolo riepilogheremo le caratteristiche principali di Bitcoin, descrivendo punto su punto le sue qualità e i suoi limiti, approfittando per fare un riepilogo dei capitoli precedenti.
+
+La rete di Bitcoin è di tipo *distribuito* ed è composta da tantissimi client interconnessi tra loro, questo la rende tecnicamente non censurabile, non può essere chiusa, bloccata o limitata. Chiunque può accedere alla rete Bitcoin anche all'interno di paesi che ne vietano l’utilizzo.
+
+Bitcoin è *permissionless*, cioè per usarlo non è richiesta l'autorizzazione da parte di nessuno, non serve registrarsi da nessuna parte, né dimostrare la propria identità, non servono documenti ad esempio, o una quantità minima di fondi per aprire un conto. Chiunque può accedere a una serie di servizi finanziari che fino ad oggi gli erano preclusi. In Italia non abbiamo questo tipo di problema, ma in altre parti del mondo grandi fette della popolazione non possono accedere ai servizi finanziari.
+
+Bitcoin è *trustless*, non è richiesto alcun tipo di fiducia nella controparte, non esistono ad esempio Bitcoin falsi. La moneta per la legge della domanda e dell'offerta può subire forti variazioni di prezzo, ma non può tecnicamente andare in default come una banca o uno stato. 
+
+Bitcoin è *open source*, significa che tutto il codice di programmazione utilizzato per creare i software che si interfacciano con la rete Bitcoin è consultabile da chiunque.
+Non c'è alcun segreto o sistema misterioso dietro al suo funzionamento, tutto è scritto nero su bianco con regole matematiche che non si prestano ha alcun tipo di interpretazione. Spesso si utilizza l’espressione: “code is law”, il codice é legge, proprio per indicare che quello che è scritto nei codici di programmazione è ciò che realmente conta. 
+Un'altra caratteristica legata al open source é che chiunque voglia, può migliorare il codice, proponendo nuovi cambiamenti, correggendo eventuali errori, ecc.  Inoltre è possibile copiare in toto i codici dei vari software coinvolti, modificarli e generare un'altra moneta, come per esempio è stato fatto per Litecoin (LTC), per Bitcoin Cash (BCH) e per molte altre.
+
+I Bitcoin sono emessi in *quantità predefinita*, non si possono creare più Bitcoin di quanti stabiliti matematicamente dal codice sorgente. La creazione di nuova moneta è quindi dettata da regole chiare che non si prestano ad interpretazione e visibili a tutti. La politica monetaria di questa moneta è dettata dalla matematica e non dalla politica, dalla finanza e dall'economia. Ogni volta che la BCE decide di stampare un nuovo euro, quelli che abbiamo nel portafoglio perdono inevitabilmente potere d'acquisto. Il software e la matematica che regolano i Bitcoin sono incorruttibili, non hanno interessi personali, non si può far loro pressione di alcun tipo, non sono ricattabili.
+
+Bitcoin *non richiede intermediari*, non servono banche o altri istituti finanziari, ognuno può gestire in piena autonomia i propri soldi. Questa è una grande libertà, che però porta con sè anche grandi responsabilità. Se commettiamo degli errori non c’è un call center da chiamare o una filiale dove andare a chiedere una copia delle credenziali per accedere al proprio conto on-line.
+ 
+Bitcoin *è pseudo anonimo* e NON anonimo, come molti spesso ripetono sui mass media. La grandissima libertà che questo sistema offre, può limitare la nostra privacy, se non vengono prese determinate precauzioni. Ricordiamo che ogni singola transazione riporta l’indirizzo del mittente, l’importo e l’indirizzo del destinatario. Ogni blocco viene accodato alla blockchain, quindi tutte le transazioni eseguite con bitcoin sono pubbliche. Chiunque può, data una transazione, andare a ritroso, calcolare i saldi dei singoli address e verificare quando i Bitcoin sono stati spostati e verso chi. Questo mezzo di pagamento deve essere quindi usato con consapevolezza. Esistono comunque altre monete come Monero o ZCash che adottano sistemi diversi da quelli utilizzati da Bitcoin per garantire maggiore privacy. Nulla ci vieta quindi, di vendere i Bitcoin per comprare Monero e magari tornare successivamente a Bitcoin prima di effettuare una transazione.
+
+*Il prezzo è espresso esclusivamente dal mercato*, non esistono oligopoli che a tavolino decidono quanto vale il Bitcoin, come nel caso del petrolio dove l’OPEC, l’unione dei principali produttori, decide il prezzo. Ad oggi il mercato mondiale delle crittovalute è uno dei pochi in cui il prezzo fluttua liberamente sulla base della semplice domanda e offerta. Più gente decide di comprare Bitcoin più il prezzo sale, viceversa più gente decide di vendere Bitcoin più Il prezzo scende. Proprio per via della sua libertà, non sono presenti organismi di controllo, come l’americana SEC o l’italiana CONSOB, che vigilano sul mercato. Questo significa che grandi investitori, possono mettere in atto quello che in gergo viene definito “pump and dump”, che tradotto letteralmente significa pompa e scarica, ovvero spingi in alto il prezzo e poi vendi tutto. Movimentando ingenti somme, ad esempio comprando l’equivalente di centinaia di milioni di dollari in Bitcoin in pochissimo tempo, il prezzo naturalmente subisce un forte incremento, se altri utenti presi dall’entusiasmo per la crescita del prezzo comprano altri Bitcoin il prezzo cresce ulteriormente. Qui arriva quindi la fase del dump, dove l’investitore iniziale esce portando a casa i profitti, e facendo nuovamente crollare il prezzo. Questa tecnica può essere usata in modo ciclico, colpisce più che altro chi si occupa di trading e speculazione nel brevissimo periodo.
+
+Bitcoin è *riserva di valore*; nonostante le fluttuazioni del prezzo, il trend che ha avuto a partire dalla sua nascita è di forte crescita. Probabilmente non potrà più crescere nei prossimi anni con questi ritmi, ma al netto delle forti oscillazioni di prezzo, si sta rivelando un ottimo bene rifugio nel medio lungo periodo. Non a caso viene definito da molti oro digitale per le sue similitudini con il più blasonato metallo giallo. Il fatto stesso che non abbia legami con altri tipi di asset lo rende immune da crolli in altri mercati offrendo quindi un altissimo potere di diversificazione, fondamentale per la gestione di portafogli di investimento bilanciati.
+
+Non tutte le criptovalute possiedono le stesse caratteristiche di Bitcoin, ognuna ha le proprie peculiarità.
+E’ importante approfondire la conoscenza delle varie monete ad oggi disponibili prima di acquistarne per usarle o come investimento. In questo libro non possiamo dilungarci oltre nel descrivere le differenze tra le varie crittovalute attualmente presenti (oltre 1500 a Febbraio 2017). 
+Online sono disponibili articoli, white paper, recensioni, video e documentazione varia sulle principali monete. Se decidete di acquistarne informatevi prima su come funzionano e su quali siano le loro caratteristiche, non date per scontato che abbiano le stesse caratteristiche di Bitcoin, perchè potrebbero essere completamente differenti sotto più punti di vista.

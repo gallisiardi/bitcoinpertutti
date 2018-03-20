@@ -1,0 +1,69 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Consigli utili per evitare gli errori più comuni
+Concludo con una serie di consigli utili, per evitare gli errori più comuni commessi da chi si affaccia per la prima volta a questo mondo, nella speranza che vi possano essere d'aiuto facendovi risparmiare tempo e denaro.
+
+=== Partire con piccole somme
+Per prendere dimestichezza con gli exchange ed i wallet, è fortemente consigliato iniziare con piccole somme. Provate ad acquistare su un exchange l’equivalente di poche decine di euro di Bitcoin. Dopo averli acquistati potete trasferirli su un vostro wallet, e successivamente trasferirli su un altro wallet, o nuovamente sull’exchange. Per queste operazioni vi verranno addebitati dei costi di commissione dall’exchange per ogni trasferimento in uscita, inoltre dovrete pagare una piccola fee per ogni transazione fatta sulla blockchain, per remunera i miner. Considerate questi costi come un piccolissimo investimento da fare per prendere dimestichezza con questi sistemi. Prima di eseguire le transazioni verificate a quanto ammontano le commissioni dell’exchange, ma soprattutto, il prezzo medio delle fee previsto dai miner. Complessivamente i costi non dovrebbero superare pochi centesimi di euro. Meglio commettere qualche errore con piccole somme, che ritrovarsi a spostare grandi capitali senza aver maturato un minimo di esperienza.
+
+=== Depositi in FIAT
+Quando dovete inviare monete FIAT (euro, dollaro, ecc.) sugli exchange, utilizzate sempre il bonifico, se possibile SEPA. Quasi tutti gli exchange non applicano alcuna commissione sui versamenti effettuati con bonifico. Viceversa sui depositi fatti con carta di credito, vengono applicate delle commissioni di deposito che possono arrivare anche al 4% o più.
+
+=== Prelievi in FIAT
+Registratevi su tutti gli exchange principali ed eseguite la verifica dei documenti per almeno un paio di essi. La verifica richiede a volte anche un mese, quindi è meglio iniziare subito la procedura. Se in futuro avrete urgenza di vendere e prelevare in moneta FIAT da un exchange, aver già eseguito la procedura sarà un gran vantaggio. Non è il caso di eseguirla su tutti, in caso di necessità potete trasferire le vostre crittovalute su un exchange sul quale avete completato la verifica, e prelevare gli euro tramite loro.
+
+=== Money management
+Non superate la quota di portafoglio prefissata per gli investimenti ad alto rischio. Spesso una valutazione effettuata prima di aver conseguito utili o perdite, è una valutazione più sana, non influenzata dal vostro stato emotivo. Potreste, in caso di euforia per la crescita dei prezzi, essere tentati di investire più di quanto sia consigliato fare, o viceversa, investire per cercare di “recuperare” delle perdite.
+
+=== Diversificare
+E’ un concetto da applicare sotto più punti di vista, a partire dal tipo di investimenti. Evitate di investire tutto il vostro portafoglio di crittovalute nella stessa moneta. Se per qualsiasi ragione quella crolla, con lei cala tutto il vostro portafoglio d’investimento. Viceversa se dividete in quattro monete, se una va a zero, il vostro portafoglio registrerà una perdita che non potrà superare il 25%.
+Allo stesso modo diversificate in base al tipo di moneta, alla tecnologia, al settore in cui opera, ecc.
+
+=== Analisi rendimenti
+Ipotizziamo che in momenti diversi, con prezzi diversi abbiamo eseguito 3 acquisti di Bitcoin. Come facciamo con un colpo d’occhio a capire se vendendo i nostri Bitcoin, siamo in guadagno o in perdita?
+Per semplificarci la vita ci viene incontro il prezzo medio. Calcolarlo correttamente è fondamentale per poter monitorare il prezzo e comprendere al volo il potenziale guadagno o perdita. Il calcolo è banale, si tratta di sommare tutti gli euro investiti in quella moneta e dividerli per la quantità detenuta. 
+Un altro aspetto importante è considerare i costi di commissione sia in entrata che in uscita, in modo da avere un’ idea di guadagno già al netto di questi costi. Su grandi cifre queste sono trascurabili, ma su piccole cifre potrebbero riservare più di una spiacevole sorpresa.
+
+=== Formazione
+Tenersi informati è fondamentale. Aver letto questo libro è già stata un’ottima scelta, che sicuramente vi permetterà di risparmiare tempo e denaro. Nella prefazione di questo libro troverete le istruzioni su come sostenere questo progetto, fateci un pensierino se avete trovato utile la lettura.
+Esistono centinaia di chat Telegram sull’argomento crittovalute, alcune anche localizzate per provincia.
+Esistono poi chat in lingua italiana per le principali monete. Spesso vengono organizzati meetup, serate, incontri di varia natura, dalla formazione allo scambio reciproco di competenze.
+I canali youtube sull’argomento non mancano, il più seguito in Italia è Marco Casario https://www.youtube.com/channel/UCZp2KqGRkO1goEAaxX5Huyg che quotidianamente realizza brevi video di circa 10 minuti sulle ultime novità dal mondo delle crittovalute; fornisce inoltre, brevi e semplici lezioni di analisi tecnica e altri consigli interessanti sulla gestione dei propri investimenti. 
+In coda al libro troverete una serie di link che puntano a molte di queste risorse; ovviamente l’elenco non può essere completo anche perchè ogni giorno nasce qualche nuova interessante iniziativa.
+Se avete dei dubbi, chiedete sui forum o nelle chat. Il forum mondiale più popolare è BitcoinTalk.org che ha una nutrita sottosezione in lingua italiana https://bitcointalk.org/index.php?board=28.0
+
+=== Trading
+Non sono un esperto di trading, ma mi sento di darvi due consigli semplici ma fondamentali.
+Il primo è “Buy low sell high” tradotto: compra quando il prezzo è basso e vendi quando è alto.
+Sembra una banalità, ma conosco molte persone che comprano le monete che su marketcap hanno registrato forti rialzi nelle ultime 24 ore. Se una moneta è già salita moltissimo nelle ultime 24, difficilmente salirà ancora altrettanto. Bisognava comprarla prima che salisse. Facile da dirsi, difficile da farsi. Personalmente mi sono preso un paio di piccole soddisfazioni, acquistando monete anche blasonate, che nell’ultimo periodo avevano registrato pessime performance, nonostante la validità dei progetti. In questi casi, o di fronte ad un forte ritracciamento del prezzo non motivato da problemi tecnici, acquistare potrebbe essere la scelta giusta. 
+Il secondo consiglio è tenere sempre a disposizione dei fondi in monete FIAT sugli exchange, a disposizione per fare acquisti rapidi nel caso in cui ci fossero delle occasioni da cogliere al volo. 
+
+=== Tasse e fiscalità
+Consultatevi con un professionista di fiducia, in questa fase, probabilmente si troverà spiazzato nel rispondervi. Il fenomeno delle criptovalute, possiamo dire che è esploso nel 2017, ci vorranno anni perché raggiunga le masse. Esistono però professionisti appassionati alla materia, molto preparati che possono consigliarvi su come muovervi al meglio in questo settore ed evitare spiacevoli sorprese. Segnatevi tutti gli acquisti e le vendite che eseguite, stampatevi le ricevute dei bonifici e documentate tutto. Se un domani vi venisse chiesta la motivazione di tali movimentazioni, quantomeno avrete della documentazione a riguardo. Personalmente vi sconsiglio di intraprendere qualsiasi tipo di attività illegale con le crittovalute, in prima battuta perchè non è legale, in seconda battuta perchè è tutto tracciato[line-through]* con buona pace dei mass media che dicono che sia anonimo*. 
+
+=== Sicurezza informatica
+Ultima ma non ultima, la sicurezza informatica, su cui ci sarebbe da scrivere un libro intero, [line-through]*e a questo punto non è detto che non lo faccia*. Di sicuro partire da sistemi operativi recenti e mantenuti aggiornati costantemente, sia per quanto riguarda il PC che per quanto riguarda gli smartphone, non installate il primo software scaricato da internet, utilizzate software diffuso, recensito [line-through]*possibilmente bene*, non installate crack o software piratato, non inserite chiavette USB provenienti da PC potenzialmente infetti.
+Utilizzate sempre l’autenticazione a due fattori, anche sull’e-mail che avete utilizzato per registrarvi ai singoli exchange. Fate sempre i backup dei QR Code, quando li aggiungete all’app di autenticazione. In caso di perdita o furto del dispositivo riuscirete a ripristinarli velocemente su un nuovo smartphone, diversamente ci vorranno settimane prima di riuscire a prendere nuovamente il controllo dei vostri account sugli exchange.
+Attivate la modalità PARANOICA per quanto concerne la gestione e la conservazione delle vostre chiavi private, create backup multipli e conservateli in posti sicuri.
+
+[.chiusura]*Ricordate sempre: voi siete la vostra banca.*
+
+Il libro per come è stato concepito nella sua versione iniziale, termina qui. Nelle prossime pagine, troverete un elenco di link a risorse utili, in lingua italiana, ed una serie di approfondimenti mirati su determinati argomenti. Il libro continuerà ad evolversi ed arricchirsti nel tempo, grazie anche al vostro contributo.
+
+Per tenervi aggiornati sulla pubblicazione di nuovi contenuti, vi consiglio di registrarvi al canale Telegram: "Bitcoin per tutti - canale aggiornamenti"
+
+https://t.me/bitcoinpertutticanale
+
+In questo canale non potete intervenire, per chattare con gli altri lettori del libro e con il sottoscritto, potete usare la chat Telegram: "Bitcoin per tutti"
+
+https://t.me/bitcoinpertutti 

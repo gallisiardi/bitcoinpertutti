@@ -1,0 +1,116 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Aspetti legale e fiscali
+
+WARNING: Non sono un legale né un commercialista, tutto ciò che è espresso in questo capitolo va preso con beneficio di inventario. Per maggiori informazioni consultate il vostro professionista di fiducia prima di effettuare qualsiasi tipo di operazione. Non esiste alcuna legge che regolamenta esplicitamente questo mercato, per cui siamo nell’ambito dell’interpretazione.
+
+=== Status legale
+Ad oggi solo il Giappone ha emanato una legge per regolamentare le crittovalute ed accettarle a tutti gli effetti come mezzo di pagamento. Altri stati come Algeria, Marocco, Nepal, Bolivia, Ecuador, Vietnam, Cambogia hanno emanato leggi per vietarne espressamente l'uso, in altri paesi sono presenti vecchie leggi che ne impediscono l'uso o sono comunque state prese delle posizioni ostili nei confronti delle crittovalute. Negli altri paesi il Bitcoin non è ancora stato regolamentato, di conseguenza è da considerarsi legale, quanto meno nelle legislazioni in cui è sancito il principio di legalità, ovvero dove è concesso tutto ciò che non è espressamente vietato da apposite leggi.
+Per maggiori informazioni sui singoli paesi, potete consultare la tabella sotto la mappa, su Wikipedia in questa pagina: https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country_or_territory
+
+Nella stragrande maggioranza dei paesi occidentali l'utilizzo delle crittovalute non è normato. In particolare in Europa sono state emanate delle direttive per quanto riguarda il regime IVA da applicare alle crittovalute. In Italia l'Agenzia delle Entrate ha risposto a diversi interpelli promossi da cittadini ed aziende. 
+
+Non esiste ancora una chiara presa di posizione neppure sul fatto se siano da considerare o meno delle monete. Ad esempio la Direttiva Europea in materia di IVA le considera “mezzi semplici di pagamento”, l'Agenzia delle Entrate italiana le paragona a valute estere, la BCE pare di essere di parere opposto in quanto il Bitcoin non è emesso da uno stato sovrano. Proprio questa caratteristica rende le criptovalute monete private, anche se di fatto non sono emesse da alcun soggetto privato.
+
+Fino a quando i singoli parlamenti nazionali o sovranazionali, come nel nostro caso quello europeo, non emaneranno delle leggi a riguardo, permarrà un velo di incertezza su tutto questo mondo. Tecnicamente nessuno stato sarà in grado di bloccare Bitcoin, potranno renderlo illegale, come lo è la diffusione online di musica, video o libri coperti da copyright, ma non potranno mai spegnere la rete Bitcoin: fino a quando esisteranno due computer connessi tra loro che ospiteranno la blockchain, il Bitcoin sopravviverà.
+
+[.text-center]
+image:images/Legal_status_of_bitcoin.png[Status legale del Bitcoin]
+Tratta da Wikimedia, ma aggiornata con le ultime novità presenti alla pagina: https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country_or_territory
+
+Avere un quadro globale preciso ed aggiornato non è semplice, alcuni paesi hanno preso posizioni contrarie per poi ricredersi e fare un passo indietro, come l’Islanda, altri ufficialmente non hanno emanato alcuna legge diretta per vietarne l’uso, ma i loro politici si sono espressi negativamente. In altri casi si sono registrate reazioni di senso opposto tra istituzioni del medesimo stato.
+
+IMPORTANT: Nei successivi paragrafi si farà abuso del condizionale. Tutte le informazioni qui riportate devono essere oggetto di verifica con un vostro consulente fiscale, prima di prendere decisioni affrettate.
+
+In assenza di una legislazioni specifica c’è grandissima incertezza soprattutto in ambito fiscale.
+Dopo aver letto molti articoli e risorse disponibili on-line, non sono riuscito a farmi un’idea chiara e univoca, quello che posso fare è riassumere tutto il materiale che ho raccolto in questi mesi, e metterlo a vostra disposizione. Vi consiglio di condividerlo con il vostro consulente fiscale e farvi dare da lui in parere specifico per la vostra situazione.
+
+=== Corte di giustizia dell'Unione europea
+Con la sentenza del 22/10/2015 la corte di Giustizia Europea ha preso una posizione netta sulle crittovalute sentenziando che il Bitcoin, essendo un mezzo di pagamento semplice e non potendo essere utilizzato, se non quale mezzo di pagamento, a fini IVA, per il principio di neutralità, deve seguire l'esenzione IVA prevista per le monete a corso legale.
+Trovate maggiori informazioni qui:
+http://curia.europa.eu/juris/liste.jsf?num=C-264/14
+http://www.dirittoegiustizia.it/allegati/17/0000071427/Corte_di_Giustizia_UE_Quinta_Sezione_sentenza_22_ottobre_2015_causa_C_264_14.html
+
+=== Banca Centrale Europea
+La BCE non ha potere di regolamentazione sulle crittovalute, Draghi stesso si è già espresso in tal senso, passando di fatto la palla alle istituzioni europee che dovrebbero esprimersi a riguardo. La BCE si è però espressa dicendo che il Bitcoin non è una valuta e non può esserlo. 
+
+Trovate maggiori informazioni qui:
+http://www.ilsole24ore.com/art/finanza-e-mercati/2018-01-22/quel-sondaggio-autogol-bce-il-bitcoin-si-imporra-come-moneta-si-il-75-utenti-175852.shtml?uuid=AExd42mD
+https://www.corrierecomunicazioni.it/finance/la-bce-demolisce-bitcoin-non-valuta/
+
+=== Agenzia delle entrate italiana
+L’Agenzia delle Entrate italiana, ha già risposto a numerosi interpelli a tema Bitcoin e crittovalute. 
+Una delle più citate e commentate online è la risoluzione n. 72 del 2016, disponibile qui: https://www.finaria.it/pdf/bitcoin-tasse-agenzia-entrate.pdf
+In questa risoluzione l’Agenzia, tra le altre cose, equipara il Bitcoin ad una moneta estera.
+
+CAUTION: La risoluzione dell’Agenzia delle Entrate è una risposta ad un interpello, cioè una richiesta di informazioni su un quesito specifico da parte di un contribuente. A tale richiesta di chiarimenti, l’Agenzia delle Entrate risponde con delle indicazioni che hanno valore esclusivamente per chi pone il quesito.
+Le risoluzioni e le circolari dell’Agenzia delle Entrate NON sono fonti di diritto ( https://www.fiscoetasse.com/approfondimenti/11861-circolari-e-risoluzioni-non-sono-fonti-del-diritto.html ). 
+Nonostante ciò, queste sono le uniche informazioni a cui appigliarsi per cercare di orientarsi in mancanza di leggi e regolamenti chiari in materia. Potrebbe essere una buona idea fare un interpello all’Agenzia delle Entrate, per avere dei chiarimenti precisi sulla vostra posizione.
+
+Come vedete le varie istituzioni coinvolte, hanno espresso pareri anche discordanti tra loro.
+
+A mio avviso gli aspetti legali e fiscali da tenere in considerazione quando effettuate acquisti in crittovalute sono quattro:
+
+- la tassazione del capital gain (guadagni sulle compravendite) e sul mining
+
+- la dichiarazione degli investimenti all’estero, quadro RW
+
+- normativa anti-riciclaggio
+
+- incassare pagamenti in crittovalute
+
+=== Capital gain per le persone fisiche
+Interpretando il contenuto della risoluzione n. 72 del 2016 emanata dall’Agenzia delle Entrate si potrebbe desumere che le crittovalute debbano essere equiparate a valute estere, quindi il capital gain sulle persone fisiche dovrebbe essere applicato esclusivamente nel caso in cui un privato cittadino, fosse in possesso dell’equivalente in crittovalute di oltre 51.645,69 € per almeno sette giorni consecutivi, ai sensi dell’art. 67 del DPR del 22/12/1986 n° 917 (TUIR). 
+In caso di superamento di questa cifra, l’attività di detenzione di crittovalute verrebbe considerata come attività di tipo speculativo e prevederebbe una tassazione del 26% sugli utili, va inoltre specificato che tale caratteristica si riferisce esclusivamente a operazioni “a pronti” (i classici acquisti e vendite), e non quindi ad operazioni “pronti contro termine” in cui c’è un chiaro intento speculativo.
+
+Trovate un intervento molto dettagliato del dottor Stefano Capaccioli qui:
+https://www.youtube.com/watch?v=odkZs2szBpY&t 
+
+Trovate altri 3 video brevi sul canale del dottor Luca Ferrini qui:
+https://www.youtube.com/watch?v=8E_pSd-eguU
+https://www.youtube.com/watch?v=ZDUzy60zf6k
+https://www.youtube.com/watch?v=kSc1O1BXOSQ
+
+=== Capital gain per le persone giuridiche
+La risoluzione n. 72 del 2016 emanata dall’Agenzia delle Entrate, indica che la cessione delle crittovalute genera reddito d’impresa e di conseguenza tale reddito deve essere dichiarato e tassato, come stabilito dal Testo Unico delle Imposte sui Redditi (TUIR) art. 9 del DPR del 22/12/1986 n° 917.
+
+=== Mining e fisco
+L’attività di mining descritta tecnicamente nelle pagine precedenti, dal punto di vista fiscale, è equiparabile in tutto e per tutto ad un’attività d’impresa, infatti il miner compie a tutti gli effetti un lavoro e per tale viene retribuito. Tecnicamente viene pagato in parte con le commissioni relative alle transazioni che ha aggregato nel blocco, in parte crea valore dal nulla ottenendo la ricompensa prevista dal protocollo. In ogni caso la sua situazione agli occhi del fisco italiano pare abbastanza chiara, si tratta di un’attività economica e come tale va trattata.
+
+Per quanto riguarda il mining come attività di impresa, il dottor Luca Ferrini ha fatto un video che chiarisce la questione qui: https://www.youtube.com/watch?v=R0RbhEWy_KA
+
+Trovate un approfondimento sul mininig eseguito al di fuori dell’attività d’impresa, a cura del dottor Stefano Capaccioli qui: https://coinlexit.wordpress.com/2017/07/13/alcune-riflessioni-sui-redditi-da-mining-da-parte-di-persone-fisiche/
+
+=== Investimenti all'estero
+Secondo la legge italiana ai sensi dell’art. 4, D.L. n. 167/1990 poi rivisto con la legge n° 186 del 15 dicembre 2014 http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-15;186 ogni investimento all’estero deve essere dichiarato nel quadro RW della dichiarazione dei redditi.
+Diventa cruciale quindi, chiarire cosa si intende per investimento all’estero, se ad esempio, l’acquisto di Bitcoin sia un investimento o sia un semplice acquisto di moneta estera. Inoltre va definito il concetto di estero, perché di fatto è difficile definire dove si trovino fisicamente, tecnicamente sono salvate sulla rete P2P che per definizione è da considerarsi distribuita globalmente. Se invio del denaro in valute FIAT su un exchange all’estero, compro dei Bitcoin e li trasferisco nel mio wallet, dove sono i Bitcoin? Tecnicamente sono nella blockchain come abbiamo visto nei capitoli precedenti. Nei wallet invece, sono presenti esclusivamente le chiavi private, che potrebbero essere equiparate ai codici di accesso ad un conto corrente o ad un PIN di un bancomat. Capite che il concetto di dove si trovino le crittovalute non è affatto scontato.
+
+E’ presente un approfondimento del dottor Stefano Capaccioli nel video già linkato sopra, che riporto per comodità: https://www.youtube.com/watch?v=odkZs2szBpY&t 
+
+Trovate maggiori informazioni qui: http://www.loconteandpartners.it/it/news/pubblicazioni-quotidiani/gli-obblighi-di-dichiarazione-nel-quadro-rw
+
+=== Riciclaggio
+Dopo ogni trasferimento di monete FIAT o acquisto di crittovalute, vi consiglio di stampare e conservare copia delle ricevute che vengono rilasciate dalla vostra banca e dagli exchange.
+Tutte le transazioni in crittovalute tra l’exchange ed il vostro wallet, come abbiamo visto, vengono registrate nella blockchain. Tramite qualsiasi explorer, potete quindi visualizzare e stampare questi movimenti. Il mio consiglio è di eseguire sempre operazioni tracciate e tracciabili. Di fronte ad un’eventuale contestazione, quantomeno, avrete del materiale per dimostrare le varie movimentazioni e giustificare eventuali bonifici in rientro sul vostro conto. Se viceversa acquistate crittovalute in contanti, le vendete ad un exchange in cambio di Euro, e successivamente ve li bonificate sul vostro conto corrente, di fronte ad una contestazione delle autorità, difficilmente sarete in grado di giustificare la provenienza dei fondi per tali acquisti. Anche in questo caso, meglio consultare un consulente *in anticipo*, onde evitare di incorrere in spiacevoli conseguenze.
+
+Trovate maggiori dettagli qui: http://www.mysolution.it/fisco/approfondimenti/commenti/2017/06/commento-30-giugno-2017-n.-1220/
+
+=== Accettare pagamenti in crittovalute
+Se avete un’attività commerciale, potete accettare pagamenti in qualsiasi valuta: euro, dollaro o bitcoin, in qualunque caso dovete emettere la relativa ricevuta fiscale. In particolare è obbligatorio indicare sulla ricevuta fiscale l’importo in euro dell’IVA. In pratica le varie attività commerciali che attualmente accettano bitcoin o altre crittovalute come mezzo di pagamento, emettono un regolare scontrino in euro e si fanno pagare tramite wallet l’equivalente in crittovaluta.
+Utilizzando sempre il medesimo address, possono, tramite un explorer, visualizzare e stampare tutte le transazioni avvenute sul proprio indirizzo e consegnarle al commercialista. I consulenti più all’avanguardia, possono, tramite l’indirizzo del wallet del proprio cliente, accedere direttamente tramite explorer a tutte le transazioni effettuate sul “conto” del proprio assistito, in completa autonomia. In alcuni casi esistono società che offrono un servizio di conversione automatica in euro, che quindi risolvono il problema a monte, a scapito di un costo di commissione.
+
+=== Conclusioni
+Come abbiamo visto la situazione è poco chiara e si può prestare a varie interpretazioni. Il mio consiglio è quello di farvi seguire da un professionista serio, che possa fare un’analisi precisa della vostra situazione finanziaria, e che vi sappia consigliare per il meglio. Ci saranno consulenti che nel dubbio vi suggeriranno di dichiarare tutto e pagare il 26% di capital gain anche se ad oggi sembrerebbe non dovuto, altri che vi diranno di non dichiarare nulla, in quanto in base alla loro esperienza ed interpretazione non dovete farlo. Tutto dipende molto a mio avviso, anche dalle cifre in questione e dalla vostra propensione al rischio. 
+Sembra paradossale ma purtroppo è così.
+
+WARNING: Come già ampiamente premesso, tutte le informazioni qui riportate, sono da intendersi come spunti di riflessione e discussione, NON come pareri professionali. Non sono né un avvocato né un commercialista. Consultate il vostro consulente di fiducia prima di effettuare qualsiasi tipo di operazione.

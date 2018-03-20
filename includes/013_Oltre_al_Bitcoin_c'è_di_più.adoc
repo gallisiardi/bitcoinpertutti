@@ -1,0 +1,139 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Oltre al Bitcoin c'è di più
+In questo libro abbiamo descritto in modo dettagliato il funzionamento Bitcoin. A fine febbraio 2018 su Coinmarketcap (https://www.coinmarketcap.com) sono presenti oltre 1500 tra Coin e token, ognuna di esse con le proprie caratteristiche molto diverse tra di loro. 
+
+TIP: Coinmarketcap è il sito di riferimento per monitorare l'andamento del mercato delle criptovalute. 
+
+=== Differenza tra coin e token
+Per Coin si intende una criptovaluta indipendente, che ha una propria rete peer-to-peer indipendente, realizzata con un software ad hoc, con caratteristiche ben precise che possono comunque essere molto simili a quelle di Bitcoin, come nel caso di Bitcoin Cash in cui il blocco è di 8 MB anzichè 1 MB, oppure completamente diverse come nel caso di IOTA in cui non c’è nuova emissione di moneta (inflazione 0%), non sono previste fee per le transazioni e non esiste la figura dei miner.
+
+I token sono crittovalute che si appoggiano ad altre coin e ne sfruttano l’infrastruttura. Un esempio di token, sono i punti spesa del supermercato, che se utilizzati ti permettono di ottenere sconti o regali, proprio come i punti di un supermercato non vengono accettati da quelli della concorrenza, i token hanno un valore solo fino a quando chi li ha emessi continua a elargire il servizio per il quale sono stati creati.
+Un altro esempio che i ragazzi nati negli anni 90 non hanno più conosciuto, sono i gettoni del telefono. Questi erano delle vere e proprie monete fisiche e negli anni 80 valevano 200 lire. Erano talmente diffuse che venivano accettate tranquillamente anche tra amici o nei negozi (per approfondire https://it.wikipedia.org/wiki/Gettone_telefonico ). Questi hanno avuto un valore fino a quando esistevano telefoni in grado di accettarli. Vennero poi rimpiazzati da telefoni che accettavano le classiche monete e successivamente dalle schede telefoniche prepagate.
+Per tornare in tema crittovalute, nella stragrande maggioranza dei casi parliamo di token che si appoggiano sulla piattaforma Ethereum, che proprio grazie alla loro proliferazione ha visto crescere a dismisura il proprio valore. 
+
+=== Lo standard ERC20
+Ethereum Request for Comments, meglio conosciuto come ERC20 è uno standard adottato dai token generati tramite gli smart contracts di Ethereum. Lo standard definisce una lista di regole comuni che un token deve possedere. Questo standard è quindi stato adottato anche dagli sviluppatori di wallet, riuscendo così a gestire tutti i token che adottano questo standard senza dover sviluppare un apposito wallet per ogni token.
+Trovate maggiori informazioni sull’ERC20 qui https://theethereum.wiki/w/index.php/ERC20_Token_Standard (in inglese)
+
+=== Coinmarketcap
+Su Coinmarketcap.com potete trovare elencate oltre 1500 criptovalute. Per ognuna di esse sono riportate già in home page una serie di informazioni utili che andremo a descrivere.
+
+[.text-center]
+image:images/coinmarketcap.png[Homepage coinmarketcap.com]
+[.text-center]
+Screenshot della homepage di https://www.coinmarketcap.com 
+
+La prima colonna indica la posizione in classifica in inglese rank, per marketcap( che analizzeremo tra poco).
+
+Il logo, nome e sigla sono ovviamente fondamentali per capire di che moneta stiamo parlando. Attenzione alla sigla, non tutti i siti adottano la stessa sigla o unità di misura.
+
+Il marketcap ovvero capitalizzazione di mercato è il risultato tra la moltiplicazione del prezzo per la quantità di moneta in circolazione. È uno dei parametri fondamentali per la valutazione di una moneta E sostanzialmente descrive l'apprezzamento di questa da parte del mercato. 
+
+Il prezzo e la media tra i prezzi praticati sui vari Exchange. Un errore comune è valutare l'apprezzamento di una Coin in base al prezzo. Il parametro fondamentale da tenere in considerazione è la Market CAP. Vale di più un biglietto da €100 o 100 monete da €1? La risposta è che ovviamente valgono uguale. Il prezzo va quindi utilizzato solo come riferimento e metodo di conversione, non come parametro per valutare quanto una moneta è apprezzato dal mercato. A parità di market.cap due monete possono avere prezzi molto diversi tra loro se hanno diversa quantità di monete circolanti.
+
+Il volume indica la quantità di scambi intercorsa solitamente nelle ultime 24 ore. Se due persone si scambiano 10 volte un euro, il volume sarà di €10. Questo parametro serve appunto per valutare quante compravendite sono avvenute nelle ultime 24 ore su una moneta.
+
+Il circulating supply indica la quantità di monete commercializzabili. A fine febbraio 2017 sono stati generati circa 17.000.000 di bitcoin. Questo è un parametro fondamentale per calcolare il market CAP. Dopo il valore numerico è indicata l'unità di misura. Come abbiamo visto un Bitcoin è composto da 100 milioni di Satoshi. Coinmarketcap utilizza BTC come unità di misura, ma nulla vieta da altro sito di utilizzare ad esempio i Satoshi.
+Accanto alla Market CAP può essere presente un * questo indica che la moneta non è inabile cioè la quantità di pezzi è predeterminata e non può crescere nel tempo in alcun modo si utilizza spesso anche il termine premi nata.
+
+La variazione % del prezzo nelle ultime 24 ore indica semplicemente quanto il prezzo è cambiato rispetto al giorno precedente. Questo parametro può trarre in inganno; infatti se il giorno prima c'è stato un forte incremento del prezzo, ad esempio +14%, e nelle gli ultimi 5 minuti il prezzo è calato anche di molto, ad esempio -12%, il parametro sulle 24 ore apparirà positivo, nonostante si siano registrate una serie di forti vendite. 
+
+Il grafico dei 7 giorni fornisce semplicemente in modo visuale, l'indicazione di come il prezzo si sia mosso negli ultimi sette giorni. 
+
+Ognuno di questi campi a parte il grafico, può essere ordinato in modo crescente o decrescente per semplificare la ricerca o il confronto tra le monete.
+
+Cliccando su ognuna di esse accedete ad una scheda per ognuna di esse con ulteriori e importanti informazioni aggiuntive.
+
+Oltre ad una serie di link verso siti Internet del progetto, explorer per navigare tra le transazioni, forum e codici sorgenti, sulla destra troviamo un'altra informazione fondamentale non presente in homepage e cioè il Max supply.  Il Max supply indica la quantità di monete che verranno emesse, per Bitcoin questa cifra come abbiamo visto equivale a 21 milioni.
+
+Scendente della pagina troviamo il grafico del prezzo, bella Market CAP, con sotto l'indicazione dei volumi in istogrammi. 
+
+Sono presenti inoltre una serie di altre schede, contatti interessanti. Quella fondamentale da conoscere è la seconda ovvero Markets.
+
+[.text-center]
+image:images/coinmarketcap_market.png[Sezione market di Bitcoin]
+[.text-center]
+Screenshot della sezione Markets di Bitcoin tratto da: https://www.coinmarketcap.com 
+
+Qui infatti troviamo elencati tutti i mercati presenti sui vari Exchange monitorati dalla piattaforma, ordinati per volume delle ultime 24 ore. Per ogni mercato sono indicati volume, prezzo e percentuale di volume sul volume totale di scambi della singola moneta.
+Sarà quindi possibile vedere quali sono gli Exchange su cui una moneta viene venduta e il suo prezzo. Normalmente i prezzi sono abbastanza allineati; è possibile però trovare dei mercati con un prezzo anche molto differente. Capita spesso ad esempio con il mercati coreani BTC/KRW, dove il prezzo è mediamente più caro rispetto al mercato BTC/USD. Questo può dipendere da una serie di fattori legati alla moneta con cui vengono scambiati i BTC. Forti politiche restrittive di queste monete, che ad esempio ne impediscono il trasporto all’esterno del paese, o permettono solo ai cittadini residenti di aprire conto correnti in valuta locale, creano di fatto un mercato interno, che rimane disallineato con tutti i mercati internazionali. Per la legge della domanda e dell'offerta, i coreani del sud, nella maggioranza dei casi sono disposti a spendere di più dell'equivalente in dollari, per acquistare un BTC, o parti di esso.
+
+Un altro parametro fondamentale da tenere in considerazione è il volume di scambio di ogni singolo mercato. Mercati su cui ogni giorno sono scambiati i milioni e milioni di dollari, garantiscono maggior sicurezza di vedere i propri ordini confermati anche in caso di forti sbalzi di prezzo, viceversa mercati con piccoli volumi di scambio potrebbero non avere domanda o offerta sufficiente per chiudere i vostri ordini.  Ricordiamo infatti che questi Exchange mettono in contatto venditori e compratori. Se il mercato fa piccoli volumi potrebbero paradossalmente non essere presenti compratori per le criptovalute che state cercando di vendere, e vi potreste quindi trovare nella situazione di non riuscire a venderle. Su mercati con grandi volumi di 100.000.000 nelle ultime 24 ore, anche la vendita di un milione di dollari in Bitcoin può essere assorbita senza alcun tipo di problema, pesando infatti solo 1% sui volumi giornalieri.
+
+=== Andamento globale dell'intero mercato delle crittovalute
+Nella parte alta dell’home page, sopra al logo, sono presenti diverse indicazioni interessanti, utili per valutare l'andamento totale del mercato. Partendo da sinistra troviamo la quantità di criptovalute attualmente presenti su coinmarketcap.com. successivamente troviamo il numero di mercati ovvero possibilità di scambio. Ogni moneta può essere infatti scambiata con molte altre monete. Ad esempio Bitcoin può essere scambiata per dollari, euro, oppure per altre criptovalute. Avremo quindi una sola Coin che è però disponibile su moltissimi mercati.
+
+Seguono il marketcap totale, cioè la somma di tutti i marketcap di ogni singola moneta elencata sul sito, il volume totale delle ultime 24 ore e la dominance di Bitcoin, ovvero quanto la capitalizzazione di Bitcoin incide sulla totalità del mercato. Cliccando su ognuno di questi parametri potete accedere ad una pagina con una serie di grafici ed informazioni dettagliate.
+
+=== Principali crittovalute
+Andiamo quindi a descrivere brevemente le principali criptovalute commercializzate sul mercato, ogni crittovaluta è riporta con nome seguito dalla sigla adottata su coinmarketcap.com .
+
+==== Bitcoin (BTC)
+Di Bitcoin abbiamo ampiamente parlato, quindi non ci dilungheremo oltre; da esso sono derivate diverse monete nate dal fork di Bitcoin. Un fork è una biforcazione del codice sorgente e in certi casi anche della blockchain, questo significa che fino ad una certa data, c'era solo una moneta, successivamente il codice sorgente del progetto è stato copiato e replicato, facendo di fatto nascere una nuova moneta completamente indipendente dalla prima. Le principali monete nate da un fork di bitcoin sono: Litecoin, Bitcoin Cash, Bitcoin Gold.
+
+==== Litecoin (LTC)
+Litecoin utilizza una differente funzione di hash (Scrypt) non minabile con  Hardware asic, la generazione di blocchi ogni due minuti e mezzo con una dimensione massima per blocco di un megabyte. Queste scelte strutturali permettono di ottenere conferme in modo molto più rapido, e commissioni molto più basse.
+
+==== Bitcoin Cash (BCH)
+Bitcoin Cash si differenzia da Bitcoin sostanzialmente per aver ingrandito le dimensione del blocco 8 megabyte, riuscendo quindi anche in questo caso ad ottenere commissioni più basse pur mantenendo i tempi di conferma di Bitcoin. La funzione di hash utilizzata è SHA256, la medesima di Bitcoin, i miner quindi possono decidere, in base alla profittabilità del momento, di minare Bitcoin oppure Bitcoin Cash.
+
+==== Bitcoin Gold (BTG)
+Bitcoin Gold ha adottato un' altra funzione di hash (Equihash), anche lei non minabile con i dispositivi ASIC. 
+
+==== Ethereum (ETH)
+Ethereum è un progetto simile a Bitcoin; è basato su una rete P2P, ha una sua moneta Ether e prevede la presenza di miner. Si differenzia da Bitcoin in quanto permette la creazione e la distribuzione di token e l’esecuzione di smart contract, cioè contratti intelligenti; si tratta di codici di programmazione scritti ed eseguiti direttamente nella blockchain, che permettono di automatizzare l’esecuzione di pagamenti all’avvenire di determinati eventi. Trovate maggiori informazioni qui: https://it.wikipedia.org/wiki/Ethereum
+
+==== IOTA (MIOTA)
+IOTA è un progetto innovativo, non esistono i miner, non esistono i blocchi e non sono previste delle commissioni per eseguire gli spostamenti di denaro tra i wallet. Ogni volta che un utente genera una transazione, si fa carico di una proof of work, per validare altre due transazioni di altri due utenti a caso, che prima di lui hanno generato le proprie transazioni. L’utente è al tempo stesso anche un miner, la sua ricompensa però non è monetaria, ma funzionale, valida le transazioni altrui per poter inserire le proprie. Grazie a questo approccio, IOTA ha la possibilità di scalare all’infinito, infatti più utenti eseguono nuove transazioni, più la rete riuscirà a elaborarle velocemente. Trovate maggiori informazioni su IOTA qui: https://www.iotaitalia.com/
+
+==== Ripple (XRP)
+Ripple è tra tutte le crittovalute, quella che maggiormente strizza l’occhio alle istituzioni finanziarie. Il suo obiettivo principale è quello di diventare l’intermediario principale per lo scambio di valute tra gli istituiti bancari.
+
+==== Monero (XMR)
+Monero ha molte similitudini con Bitcoin, ma si differenzia per un sistema di firma delle transazioni, che garantisce un alto livello di privacy. Sono state inoltre implementate altre soluzioni tecnologiche, sempre improntate ad aumentare la riservatezza, come l’offuscamento del valore della transazione e l’utilizzo di indirizzi stealth che rendono più complesso identificare il beneficiario finale della transazione.
+
+==== Zcash (ZEC)
+Anche ZCash come Monero, basa il suo focus sulla privacy degli utilizzatori, infatti tutti i dati della transazione, sono cifrati e visualizzabili solo da chi ha eseguito la transazione. Resta pubblica e disponibile a chiunque solo la data in cui questo pagamento è stato effettuato.
+
+==== Tether (USDT)
+Tether è una crittovaluta particolare, tende ad avere un valore sempre allineato con il dollaro. I suoi creatori, infatti, affermano che per ogni TETHER emesso, loro dispongono di un controvalore in USD. Questo aspetto è stato contestato in più occasioni e spesso escono articoli molto critici verso questa crittovaluta. Il suo obiettivo è quello di essere usata in sostituzione delle monete FIAT. Ad esempio, quando si vendono delle crittovalute, si potrebbe venderle in cambio di USDT (dollari tether), che possono essere spostate più agevolmente, velocemente e con meno controlli burocratici ad esempio tra i vari exchange, rispetto ai dollari tradizionali. 
+
+=== ALTRI SERVIZI IMPLEMENTABILI SU BLOCKCHAIN
+In questo libro stiamo analizzando in modo approfondito il Bitcoin in quanto a moneta, in realtà questa è solo la punta dell’iceberg di una serie di servizi che possono essere implementati sulla blockchain.
+Abbiamo visto come una transazione venga inviata dal wallet nella rete P2P, accorpata in un blocco e successivamente in una catena di blocchi dai miner. Anziché scrivere una transazione è possibile scrivere altre informazioni sulla blockchain, sfruttando tutte le caratteristiche che abbiamo elencato in precedenza.
+La blockchain è un registro pubblico condiviso, che non può essere manomesso, alterato o modificato, si tratta di dati immutabili, resilienti ad attacchi informatici. Tutta la sicurezza offerta dall’infrastruttura bitcoin, che fino ad oggi si è rivelata essere inattaccabile, è a disposizione di chiunque per poter salvare e archiviare delle piccole quantità di dati. 
+
+==== Timestamping
+Grazie a questa possibilità, sono nati servizi di timestamping che permettono di dare data certa ad un determinato documento, non salvando il documento stesso sulla blockchain, ma salvando il suo hash.
+Potrei ad esempio, creare la funzione di hash del PDF di questo libro, e salvarla nella blockchain di Bitcoin. In questo modo, distribuendo il libro, chiunque potrebbe verificare che il PDF in suo possesso sia effettivamente quello originale, e non una versione contraffatta. Lo stesso risultato potrei ottenerlo scrivendo l’hash del PDF sul sito, però il sito potrebbe subire un attacco informatico. 
+L’unico limite che questa tecnologia attualmente ha, è la ridotta quantità di dati salvabili. Per salvare l’hash di un documento è sufficiente una transazione. Per salvare il PDF completo, servirebbero migliaia di transazioni, ogni transazione, come sappiamo, prevede un costo per essere eseguita, rendendo di fatto molto oneroso immagazzinare grandi quantità di dati sulla blockchain di Bitcoin. Viceversa sono state implementate soluzioni che permettono di archiviare moltissime funzioni di hash in un’unica transazione, grazie all’utilizzo dei Merkle Tree. Per chi fosse interessato è possibile approfondire l’argomento qui: https://en.wikipedia.org/wiki/Merkle_tree
+
+==== Registri pubblici
+Si potrebbe ipotizzare di utilizzare la blockchain per archiviare le funzioni di hash di atti notarili, di pubblici registri come il catasto, il PRA, i brevetti, ecc. Immaginiamo una serie di pubblici registri, presso cui chiunque di noi, in completa autonomia, possa intervenire 7 giorni su 7, 24 ore su 24, senza la necessità ed i costi di doversi affidare a dei professionisti, senza più lungaggini burocratiche e costi annessi. Tramite una semplice app si potrebbe quindi cedere la proprietà di un’autovettura, salvando in blockchain con data certa, la funzione di hash del documento di passaggio di proprietà, magari indicando anche la transazione in Bitcoin usata per pagare il mezzo. Nessuno potrebbe contestare tale dato. Anche in caso di multe, la data certa garantita dalla blockchain, sarebbe una prova schiacciante, per indicare quando il passaggio di proprietà è avvenuto. Non è utopia, è un servizio già realizzabile oggi.
+
+==== Sistemi di votazione
+La stessa tecnologia si potrebbe adottare per gestire un sistema di votazioni direttamente online, garantendo sia l’anonimato, che la completa tracciabilità dei voti, con uno spoglio di fatto istantaneo e con un abbattimento dei costi incredibile. Anche qui basterebbe un’app e poco più per gestire il tutto. 
+
+==== Trasparenza nella gestione finanziaria
+Grazie alle caratteristiche di Bitcoin, la trasparenza nella gestione dei fondi è uno dei capisaldi del protocollo.
+Immaginiamo le associazioni di volontariato, le ONLUS e perché no, i partiti politici; potrebbero raccogliere denaro in modo completamente trasparente, chiunque potrebbe verificare ogni movimentazione, sia in entrata che in uscita. In questo senso mi permetto di suggerirvi HELPERBIT https://www.helperbit.com/ un’applicazione già operativa, che si occupa di promuovere proprio questo nuovo metodo di raccolta fondi, a sostegno di progetti di solidarietà attivi in più parti del mondo, Italia compresa.
+
+==== Smart contract
+Sulla blockchain di Ethereum, e su quella di altre monete sia operative che in fase di realizzazione, è possibile eseguire degli smart contract, cioè dei contratti intelligenti, che non richiedono la presenza di un intermediario, o di un giudice terzo per derimere un eventuale contenzioso. Si tratta di veri e propri codici di programmazione, che, al verificarsi di determinati eventi, possono eseguire dei pagamenti, generare dei token, o eseguire a loro volta altri smart contract. Ciò che è scritto nel codice è pubblico, alla portata di chiunque, i contraenti possono analizzare il codice, e partecipando ne accettano il contenuto e le conseguenze. Questa è la grande innovazione presente in Ethereum, che attualmente Bitcoin non implementa. 
+Tra gli sviluppatori c’è grandissimo interesse verso questa nuova forma di software, salvati ed eseguiti nella blockchain, con tutte le caratteristiche di sicurezza, tracciabilità e resilienza che contraddistinguono questa tecnologia. Stanno nascendo una serie di nuovi servizi che prima non potevano essere nemmeno immaginati, tutto grazie alle caratteristiche di questa innovativa tecnologia. 
+
+==== Conclusioni
+In sostanza tutto ciò che ha la necessità di essere pubblico, condiviso, immutabile nel tempo e richiede un alto profilo di sicurezza, può molto probabilmente essere spostato o gestito tramite la blockchain con ottimi risultati.
+Uno smart contract ad esempio non può essere corrotto, non si presta ad interpretazioni, ha un costo irrisorio, non richiede l’intermediazione di professionisti per redigere complessi contratti che sono e resteranno comunque oggetto di contestazioni, proprio per via della natura della lingua; viceversa la matematica e la programmazione, offrono maggiore chiarezza sull’esecuzione di un contratto. Grazie a queste tecnologie si potrebbero abbattere i costi diretti, i costi indiretti, migliorare la qualità del servizio, il grado di accessibilità al servizio stesso, la trasparenza, annullare la corruzione, gli sprechi. Sembra incredibile, ma è tutto già realizzabile senza neppure grandissimi investimenti, e con dei costi operativi trascurabili, in ogni caso decisamente inferiori a quelli attuali.
+

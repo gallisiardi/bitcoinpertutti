@@ -1,0 +1,96 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Sicurezza e privacy
+Abbiamo visto come mantenere i nostri Bitcoin su un Exchange voglia dire assumersi il rischio che questo intermediario fallisca o venga derubato. Questo è uno dei rischi più semplici da comprendere e valutare, e verso cui è possibile tutelarsi adottando una piccola e semplice accortezza e cioè non lasciando i fondi sugli Exchange. Abbiamo anche approfondito più volte nel libro come sia di fondamentale importanza la gestione delle chiavi private per mantenere al sicuro i vostri Bitcoin. Il mio consiglio personale è di fare sempre più copie delle vostre chiavi private e conservarle in posti sicuri differenti, tenendo bene a mente che chiunque entra in possesso di queste chiavi può accedere ai vostri Bitcoin.
+
+=== Gestione delle chiavi
+Una buona idea può essere quella di stampare su un semplicissimo foglio di carta la vostra chiave privata, magari senza scriverci a fianco che è la chiave privata del vostro conto in Bitcoin dove sono contenuti 100 Bitcoin. [line-through]*Averne di questi problemi!!!*
+
+Potrebbe essere saggio condividere con una persona *fidata* ad esempio il vostro partner, la prima metà della vostra chiave privata (le prime 6 parole), mentre condividere con altri, ad esempio i vostri genitori, la seconda parte (le successive 6 parole). In questo modo, anche in caso di una vostra eventuale prematura dipartita, queste persone possono entrare in possesso dei vostri Bitcoin per cederli ai vostri figli o a chi ne ha diritto. Se non lo fate perché siete scaramantici, meglio per noi, in quanto i vostri Bitcoin rimarranno bloccati sulla blockchain e creeranno ulteriore deflazione e quindi incrementando il valore di quelli in nostro possesso.
+
+Esistono wallet in grado di gestire portafogli multifirma, che funzionano allo stesso modo dei conti correnti bancari con più firmatari. Sono possibili diverse configurazioni, ad esempio:
+- conto con due firme in cui per muovere i fondi sono necessarie entrambe le firme
+- conto con due firme in cui per spostare i fondi è necessaria una sola firma
+- conto con più firme in cui è possibile decidere quante firme, siano necessarie per spendere i Bitcoin, ad esempio è possibile creare un portafoglio 5 di 7, cioè un wallet in cui è possibile inserire 7 firme e dove per spostare i fondi ne sono necessari almeno 5.
+
+È chiaro che si possono anche creare portafogli ad esempio da 7 di 7. Se nel malaugurato caso uno solo dei sette possessori di chiavi private perdesse la propria, i fondi rimarrebbero bloccati sulla blockchain per sempre [line-through]*creando ulteriore deflazione e accrescendo il valore dei nostri Bitcoin*.
+
+Per archiviare in modo sicuro le vostre chiavi, potete provare ad avventurarvi nel mondo della crittografia applicata, creando dei file contenenti le vostre chiavi private, e successivamente cifrandoli. Va da sé che queste operazioni devono essere eseguite con cognizione di causa e poi avrete sempre il problema di dover ricordare la vostra password per decrittare i file cifrato. Il grosso vantaggio è che potete conservare i file (meglio) se in più copie, ad esempio nel vostro cloud.
+
+Come probabilmente avrete intuito, esiste un pericolo concreto di adottare delle misure troppo sicure per proteggere la vostra chiave privata che potrebbe addirittura impedire a voi stessi per un errore o una casualità, di accedere alle chiavi. Non sareste i primi.
+
+=== Backup e diversificazione
+Qualsiasi sistema decidiate di adottare per proteggere i vostri Bitcoin, è fondamentale che non sia unico. Create almeno un paio di copie di backup e conservatele in luoghi differenti.
+Ricordate che tutti i mezzi elettronici ad esempio computer, tablet, smartphone, chiavette USB, DVD, sono soggetti a rotture, deperimento, furti, ecc. Diversificate i portafogli, non mantenete tutti sotto un unico address, nella malaugurata ipotesi di perdere la chiave privata, non perderete tutto il vostro patrimonio in crittovalute. Una buona soluzione potrebbe essere quella di gestire un piccolo portafoglio con cifre da utilizzare per spese quotidiane, per avere una maggiore praticità potete permettervi di ridurre leggermente il livello paranoico di sicurezza, che invece dovrete adottare per i fondi ai quali accedete saltuariamente.
+
+Personalmente ho deciso di diversificare al massimo il rischio utilizzando almeno quattro sistemi differenti tra cui carta, chiavetta USB, file cifrati e più depositi in più exchange (accettando il rischio che questi possano sparire da un giorno all’altro).
+
+=== Autenticazione a 2 fattori
+Un'altra pratica comune per garantire la sicurezza che nessuna persona non autorizzata acceda al vostro account su un exchange è l'adozione di un sistema di verifica in due fattori. Quasi tutti gli exchange la prevedono, in alcuni casi è addirittura obbligatoria. Se un exchange non implementa questo tipo funzionalità, forse è meglio tenersene alla larga e spostarsi altrove per fare acquisti.
+
+Attivare l’autenticazione in due fattori è semplicissimo. Si scarica un’app apposita sul proprio smartphone, la più usata è Google Authenticator e si segue la procedura passo a passo indicata sul sito dell’exchange. Vi verrà chiesto di fotografare un QR Code con l'app di autenticazione, dopo averlo fatto, apparirà all'interno della vostra app il nome dell’exchange con sotto un codice di 6 numeri. Questo codice ha una durata temporanea di poche decine di secondi dopodiché viene bruciato e ne viene generato uno nuovo. È possibile che molti di voi adottino già questo sistema o di un sistema simile con i token fisici bancari. Quando effettuate il login all’exchange, vi verrà richiesto di inserire, oltre alle solite username e password, il codice generato da Google Authenticator.
+
+IMPORTANT: Eseguite un backup dei QR Code che vi vengono mostrati a video per attivare l'autenticazione a due fattori. Fatene un backup stampandoli su carta o creando dei PDF ed archiviateli in un posto sicuro. Questi QR Code serviranno per ripristinare i vostri codici di accesso a due fattori nel caso perdiate lo smartphone. Se non disponete di questi codici si prospettano lunghe ed estenuanti procedure di recupero account, invio di documenti, tempi di attesa per la verifica, ecc. Conservare questi backup in luogo sicuro altrimenti chiunque può attivarli sul proprio telefono e, entrando in possesso del vostro username e password, può accedere agli exchange e spendere i vostri Bitcoin.
+
+Un’altra buona norma, è la protezione del vostro account e-mail con l’autenticazione a due fattori, anche perché chi entra in possesso del vostro account email potrebbe attivare le procedure di recuro password ed accedere a tutti i vostri account online. Questa accortezza deve essere a mio avviso adottata anche da chi non intende acquistare crittovalute. 
+
+Verificate sempre che i siti degli exchange a cui vi collegate abbiano attivato l’HTTPS e il dominio da voi digitato sia corretto; per evitare di commettere errori di battitura è buona norma salvare i link nei preferiti. In passato, sono stati creati siti praticamente identici a quelli ufficiali, in cui acquistando pubblicità sui motori di ricerca venivano dirottati gli utenti per rubar loro le credenziali di accesso agli account.
+
+Se qualcuno, per qualsiasi ragione, vi sta chiedendo la vostra chiave privata, probabilmente sta cercando di appropriarsi dei vostri soldi.
+
+In linea di massima l'approccio da utilizzare in questo caso è di tipo PARANOICO. Partite sempre dal presupposto che qualcuno vi voglia truffare e fatevi convincere dell'opposto.
+
+=== Privacy
+Come abbiamo già indicato più volte nelle pagine precedenti, il protocollo Bitcoin ha come caratteristica progettuale la trasparenza, ogni transazione presente, passata e futura deve essere registrata nella blockchain perché venga ritenuta valida.
+Chiunque può quindi vedere e monitorare tutte le transazioni, da quale address sono partiti i Bitcoin e verso quale indirizzo sono stati inviati; diventa fondamentale quindi capire quanto questi address siano riconducibili ai singoli individui.
+Quando ci registriamo su un exchange ad esempio, dobbiamo fornire tutti i nostri documenti, il nostro numero di telefono e altra documentazione che serve appunto a verificare la nostra identità, come richiesto dalle norme bancarie internazionali. Gli exchange infatti sono una sorta di ponte che connette i circuiti bancari tradizionali e la rete Bitcoin. Quando ricevono valute FIAT dai loro clienti tramite bonifici o carte di credito, devono obbligatoriamente riceverli su dei conti correnti bancari tradizionali.
+Non possono quindi esimersi da tutto ciò che è la normale burocrazia richiesta per legge.
+Quando completerete un acquisto di crittovalute, l’exchange registrerà tale evento e lo collegherà alla chiave privata del vostro wallet online, da lui detenuta. Il wallet che vi fornisce l’exchange, può essere utilizzato per inviare le crittovalute acquistate ad un vostro address, o ad un address di un altro exchange.
+Tutti questi passaggi saranno quindi registrati nella blockchain, chiunque potrà visualizzarli e seguire il flusso di denaro, da un wallet all’altro. Solo l’exchange e le autorità (chiedendo i vostri dati all’exchange), potranno però ricollegare la vostra identità al flusso di transazioni.
+
+Ogni volta che eseguiamo un pagamento, riveliamo al ricevente il nostro indirizzo mettendolo quindi in condizione di percorrere a ritroso tutte le transazioni in ingresso ed in uscita che hanno avuto a che fare con l’address che abbiamo usato per effettuare il pagamento, fino a risalire al nostro wallet sull’exchange dove abbiamo tutti i nostri Bitcoin. Viceversa, anche noi possiamo fare altrettanto nei suoi confronti.
+
+Per ovviare a questo problema, possiamo creare nuovi address, paradossalmente anche un nuovo address per ogni transazione. In questo modo ripercorrere a ritroso le transazioni sarà più complesso, anche se non impossibile. Un’altra buona norma, potrebbe essere quella di non usare gli address dei wallet sui quali abbiamo i nostri investimenti, per pagare una pizza. Creare più chiavi private, e quindi più address non costa nulla, i wallet deterministici, permettono di avere un numero elevatissimo di chiavi pubbliche e private tutte sotto un unico seed (il famoso elenco di 12 parole).
+Acquistando Bitcoin in modi differenti, ad esempio usando exchange diversi, o comprando piccole somme da amici, si mescolano ulteriormente le carte, e rendono un tracciamento delle nostre movimentazioni ancor più difficile e complesso. 
+
+Vediamo due esempi concreti. 
+
+[big red yellow-background]*TODO immagine acquisti in sequenza da unica fonte*
+
+Alice acquista 11.000 € in Bitcoin su un unico exchange, 10.000 come investimento, e 1.000 per le spese correnti. Utilizza sempre lo stesso address, per tutte le transazioni. Tutti quelli che ricevono o inviano Bitcoin ad Alice, possono vedere il suo estratto conto e potranno continuare a seguirlo per sempre. Se ad esempio Alice si fa spedire della merce a casa dopo aver effettuato un acquisto online, il venditore potrà collegare tutti i dati anagrafici di Alice, con tutti i suoi dati finanziari, ad esempio quanti Bitcoin ha in un determinato momento, quanti ne ha acquistati e quando, quando riceverà dei pagamenti ecc. A quel punto potrà usare questa mole enorme di informazioni per ad esempio, inviare della pubblicità quando Alice ha più disponibilità economica.
+
+[big red yellow-background]*TODO immagine acquisti da più fonti*
+
+Bob ha diviso il suo indirizzo dove detiene i Bitcoin come investimento, da quello che utilizza per pagare spese correnti. Addirittura ha creato un indirizzo apposito da utilizzare per gli acquisti che prevedono l’invio di prodotti a casa da un determinato negozio online, in modo da isolare queste transazioni da tutte le altre. Bob evita accuratamente di eseguire transazioni tra gli address in suo possesso in modo da rendere impossibile per un malintenzionato, tracciare tutte le sue operazioni in bitcoin. 
+
+=== I mixer
+Esistono alcuni servizi che permettono di ottenere un maggiore privacy, interponendosi tra noi e il destinatario dei fondi, ovviamente dietro un compenso che può arrivare anche a diversi punti percentuale. 
+Documentatevi in modo accurato prima di utilizzare questi servizi, soprattutto perché tutto ruota attorno ad un rapporto di fiducia nel servizio di mixing. Voi infatti, dovete inviare i vostri Bitcoin al mixer, che a sua volta si impegna ad effettuare il pagamento trattenendosi la commissione concordata. Non c’è alcuna garanzia che questo intermediario rispetti gli accordi. Un ipotetico truffatore potrebbe pubblicizzare un’attività di mixing, ricevere i versamenti degli utilizzatori, e non effettuare mai i pagamenti. 
+
+=== Indirizzi IP
+Un altro aspetto da tenere in considerazione è l’identificazione dell’utente tramite indirizzo IP. 
+Ogni operazione che eseguiamo online è collegata ad un indirizzo IP, una sorta di targa, che identifica la nostra connessione ad internet, e contrassegna ogni nostra operazione compiuta online.
+
+TIP: Puoi verificare il tuo indirizzo IP qui: http://www.mio-ip.it
+
+Nella stragrande maggioranza delle ADSL domestiche e nelle connessioni ad internet tramite smartphone questo IP viene modificato periodicamente (IP dinamico), rendendo difficile un tracciamento. In altri casi, si ha un IP fisso, cioè un indirizzo che non cambia mai, ad esempio nelle connettività aziendali.
+Le autorità possono, su mandato di un giudice, chiedere agli operatori di telefonia, a chi era associato un determinato IP in una determinata data e ora, ottenendo in risposta l’anagrafica dell’intestatario della linea telefonica. Questi dati devono essere conservati dai provider per 12 mesi.
+Esistono tuttavia una serie di strumenti che permettono di incrementare il livello di privacy delle nostre attività online, rendendo molto più complessa qualunque operazione di tracciamento. Il sistema certamente più diffuso è TOR https://www.torproject.org/ 
+
+CAUTION: Sconsiglio sempre di svolgere qualsiasi attività illegale, in prima battuta perchè appunto è illegale e infrangendo la legge potreste andare incontro a spiacevoli conseguenze, in secondo luogo perchè online, come abbiamo visto, ogni nostra operazione è registrata e conservata per mesi, in alcuni casi anni. 
+
+Quando eseguiamo un pagamento in Bitcoin la nostra transazione viaggia tra il nostro dispositivo e un nodo della rete Bitcoin, che per forza di cose, può vedere il nostro indirizzo IP ed archiviare questa informazione, magari poi, collegandola ad altre informazioni in suo possesso o provenienti da altre fonti.
+
+Non voglio mettervi in allarme, ma rendervi consapevoli di come le vostre attività online possano essere registrate e tracciate. Personalmente ritengo che non ci siano grandi pericoli per la privacy degli utilizzatori delle crittovalute, a patto di adottare le adeguate contromisure, ad esempio utilizzare connessioni con indirizzo IP dinamico, cambiare spesso address ed usare portafogli diversi per gli investimenti e per le spese correnti.
+
+Come abbiamo già indicato nei capitoli precedenti, esistono moltissime altre crittovalute, alcune di queste adottano delle tecnologie che garantiscono maggior privacy per gli utilizzatori. Tra queste le più blasonate sono certamente Monero e ZCash.

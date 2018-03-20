@@ -1,0 +1,76 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Link vari
+
+La documentazione in lingua inglese sulle crittovalute abbonda, ma anche nel panorama italiano c’è una discreta produzione di materiale interessante. In questo elenco cerco, ove possibile, di fornire un panorama di risorse in lingua italiana.
+
+=== Sito del libro
+Il sito del progetto: https://www.bitcoinpertutti.org
+
+=== Telegram
+Il canale Telegram https://t.me/bitcoinpertutticanale per tenervi aggiornati su correzioni, nuove edizioni e la pubblicazione di nuovi capitoli, non si può interagire ma solo essere avvisati sulle ultime novità che riguardano il libro.
+
+La chat dei lettori del libro https://t.me/bitcoinpertutti qui potete interagire con gli altri lettori del libro o con me sui contenuti del libro.
+
+=== Wallet Bitcoin
+Elenco wallet per Windows: https://bitcoin.org/it/wallets/desktop/windows/
+
+Elenco wallet per Linux: https://bitcoin.org/it/wallets/desktop/linux/
+
+Elenco wallet per Mac: https://bitcoin.org/it/wallets/desktop/mac/
+
+Elenco wallet per Android: https://bitcoin.org/it/wallets/mobile/android/
+
+Elenco wallet per IOS: https://bitcoin.org/it/wallets/mobile/ios/
+
+Elenco wallet per Windows Phone: https://bitcoin.org/it/wallets/mobile/windowsphone/
+
+Elenco wallet per Blackberry: https://bitcoin.org/it/wallets/mobile/blackberry/
+
+Wallet che gestisce sia Bitcoin che Bitcoin Cash: https://www.bitcoin.com/
+
+=== Exchange
+Lista degli exchange ordinata per volumi generati nelle ultime 24 ore: https://coinmarketcap.com/exchanges/volume/24-hour/
+
+=== Explorer
+Blockchain.info: https://blockchain.info/it
+
+Blockexplorer.com: https://blockexplorer.com
+
+=== Forum
+Bitcointalk.org: https://bitcointalk.org/index.php?board=28.0
+
+=== Grafici
+Analisi dell’andamento delle fee sulla rete Bitcoin: https://dedi.jochen-hoenicke.de/queue/#3m
+
+Analisi di molti parametri della rete Bitcoin e Bitcoin cash: https://www.fork.lol
+
+Altri grafici su Bitcoin e altre monete: https://bitinfocharts.com/comparison/transactionfees-btc-ltc.html#6m
+
+=== Canali Youtube
+Blockchain caffè (tecnologia, ma con parole semplici): https://www.youtube.com/channel/UC45fFhSPMzXN2TRqgkGLPsw
+
+Marco Casario (trading e mercato): https://www.youtube.com/channel/UCZp2KqGRkO1goEAaxX5Huyg 
+
+Stefano Capaccioli (aspetti legati e fiscali): https://www.youtube.com/channel/UCdRl8q3vuiLmwCgzNVBMSsQ
+
+Luca Ferrini (aspetti legati e fiscali): https://www.youtube.com/channel/UCqDQhUWI2LigqL1cdtOtrsQ
+
+Ferdinando Ametrano (professore universitario): https://www.youtube.com/channel/UCq5tOjw0pZLeoxnqkC5KSHQ
+
+Vi consiglio di iscrivervi a questi canali e successivamente cliccare sulla campanella a fianco del pulsante di iscrizione, in modo da essere avvisati alla pubblicazione di ogni nuovo video.
+
+=== Blog
+Alberto de Luigi (tecnico): https://www.albertodeluigi.com/
+
+Coinlex (aspetti legali, contabili, fiscali): https://coinlexit.wordpress.com/

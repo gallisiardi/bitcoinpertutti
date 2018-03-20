@@ -1,0 +1,74 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Truffe e raggiri
+Come in ogni settore, anche in questo, le truffe e i raggiri di vario tipo e natura non mancano.
+Sfruttando le aspettative di forti guadagni, i malintenzionati hanno messo a punto diverse strategie per derubare potenziali investitori, che si avvicinano a questo mondo senza le dovute competenze.
+
+Uno degli scopi di questo libro è proprio quello di diffondere le competenze di base per potersi muovere nell’universo delle crittovalute con le necessarie competenze per non incorrere nelle truffe più diffuse.
+
+=== Ha investito 10 € ed è diventato milionario
+Partiamo da un grande classico, il banner pubblicitario del ragazzo con in mano un ventaglio di dollari, circondato da avvenenti donzelle e da automobili lussuose. Solitamente il testo che accompagna l’immagine suona più o meno così: “Studente investe 10€ in Bitcoin, è diventato milionario”.
+Sicuramente chi è entrato in Bitcoin nel 2009/2010, con 10 € e’ riuscito a comprare l’equivalente odierno di milioni di euro in Bitcoin. Conosco personalmente diversi appassionati che avevano minato alcuni blocchi di Bitcoin con il PC di casa, quando ancora non esistevano le schede ASIC; parlo degli anni in cui la ricompensa per ogni blocco minato era di 50 bitcoin. Tutti e dico tutti, li hanno venduti, alcuni facendo degli ottimi guadagni in rapporto ai costi sostenuti. Nessuno li ha tenuti fino al 2018. Sicuramente ci può essere gente che, più per caso che per strategia, ha conservato i Bitcoin minati, ritrovarsi con delle piccole fortune, ma sono dei casi più unici che rari. In ogni casi sono performance che non torneranno più, è un treno passato e non ripasserà più, facciamocene una ragione e viviamo la cosa serenamente. Sicuramente questo settore può ancora dare grandi soddisfazioni, ma, ad oggi, sperare di investire 1.000 € e vederli crescere di mille volte nel giro di qualche anno è praticamente impossibile. 
+
+=== Investimenti telefonici
+Con grande stupore ho ricevuto in ufficio una chiamata da un call center probabilmente indiano, che mi invitava ad investire in crittovalute. Ho letto anche alcuni articoli a riguardo, pare un fenomeno in forte crescita. Se continuano a chiamare probabilmente qualcuno che gli manda i soldi ci sarà. Il mio consiglio è ovviamente di NON affidarsi a questo tipo di intermediazione. Se non siete in grado di comprendere i meccanismi che regolano questo mercato, il mio consiglio è di non investirci. Se nonostante ciò, proprio volete investire a tutti i costi in criptovalute, vi consiglio di rivolgervi ad un promotore finanziario qualificato e di comprovata fiducia. Questo è un controsenso: un sistema che nasce per tagliare fuori l’intermediazione, finisce per diventare l’ennesimo prodotto di investimento “venduto” da un intermediario.
+Con tutto il rispetto per i promotori finanziari e gli operatori del settore finanziario.
+
+=== Schema Ponzi
+Lo “Schema Ponzi” è il tipo di truffa finanziaria più diffusa al mondo, prende il nome da Charles Ponzi italo americano che negli anni 20, partendo con due dollari riuscì a raccogliere oltre 15 milioni di dollari. 
+Uno dei casi più eclatanti di Schema Ponzi, si registrò nel 2008, quando Bernard Madoff, riuscì a creare una truffa per oltre 50 miliardi di dollari, coinvolgendo non solo investitori privati, ma anche grandi investitori istituzionali. Madoff era talmente ben inserito nel sistema finanziario che ricoprì addirittura ruoli di spicco, fu ad esempio presidente del NASDAQ. Questo esempio per dimostrare che non si tratta del gioco delle tre carte fatto con un banchetto ambulante alle fiere di paese, ma di operazioni che durano anni e che a prima vista possono apparire dei buoni investimenti, promossi da professionisti affidabili.
+Tecnicamente si tratta di una truffa semplicissima: il truffatore si fa consegnare del denaro dall’investitore con la promessa di garantire il pagamento di interessi molto superiori agli altri investimenti disponibili sul mercato, spesso giurando e spergiurando sull’assenza di rischi. 
+Per dimostrare che il sistema funziona, ogni mese, il truffatore deposita la quota di interesse pattuita sul conto della vittima, che dopo un paio di mesi, si convince della bontà dell’investimento e spesso incrementa ulteriormente la propria posizione e coinvolge, in buona fede, amici e conoscenti. Il truffatore in realtà non sta facendo nessun investimento, ma usa semplicemente i soldi del primo cliente, per pagare gli interessi al cliente stesso, e a tutte le persone che via via questo coinvolge. Capite che si crea un fenomeno di passaparola, spesso ulteriormente incentivato da strutture di marketing piramidale, dove chi coinvolge nuove persone, ottiene guadagni per questa attività di “vendita”.
+Tutto ciò prosegue finchè il malintenzionato non viene scoperto o fugge con il malloppo raccolto. Per limitare questi fenomeni in molti paesi le attività di marketing piramidale sono state regolamentate. Queste strategie di marketing non sono delle truffe, ma spesso vengono sfruttate dai truffatori per ingigantire la portata delle loro attività. 
+
+Anche nel mondo delle crittovalute c’è stato, ci sono e ci saranno diversi “Schemi Ponzi”, muovetevi quindi con la massima prudenza. 
+
+Trovate maggiori informazioni sullo “Schema Ponzi” qui: https://it.wikipedia.org/wiki/Schema_Ponzi
+mentre per il multi level marketing qui: https://it.wikipedia.org/wiki/Multi-level_marketing
+
+=== Guadagni e rendite garantite
+Dietro alla stragrande maggioranza di queste truffe ci sono promesse di garantire grandi guadagni, certi e costanti nel tempo. Chiunque segua da qualche mese il mercato delle crittovalute, avrà di sicuro assistito a grandi cadute del prezzo e relative riprese; se c’è un mercato davvero imprevedibile nei suoi movimenti, anche molto violenti, è quello delle crittovalute. Garantire rendimenti stabili e sicuri nel tempo fa a pugni con questo mondo. Se volete investire in crittovalute acquistatele direttamente voi, e se siete arrivati a leggere queste pagine, un’idea di come fare dovreste esservela fatta. Se avete dei dubbi, potete chiedere sulle chat o sui forum indicati nella sezione Risorse utili presente alla fine di questo libro.
+
+=== ICO truffa
+Nei capitoli precedenti abbiamo visto che cos’è e come funziona una ICO. Come abbiamo già avuto modo di dire, si tratta di una donazione che voi fate, un atto di pura fiducia nei confronti dei promotori di questa raccolta fondi. Se decidete di partecipare, documentatevi benissimo sulle persone sulle quali state investendo, sul loro passato, sulle loro competenze tecniche, ma anche imprenditoriali. Inutile dire che in molti casi l’unica motivazione dietro alle ICO è quella di raccogliere soldi, il progetto è solo una scusa per farlo. Massima attenzione quindi.
+
+=== Promotori finanziari con cattive intenzioni
+Da sempre la figura del promotore finanziario è contraddistinta, come in tutti gli altri settori, da molte persone per bene e da qualche disonesto. In questa fase di grande interesse per le crittovalute sono apparsi personaggi discutibili, poco professionali, che si spacciano per promotori e vi invitano a investire in questo settore. La mia unica raccomandazione è quella di affidarsi a professionisti qualificati e di comprovata fiducia; muovetevi con prudenza.
+
+=== Prodotti finanziari spacciati per crittovalute
+Alcuni conoscenti, mi hanno detto di aver acquistato crittovalute su alcuni siti che non mi risultavano essere degli exchange. Approfondendo, ho scoperto che questi siti, vendevano dei prodotti finanziari “indicizzati” sulle crittovalute. Le persone con cui sono venuto in contatto credevano di aver acquistato Bitcoin, in realtà avevano acquistato dei prodotti finanziari, una sorta di contratto a scadenza sull’acquisto o la vendita in una determinata data ad un determinato prezzo di una certa quantità di crittovalute. 
+Questi sono strumenti finanziari del tutto leciti, ma che non sono crittovalute. Personalmente consiglio di investire in questi prodotti, soprattutto se non sapete di che si tratta, quali sono i pro e i contro, ecc. A mio modesto avviso, si tratta di una scommessa sull’esito di un’altra scommessa. Un mercato già molto volatile come questo, secondo me non ha bisogno di aggiungere altra incertezza. Se volete iniziare a comprare e vendere in crittovalute, potete farlo direttamente tramite gli exchange, in completa autonomia.
+
+=== Attacchi informatici
+Una sezione a parte di questo capitolo è dedicata alle truffe tramite strumenti informatici. 
+Per muoversi in questo mercato serve utilizzare PC, smartphone o tablet; facendolo ci esponiamo inevitabilmente a dei rischi informatici, legati all’uso di queste tecnologie. Sarebbe fantastico poter riuscire in mezza paginetta a riassumere tutti i pericoli e le strategie per operare in sicurezza, purtroppo non è possibile, quindi cercherò di riepilogare i problemi più comuni.
+
+==== Virus e malware
+I virus e i malware (software con scopi malevoli), si trasmettono principalmente via email, tramite il download di software, tramite crack o programmi illegali (opportunamente modificati) o con una semplice chiavetta USB, precedentemente usata su un PC infetto. Per quanto riguarda gli smartphone e i tablet, installando app non ufficiali, o non provenienti dagli store ufficiali. E’ già successo che app presenti negli store contenessero dei malware.
+Tutti questi software possono leggere il contenuto del vostro PC o smartphone, alla ricerca delle vostre chiavi private o dei numeri della vostra carta di credito.
+
+Le precauzioni da adottare sono le medesime per tutti i dispositivi e cioè mantenere il sistema operativo e i vari software aggiornati, non utilizzare software pirata, non scaricare crack o programmi “sbloccati”. Scaricare sempre software da fonti affidabili, prediligere dove possibile software open source. Non aprire allegati di email di cui non conosciamo la fonte, o di materiale non richiesto anche nel caso provenisse da una fonte attendibile. Spesso vengono usati trucchi psicologici per indurvi ad aprire l’allegato, ad esempio, giocando sulla vostra curiosità, sulle vostre paure o sulla vostra distrazione. Vengono inviate false fatture, false fotografie, false multe, con l’unico obiettivo di farvi cliccare sull’allegato.
+Installare un antivirus aiuta, ma il miglior antivirus è il vostro cervello.
+
+==== Ramsonware
+Sono dei virus che cifrano il contenuto del vostro hard disk con una chiave crittografica e vi chiedono un riscatto in Bitcoin, per restituirvi i vostri file. Per proteggersi valgono le stesse regole descritte sopra, in più ricordiamo l’efficacia di una buona politica di backup, con creazione frequenti di copie di sicurezza di tutti i documenti importanti presenti sul vostro PC. Se avete copia di questi documenti potete permettervi di formattare il computer e recuperare i dati persi dalla copia di salvataggio. Generalmente i ramsonware non vanno alla ricerca delle vostre chiavi private all’interno del vostro PC, ma non mi stupirei se iniziassero ad implementare anche questa redditizia funzionalità.
+
+==== Phishing
+Il phishing è quel tipo di attacco informatico che sfrutta la realizzazione di siti o email, il più possibili simili a quelle di istituti bancari, exchange o siti di commercio elettronico. Questi messaggi cercano in modi diversi di invitarvi a inserire le vostre credenziali, su un sito creato ad hoc dai criminali. Così facendo, si impossessano della vostra username e password, ed accedono al sito originale a nome vostro. 
+Ci si può difendere da questo tipo di attacchi, facendo moltissima attenzione a tutte quelle email nelle quali vi si invita ad andare su un sito dove vi viene richiesto di inserire username e password. Una buona strategia da adottare è quella di attivare sempre l’autenticazione a due fattori, con i servizi online che la implementano.
+
+==== Altri attacchi informatici
+Esistono altri tipi di attacchi informatici di diversa natura, tutti solitamente finalizzati a prendere il controllo del vostro PC o smartphone, spesso con obiettivi diversi, non ultimo quello di trasformare il PC di un miner, e farlo lavorare per estrarre crittovalute. Nei capitoli precedenti abbiamo visto come questa attività non sia molto redditizia, quanto meno in Italia. Il punto è che questi criminali, raccolgono il risultato del mining, ma lasciano a voi tutti i costi, a partire dall’elevato consumo elettrico.
+
+In generale dobbiamo essere consapevoli di questi rischi e adottare le relative contromisure. 
+Se decidete di lasciare copia delle vostre username e password sul vostro PC, adottate un sistema di cifratura, in modo da renderle illeggibili a chiunque riuscisse ad accedere ai file. Lo stesso discorso vale per le chiave private che vi permettono di disporre delle vostre crittovalute.

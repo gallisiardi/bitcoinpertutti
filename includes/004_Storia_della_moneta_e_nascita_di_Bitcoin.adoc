@@ -1,0 +1,163 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Storia della moneta e nascita di Bitcoin
+
+Iniziamo con il definire che cos’è una moneta, per farlo citiamo [.line-through]#l’enciclopedia# Wikipedia https://it.wikipedia.org/wiki/Moneta:
+
+Per moneta si intende tutto quello che viene utilizzato come mezzo di pagamento e intermediario degli scambi e che svolge le funzioni di:
+
+- misura del valore (moneta come unità di conto)
+
+- mezzo di scambio nella compravendita di beni e servizi e in genere nelle transazioni commerciali (moneta come strumento di pagamento)
+
+- fondo di valore (moneta come riserva di valore)
+
+{empty} +
+
+[quote, Paul Samuelson premio Nobel per l'economia nel 1970 https://it.wikipedia.org/wiki/Moneta]
+*la moneta*, in quanto moneta e non in quanto merce, *è voluta non per il suo valore intrinseco, ma per le cose che consente di acquistare*
+
+{empty} +
+
+Bitcoin viene considerato da molti una moneta, proprio per la sua capacità di essere mezzo di scambio per la compravendita di beni e riserva di valore. Negli ultimi anni ha assunto più un aspetto di asset o investimento, da molti viene infatti definito oro digitale.
+E’ difficile definirlo o equipararlo ad altre valute, perchè a differenza delle monete utilizzate comunemente negli ultimi secoli, non è emesso da uno stato sovrano. Questa è la prima grandissima differenza rispetto alle monete comunemente conosciute ed utilizzate: euro, dollaro, franco svizzero, sterlina, ecc. ed è fonte di dubbi o perplessità da parte di chi non approfondisce la materia. Le principali obiezioni sono: chi ne garantisce il valore? chi decide quanti bitcoin creare? cosa c’è dietro? ecc.  
+
+Per rispondere  a queste domande dobbiamo prima chiarire alcune caratteristiche base che deve avere una moneta, in modo da poter poi confrontare le monete FIAT (euro, dollaro, sterlina, ecc.) con le crittovalute come il Bitcoin.
+
+TIP: Le monete FIAT sono così definite proprio perchè sono create dal nulla. Il termine ”FIAT” si riferisce alla frase della Bibbia “Deus fiat lux et lux facta est” tradotto “Dio disse sia fatta la luce e la luce fu fatta”, proprio per descrivere la natura di queste monete ed il fatto che vengano create dal nulla. Sì dal nulla, avete letto bene. Il nostro Dio ha un nome e cognome: Mario Draghi, presidente della Banca Centrale Europea.
+Quando Draghi dà ordine di stampare 1.000 miliardi di euro, le tipografie iniziano a lavorare e creare moneta FIAT dal nulla. “Draghi fiat euro et euro facta est”.
+
+A garanzia dell’euro o del dollaro, non c’è alcun corrispettivo di oro o metalli preziosi, come erroneamente ancora molti credono. La parità nel caso dell’Euro non è mai esistita, nel caso del dollaro è ufficialemente terminata nel 1971 con la fine degli accordi di Bretton Woods ( per approfondire https://it.wikiversity.org/wiki/Conferenza_di_Bretton_Woods#La_fine_degli_accordi ).
+
+La vera forza su cui si basano queste monete è il corso legale ( https://it.wikipedia.org/wiki/Corso_legale ) e cioè l’obbligo da parte dei cittadini, di accettare la moneta emessa dallo stato come metodo di pagamento. Nessun negoziante può rifiutarsi di accettare Euro, nessun lavoratore può rifiutarsi di essere pagato in Euro. Questo non vuole dire che è obbligato a ricevere SOLO euro. Può ricevere qualsiasi valuta, ma se qualcuno vuole pagarlo in euro, lui è obbligato ad accettare euro.  
+
+=== Caratteristiche delle monete
+Approfondiamo ora, alcune caratteristiche che dovrebbe avere una moneta ideale, in modo da poter poi andare a confrontare le varie tipologie di moneta sotto vari aspetti.
+
+*Scarsità*: una moneta deve avere un giusto compromesso tra disponibilità e scarsità. Non deve naturalmente essere troppo abbondante (un pugno di sabbia), altrimenti avrebbe pochissimo valore, né troppo scarsa, altrimenti avrebbe troppo valore per essere scambiata (un quadro di Picasso).
+ 
+*Durevolezza*: deve resistere a lungo senza danneggiarsi e senza richiedere manutenzione
+
+*Divisibilità*: deve essere facilmente divisibile per piccoli importi
+
+*Verificabilità*: occorre poter verificare l'autenticità e proteggersi dalla contraffazione
+
+*Portabilità*: devo poterle trasportare facilmente
+
+*Fungibilità*: monete dello stesso valore devono essere interscambiabili, uguali le une alle altre
+
+*Fiducia*: per essere accettata, chi la riceve come pagamento deve avere la ragionevole certezza che possa a sua volta spenderla per comprare altri beni o servizi.
+
+=== Confronto mezzi di pagamento
+La tabella sottostante, confronta vari mezzi di pagamento e ne confronta le caratteristiche.
+Sotto i voti che vanno da 1 a 5, sono espresse alcune motivazioni che hanno influenzato il punteggio
+
+[width="100%",cols="<,^,^,^,^,^",frame="topbot",options="header,footer"]
+|===============================================================================
+| |CAPRA |ORO |FIAT (contanti) |FIAT (elettronica) |BITCOIN
+| *MISURA DI VALORE* |2 |4 |5 |5 |3 -volatilità del prezzo
+| *MEZZO DI SCAMBIO* |2 |4 -non pratico |5 |5 |3 -ancora poco diffuso
+| *FONDO DI VALORE* |5 |5 |4 -inflazione |4 -inflazione |5 +incrementato valore
+| *SCARSITA’* |1 |5 |2 -inflazione |2 -inflazione |5
+| *DUREVOLEZZA* |1 |5 |4 -vanno sostituite |5 |5
+| *DIVISIBILITA’* |1 |3 -poco pratico |4 |4 |5 +micropagamenti
+| *VERIFICABILITA’* |2 |3 -complesso |4-banconote false |5 |5 +non falsificabile
+| *FISICITA’* |5 |5 |3 -materiale, ma con valore intrinseco nullo |1 
+-immateriale, valore intrinseco nullo |1 -immateriale, valore intrinseco nullo
+| *PORTABILITA’* |1 -poco pratico |4 |4 |5 +immateriale |5 +immateriale
+| *FUNGIBILITA’* |1 -tutte diverse |4 -alterazioni |5 |5 |5
+| *SICUREZZA* |3 |4 -alterazioni | 4 -banconote false | 5 |5
+| *LIBERO DA POTERE POLITICO* |5 |5 +indipendente |1 -sotto il controllo politico |
+1 -sotto il controllo politico/governativo | 5 +indipendente
+| *TRACCIABILE* |1 |1 |1 -anonimo |5 +tracciabile |3 -pseudo anonimo
+| *ANONIMATO* |5 |5 |5 +anonimo |1 -completamente tracciato |2 +pseudo anonimo
+|===============================================================================
+
+=== Inflazione e deflazione
+Tutti sanno che l’inflazione è l’aumento dei prezzi, in realtà sarebbe più corretto parlare di riduzione del potere d’acquisto della moneta. Infatti la definizione di Wikipedia dice:
+
+[quote, Wikipedia sull'inflazione]
+L’inflazione è l'aumento prolungato del livello medio generale dei prezzi di beni e servizi in un dato periodo di tempo, che genera una diminuzione del potere d'acquisto della moneta
+
+{empty} +
+
+e continua:
+
+[quote, Wikipedia sull'inflazione]
+Con l'innalzamento dei prezzi, ogni unità monetaria potrà comprare meno beni e servizi. Conseguentemente, l'inflazione è anche un'erosione del potere d'acquisto dei consumatori
+
+{empty} +
+
+La deflazione invece è il fenomeno opposto e cioè:
+
+[quote, Wikipedia sulla deflazione]
+La deflazione è una diminuzione del livello generale dei prezzi, che genera un incremento del potere d'acquisto della moneta
+
+{empty} +
+
+=== Storia della moneta
+Capire come la moneta si è evoluta nel tempo è fondamentale per poter valutare l’evoluzione che avrà in futuro. 
+Quando siamo troppo abituati ad usare qualcosa non ci chiediamo come mai la stiamo utilizzando e neppure come funzioni. Digitiamo i numeri della nostra carta di credito, senza neppure pensarci. Agli albori di internet c’era moltissima diffidenza verso i pagamenti online. Oggi sono stati sdoganati ed è stato dimostrata la loro sicurezza.
+Le truffe legate alle carte di credito clonate, nella stragrande maggioranza dei casi nascono da dipendenti infedeli che copiano manualmente o tramite pos truffaldini appositamente modificati, le carte dei clienti di un esercizio commerciale.
+
+IMPORTANT: Non affidate la vostra carta di credito ad altre persone, tantomeno ai commessi o peggio ancora ai camerieri, che potrebbero allontanarsi con la vostra carta. Quando digitate il PIN ricordatevi di farlo lontano da da occhi indiscreti.
+
+A scuola ci hanno insegnato che il commercio è nato con il baratto. In realtà la maggior parte di scambi commerciali avveniva con un’economia basata sul debito (o del dono), ovviamente di base c’era la fiducia che questo debito venisse onorato, immaginiamo un contesto familiare o vicinale. Viceversa il baratto veniva utilizzato dove questa forma di fiducia mancava. Non esistono prove storiche di economie basate principalmente sul baratto, la moneta in questo senso ha stravolto il mondo del commercio facendo crescere gli scambi in modo esponenziale. Questo libro, ad esempio, è stato distribuito gratuitamente, nella [.line-through]#certezza# speranza, che le donazioni che verranno fatte dai lettori, ripaghino lo sforzo ed i costi sostenuti per produrlo e distribuirlo.
+
+Le prime monete furono monete merci, cioè prodotti veri e propri di uso comune, che oltre al fine principale avevano anche un uso monetario: collane di conchiglie, fave di cacao, chiodi, ecc. Tutta la comunità le accettava come monete di scambio.
+
+==== VII secolo a.C.
+La prima moneta metallica, risale al VII sec. a.C è costituita di Elettro, una lega di argento ed oro. E’ stata introdotta da Fidone, un tiranno della città di Argo. Con la creazione della moneta e con l’introduzione di un sistema di misure standardizzato, riuscì ad incrementare il commercio.
+
+[.text-center]
+image:images/BMC_193.jpg[Dracma greca del VII sec, align="center"]
+
+[.text-center]
+Dracma greca del VII sec. a.C.; tratta da: https://commons.wikimedia.org/wiki/File:BMC_193.jpg
+
+Nel VI se. a.C. in seguito alla scoperta di nuove miniere d’argento in Spagna, si ebbe la prima crisi inflazionistica dovuta all’ingresso massivo di Argento nel sistema monetario.
+
+Nel III sec. d.C. si ebbe invece una grande crisi inflazionistica nell’impero romano a causa della riduzione dei metalli preziosi sostituiti da altre leghe. Gli imperatori ridussero via via la quantità di oro e metalli preziosi nelle monete sostituendoli con altre leghe. Inoltre per finanziare campagne militari coniarono nuove monete sempre più povere di metalli preziosi.
+
+==== Medioevo
+Nell’ XI secolo, i Templari organizzarono un sistema basato su note di credito, che permetteva ai pellegrini e crociati, di depositare il denaro alla partenza e ritirarlo quando giungevano a destinazione. 
+
+Nei secoli successivi i mercanti e le grandi compagnie commerciali con sedi anche molto distanti tra loro, iniziarono ad adottare un sistema analogo per evitare di trasportare l’oro nei lunghi spostamenti, con tutti i rischi che ciò comportava.
+
+Durante il medioevo, nacquero le “note di banco” (da cui derivò poi il termine banconota). Si trattava di semplici ricevute che venivano rilasciate in cambio di un deposito di oro e metalli preziosi, che davano diritto a chi le possedeva di ottenere in cambio i metalli preziosi depositati. L’uso di queste note di banco si diffuse fino al punto che la gente continuava a scambiarsi queste note di banco, e soltanto una minima parte delle persone andava a riscuotere i metalli preziosi. Qualcuno ebbe quindi la “geniale” idea di emettere nuove note di credito, senza disporre di un effettivo controvalore in metalli preziosi, creando quindi nuova moneta e  inflazione.  
+
+Nel 1343, in Toscana nascono le prima “banche”, tra cui il Monte Comune di Firenze e nel 1472 Monte dei Paschi di Siena. 
+
+Nel 1694, nasce la prima Banca Centrale, la Bank of England. Un gruppo di uomini facoltosi prestarono ingenti capitali al sovrano Guglielmo III, per finanziare lo sforzo bellico contro la Francia, in cambio della possibilità di stampare cartamoneta. Nei secoli successivi anche le altre nazioni europee crearono le proprie banche centrali, spesso proprio per finanziare sforzi bellici. In tempi di pace la convertibilità in metalli preziosi era garantita, mentre durante le guerre veniva spesso interrotta, per permettere alle banche e ai governi di stampare moneta per finanziare le guerre, generando inflazione.
+
+==== XX secolo
+Nel 1914 in Germania durante la Repubblica di Weimar si sospende la convertibilità, per finanziare lo sforzo bellico. 
+Si continua a stampare moneta fino al termine del conflitto. La quantità del denaro in circolazione era quintuplicata, mentre la controparte in oro era scesa allo 0,5 per cento. Durante la sua fase finale, nel novembre 1923, il marco valeva un bilionesimo 1/1.000.000.000.000 di quanto valesse solo pochi anni prima nel 1914. Per descrivere il fenomeno venne coniato il temine iperinflazione.
+
+Nel Luglio del 1944 i maggiori paesi industrializzati del mondo si incontrarono a Bretton Woods per concordare una serie di regole comuni per governare i reciproci rapporti monetari, alla base dei quali c’era il dollaro come moneta di interscambio tra le altre valute. Essendo convertibile in oro, tutti gli stati accettarono la proposta statunitense ( https://it.wikipedia.org/wiki/Conferenza_di_Bretton_Woods ).
+
+Nel 1971, il presidente Nixon dichiarò la fine degli accordi di Bretton Woods e la fine della convertibilità da dollaro ad oro.
+
+Negli anni successivi si registrarono gravi casi di iperinflazione in Messico: viene registrata una iperinflazione del 833% annuo, nel 2008 in Zimbabwe si arrivò al 5.473% annuo. 
+
+==== Fine anni '90
+Nel 1996 nasce E-gold; si trattava di un sito che permetteva di aprire un account e versare dollari per ottenere dei grammi di oro, non fisicamente ma registrati all’interno del proprio account. Una volta ottenuti era possibile inviarli ad altro utente del sito. Nel 2009 gli utenti attivi erano oltre 5 milioni. Nel 2006 nei momenti di picco, e-gold “spostava” l’equivalente di oltre 2 miliardi di dollari all’anno, avendo come controvalore l’equivalente di 71 milioni di dollari in oro. Il sito venne poi chiuso, e la società perseguita legalmente. Altri servizi analoghi vennero creati, nessuno però sopravvisse. L’alternativa era adeguarsi alle regole del sistema finanziario internazionale, come fece ad esempio PayPal o venire perseguiti legalmente dalle autorità
+
+Tra il 1999/2001 cresce e successivamente scoppia quella che verrà definita la “bolla delle dot.com”. La diffusione di internet, fece nascere una moltitudine di aziende che offrivano ogni sorta di servizio online. Ci fu una vera e propria corsa all’acquisto di azioni di queste società, che quindi videro la loro quotazione in borsa incrementarsi di giorno in giorno, richiamando ulteriori investitori ( https://it.wikipedia.org/wiki/Bolla_delle_dot-com ). Questa spirale perversa durò un paio d’anni ed il mercato globale raggiunse la capitalizzazione di 10.000 miliardi di dollari.
+Molte di queste aziende fallirono, molte altre sopravvissero vedendo fortemente ridimensionata la loro capitalizzazione fino a quasi scomparire, alcune nonostante il forte calo si ripresero, ed a distanza di oltre dieci anni raggiunsero nuovamente quei livelli di capitalizzazione.
+
+Nel Luglio 2007 scoppia la crisi sui mutui subprime a causa del crollo del mercato immobiliare statunitense. Molte banche avevano concesso prestiti a persone che non sonostate in grado di restituirli, sulla base di garanzie scarse o gonfiate, che sono venute meno dopo il crollo del mercato immobiliare. Questa crisi avrà un effetto contagio che coinvolgerà l’economia mondiale per gli anni a seguire.
+
+==== Nascita di Bitcoin
+E’ in questo contesto di sfiducia nelle banche e nelle istituzioni finanziare che il primo novembre del 2008, in una mailing list di crittografia, appare un post di un tale Satoshi Nakamoto (probabilmente uno pseudonimo dietro cui si cela forse un gruppo di persone), il quale annuncia di aver inventato un sistema di pagamento elettronico, basato su una rete P2P che non richiede la presenza di un'autorità centrale che svolga il ruolo di garante per le transazioni. Inizialmente l’idea non viene presa troppo sul serio, anche perché apporta delle innovazioni tecnologiche importanti e mai viste prima. Altri invece vengono incuriositi dall’idea e chiedono maggiori dettagli a Satoshi su come pensi di risolvere alcune questioni tecniche complesse. Di fronte a questa richiesta di maggiori dettagli, Nakamoto replica di non avere il tempo di fornire ulteriori dettagli, ma che è ormai più di un anno che sta lavorando al progetto e che a breve pubblicherà il software e tutto il codice sorgente con licenza open source. Un mese e mezzo dopo, pubblicherà tutto il codice sorgente su sourceforge.net, nasce il Bitcoin. Il 03/01/2017 cioè 8 anni più tardi, il Bitcoin raggiunge la quotazione di 900 $ l’uno, mentre il 03/01/2018, varrà 15.000 $, dopo aver toccato picchi di 20.000 $ durante il mese di dicembre 2017.
+

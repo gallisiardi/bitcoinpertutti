@@ -1,0 +1,157 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== La competizione tra miner
+Nel capitolo precedente abbiamo visto come i miner raccolgono le transazioni che viaggiano sulla rete Bitcoin, le verificano e le accorpano in un blocco. Dopo aver eseguito queste operazioni, i miner devono calcolare la funzione di hash di questo blocco. Un normalissimo PC casalingo, per eseguire questo calcolo, richiede pochi millesimi di secondo, ogni minuto potrebbero quindi essere generati migliaia e migliaia di blocchi da parte di ogni miner. Un così elevato numero di blocchi congestionerebbe la rete di bitcoin, infatti ogni node della rete, dovrebbe scambiare migliaia di blocchi generati con tutti gli altri nodi e viceversa.
+
+Satoshi ha quindi ideato ed implementato un sistema che permette la generazione di un solo blocco ad un solo miner,in media ogni 10 minuti, indipendentemente da quanti siano i miner connessi in quel momento alla rete. In questo modo tutti i nodi, ogni 10 minuti circa, dovranno scambiarsi reciprocamente un solo blocco e cioè un singolo file da un megabyte. Per ottenere questo risultato ha implementato una serie di regole nel protocollo bitcoin, che ora analizzeremo più nel dettaglio.
+
+=== Proof of work in Bitcoin
+Nei capitoli precedenti abbiamo visto che cos’è e a cosa serve una funzione di hash. Facciamo un breve riepilogo. Dato un determinato testo, file (o blocco),  una funzione di hash è in grado di generare in output una stringa di caratteri alfanumerici. Anche la più piccola variazione effettuata sui dati in ingresso genera in uscita una stringa completamente differente rispetto a quella generata precedentemente.
+
+```
+I am Satoshi Nakamoto0	> a80a81401765c8eddee25df36728d732acb6d135bcdee6c2f87a3784279cfaed
+I am Satoshi Nakamoto1	> f7bc9a6304a4647bb41241a677b5345fe3cd30db882c8281cf24fbb7645b6240
+I am Satoshi Nakamoto2	> ea758a8134b115298a1583ffb80ae62939a2d086273ef5a7b14fbfe7fb8a799e
+I am Satoshi Nakamoto3	> bfa9779618ff072c903d773de30c99bd6e2fd70bb8f2cbb929400e0976a5c6f4
+I am Satoshi Nakamoto4	> bce8564de9a83c18c31944a66bde992ff1a77513f888e91c185bd08ab9c831d5
+I am Satoshi Nakamoto5	> eb362c3cf3479be0a97a20163589038e4dbead49f915e96e8f983f99efa3ef0a
+I am Satoshi Nakamoto6	> 4a2fd48e3be420d0d28e202360cfbaba410beddeebb8ec07a669cd8928a8ba0e
+I am Satoshi Nakamoto7	> 790b5a1349a5f2b909bf74d0d166b17a333c7fd80c0f0eeabf29c4564ada8351
+I am Satoshi Nakamoto8	> 702c45e5b15aa54b625d68dd947f1597b1fa571d00ac6c3dedfa499f425e7369
+I am Satoshi Nakamoto9	> 7007cf7dd40f5e933cd89fff5b791ff0614d9c6017fbe831d63d392583564f74
+I am Satoshi Nakamoto10	> c2f38c81992f4614206a21537bd634af717896430ff1de6fc1ee44a949737705
+I am Satoshi Nakamoto11	>7045da6ed8a914690f087690e1e8d662cf9e56f76b445d9dc99c68354c83c102
+I am Satoshi Nakamoto12	> 60f01db30c1a0d4cbce2b4b22e88b9b93f58f10555a8f0f4f5da97c3926981c0
+I am Satoshi Nakamoto13	> 0ebc56d59a34f5082aaef3d66b37a661696c2b618e62432727216ba9531041a5
+I am Satoshi Nakamoto14	> 27ead1ca85da66981fd9da01a8c6816f54cfa0d4834e68a3e2a5477e865164c4
+I am Satoshi Nakamoto15	> 394809fb809c5f83ce97ab554a2812cd901d3b164ae93492d5718e15006b1db2
+I am Satoshi Nakamoto16	> 8fa4992219df33f50834465d30474298a7d5ec7c7418e642ba6eae6a7b3785b7
+I am Satoshi Nakamoto17	> dca9b8b4f8d8e1521fa4eaa46f4f0cdf9ae0e6939477e1c6d89442b121b8a58e
+I am Satoshi Nakamoto18	> 9989a401b2a3a318b01e9ca9a22b0f39d82e48bb51e0d324aaa44ecaba836252
+I am Satoshi Nakamoto19	> cda56022ecb5b67b2bc93a2d764e75fc6ec6e6e79ff6c39e21d03b45aa5b303a
+```
+
+Come vediamo nell'esempio modificando l'ultima cifra otteniamo degli hash completamente differenti l'uno dall'altro. 
+
+Abbiamo fatto un semplice esperimento in cui i partecipanti dovevano lanciare 10 dadi, cercando di ottenere il punteggio richiesto. Aumentando l’obiettivo, il numero di lanci necessari per ottenere il risultato atteso cresce a dismisura, fino a richiedere in media oltre 60.000.000 di lanci per ottenere il punteggio di 60. Lo stesso approccio è utilizzato nel protocollo Bitcoin per gestire i miner e la loro capacità di generare l’hash di un blocco di transazioni. Il protocollo prevede infatti che l’hash di un blocco debba iniziare con una serie di 0 (ad esempio 00000000fd45e ecc.)
+
+Statisticamente occorre effettuare 16 modifiche per riuscire a generare un output con almeno uno 0 iniziale. Nell'esempio precedente questo risultato si è ottenuto aggiungendo il numero 13 alla stringa. Ovviamente maggiore è il numero di zeri iniziali richiesti, maggiore è la quantità di funzione di hash che devono essere svolte per riuscire a trovare un risultato con queste caratteristiche. Stiamo parlando di una crescita esponenziale all’aggiunta di ogni 0 successivo al primo.
+
+Ipotizziamo di essere un miner, ed aver creato il blocco di transazioni da 1 MB, e di aver calcolato l’hash di questo blocco, ad esempio 234894d63ab80c10af9ffc382c63283175a7867c486100d901b0d2d8adcddcad.
+
+L’hash in questo caso, inizia per 2. Non rispecchia l’obiettivo di iniziare ad esempio con 10 zeri. 
+Il blocco non può quindi essere considerato valido, in quanto gli altri nodi lo ignorerebbero, deve quindi essere modificato, con l’aggiunta di un semplice numero, ad esempio “1” (in crittografia la modifica di questo valore prende il nome di NONCE)
+A questo punto il blocco è diverso da quello precedente (in quanto è stato aggiunto il carattere “1”) e genererà un hash diverso ad esempio 0074f551bcc5f6bf727ede435899a3fc7001fc352d09e0ec1258d5f8691db286e.
+Questo nuovo hash non inizia per 10 zeri, e quindi occorre incrementare in NONCE a 2 e continuare così, 
+per migliaia e migliaia di volte fino a quando non verrà generato un hash che corrisponde alle caratteristiche richieste.
+ 
+=== Hashpower e retarget
+In un'ipotetica rete composta da due soli computer, la potenza di calcolo di queste macchine non varia nel tempo. Se l'obiettivo è quello di generare mediamente un blocco ogni 10 minuti, basterà alzare o abbassare il numero di zeri all'inizio del hash del blocco, fino ad ottenere il risultato voluto. La rete Bitcoin però è aperta e chiunque può aggiungere o togliere nuovi computer che svolgono il ruolo di miner. Il livello di difficoltà quindi deve variare in funzione della potenza di calcolo dell’intera rete Bitcoin. Questa potenza di calcolo prende il nome di hashpower o hashrate. Come fare quindi a calcolare qual è effettivamente la potenza di calcolo dell'intera rete Bitcoin? Semplice, basta monitorare ogni quanto tempo vengono generati gli ultimi blocchi e fare una media, se il tempo medio ottenuto è inferiore a 10 minuti, significa che la rete sta trovando con troppa facilità nuovi blocchi e la difficoltà va aumentata (un hash del blocco dovrà avere più zeri iniziali). Viceversa se la rete impiega mediamente più di 10 minuti, significa che sono presenti meno miner, e la difficoltà deve essere diminuita  (un hash del blocco dovrà avere meno zeri iniziali). Il ricalcolo del livello di difficoltà sulla rete Bitcoin, avviene ogni 2016 blocchi, cioè ogni 2 settimane circa e prende il nome di RETARGET. Ogni software che si interfaccia alla rete Bitcoin lo può calcolare autonomamente, con un semplice calcolo matematico.
+
+=== La competizione tra i miner
+Ogni 10 minuti quindi, parte una vera e propria gara tra tutti i miner del mondo, per generare un nuovo blocco. Ognuno di essi dovrà comporre un nuovo blocco e iniziare a calcolarne l’hash fino a quando non otterrà un hash che inizi con il numero di zeri richiesti. A quel punto invierà il blocco e il relativo hash sulla rete agli altri nodi. I miner, ricevendo questo blocco, ne verificheranno la correttezza, ricalcolando l’hash del blocco. In questo caso basterà un millisecondo per verificare se il lavoro svolto dall’altro miner è corretto. Se lo è, il blocco verrà quindi accodato alla blockchain. Tutti gli altri miner interromperanno il lavoro in corso sul blocco precedente, e ricominceranno da zero, generando un nuovo blocco con nuove transazioni, calcolandone l’hash, nella speranza di trovarlo nel minor tempo possibile.
+
+Per remunerare questo sforzo computazionale, Satoshi ha previsto che ogni miner possa auto assegnarsi una certa quantità di Bitcoin prestabilita. Questa ricompensa prende il nome di coinbase ed è sempre la prima transazione di ogni blocco. Anche questa, ovviamente, è gestita e regolata da concetti matematici. Quando tutti gli altri miner verificheranno il lavoro svolto da chi ha prodotto il blocco, tra le altre cose, si accerteranno che il creatore non si sia auto assegnato più Bitcoin di quelli stabiliti dal protocollo.
+
+Il sistema adottato per l’assegnazione della ricompensa è molto semplice, ogni quattro anni circa (per l’esattezza ogni 210.000 blocchi) la quantità di Bitcoin che un miner può ottenere per la generazione di ogni blocco si dimezza.
+Dal genesis block, al blocco numero 209.999 (minato il 28-11-2012) la ricompensa è stata di 50 Bitcoin a blocco, per poi essere dimezzata a 25 bitcoin fino al blocco numero, 419.999 (minato il 09-07-2016). A partire del blocco 420.000 la ricompensa è quindi stata ulteriormente dimezzata a 12.5 e rimarrà invariata fino al blocco 630.000, che in base alle stime attuali verrà minato tra maggio e giugno del 2020, e così via fino al 2140 circa quando verrà minato l’ultimo Satoshi. Da quel momento in avanti non saranno più creati nuovi Bitcoin, essendo stato raggiunto il numero massimo stabilito dal protocollo di 21.000.000 di unità. 
+
+Questo sistema oltre a remunerare i miner detta anche la politica monetaria di Bitcoin. Infatti chiunque può calcolare l'inflazione a partire dal Genesis block fino al 2140 circa, dopo questa data la ricompensa per la generazione di nuovo blocco sarà zero. In questo momento l’inflazione, intesa come l’incremento della massa monetaria in circolazione, è di circa del 4% per l’anno 2018.
+
+Facciamo due calcoli:
+```
+525.600 (minuti ogni anno 365*24*60) diviso 10 (minuti ogni blocco) uguale 52.560 blocchi all’anno circa.
+
+Ogni blocco genera 12.5 Bitcoin di ricompensa che prima non esistevano, di conseguenza possiamo dire che a fine 2018 saranno generati nel corso dell’anno, circa 657.000 nuovi Bitcoin (52.560 blocchi per 12.5).
+
+La massa monetaria di Bitcoin in circolazione il 31/12/2017 era di circa 16.774.000 quindi facendo la proporzione
+16.774.000:657.000= 100:x abbiamo un x che vale 3,916 % (inflazione per l’anno 2018). 
+
+Per l’anno 2019, la massa monetaria sarà di circa 17.431.000 Bitcoin (16.774.000 quella a fine 2017 più i 657.000 generati nel 2018), mentre i Bitcoin generati saranno sempre circa 657.000, quindi avremo la seguente proporzione
+17.431.000:657.000= 100:x dove x vale 3,769 % (inflazione per l’anno 2018).
+
+Nel 2020 come detto nel paragrafo precedente, la quantità annua di Bitcoin generati si dimezzerà e di conseguenza l’inflazione nei 4 anni successivi andrà da circa 1,79% per il 2021 al 1,69% nel 2024.
+
+Nel quadriennio successivo si dimezzerà nuovamente, e così via fino al 2140, quando si arriverà ad un’inflazione dello 0%.
+```
+
+In realtà dobbiamo parlare di moneta deflattiva, perchè a causa di banali errori, ad esempio un miner che si dimentica di autoassegnarsi la ricompensa, oppure la perdita delle chiavi private e quindi l’impossibilità di spendere i Bitcoin, o a causa di altre procedure che permettono il salvataggio di dati nella blockchain “bruciando” Bitcoin, più passa il tempo più la quantità di moneta effettivamente in circolazione tenderà a decrescere. I dati ottenuti nei calcoli precedenti sono quindi da ritenersi stime per eccesso.
+
+[.text-center]
+image:images/inflazione.png[Inflazione di Bitcoin]
+[.text-center]
+In questo grafico in blu, con la scala sull'asse Y di destra, la quantità di Bitcoin emessa fino ad oggi e quella prevista per i prossimi anni; in rosso l'andamento dell'inflazione. Immagine tratta da:  https://bitcointalk.org/index.php?topic=130619.0
+
+
+=== Commissioni
+Oltre alla ricompensa riconosciuta ad ogni miner per la generazione di un blocco, la cosiddetta coinbase, i miner vengono remunerati con delle piccole commissioni per ogni transazione inserita in un blocco. 
+La ricompensa totale sarà quindi composta dal coinbase sommato a tutte le singole commissioni di ogni transazione inclusa nel blocco.
+
+Ogni transazione, per essere processata da un miner ed inclusa in un blocco, prevede una commissione (in inglese fee), che viene nella stragrande maggioranza dei casi, pagata da chi invia il denaro. Inserendo nel blocco ad esempio 2000 transazioni, il miner porterà a casa la coinbase più la somma di queste fee. 
+
+[.text-center]
+image:images/ricompensa.png[Ricompensa Blochi]
+[.text-center]
+Grafico delle ricompense per ogni blocco minato di Bitcoin in giallo e di Bitcoin Cash in blu.
+Immagine tratta da: https://fork.lol/reward/blocks
+
+Per ottenere maggiori guadagni, il miner darà quindi priorità alle transazioni con fee più alte. In linea di massima possiamo dire che le transazioni vengono ordinate per fee partendo da quelli con valori più alti. Sarà quindi questo ordine a stabilire quali transazioni avranno priorità nell’essere processate. 
+Essendoci un limite di 1MB per blocco, alcune transazione con meno fee, potrebbero rimanere fuori, ed entrare solamente nei blocchi successivi, quando non saranno presenti transazioni con fee maggiori.
+Il costo delle commissioni varia nel tempo, seguendo la legge della domanda e dell'offerta. Il prezzo delle commissioni non è fisso e non è legato all’importo trasferito, ma alla dimensione della transazione. 
+
+TIP: Nei periodi in cui sono presenti tante transazioni se si desidera avere priorità nell'elaborazione e quindi essere inseriti prima nei blocchi e quindi nella blockchain, occorre spendere di più in commissioni. A puro titolo di esempio, a Dicembre 2017 ci sono stati dei momenti in cui per veder confermata una transizione nel giro di qualche ora, era richiesta una commissione dell’equivalente di 50€. Viceversa nei periodi in cui sono presenti poche transazioni potrebbe bastare una commissione di pochissimi centesimi di euro. Occorre quindi monitorare l’andamento delle commissioni, soprattutto nel caso in cui sia necessario avere una conferma immediata delle transazioni in poco tempo. I wallet svolgono il calcolo della commissione per conto vostro. Monitorate questo costo con attenzione prima di eseguire la transazione. Se la cifra è piccola, valutate di cambiare BTC per altre monete, ad esempio LTC o BCH che fino a questo momento si sono dimostrate soffrire meno di questi sbalzi nei costi delle transazioni.
+
+[.text-center]
+image:images/txunconfirmed.png[Costo delle fee]
+[.text-center]
+Immagine tratta da: https://dedi.jochen-hoenicke.de/queue/#3m
+In questa immagine è possibile apprezzare il costo espresso in satoshi/Byte, tra fine novembre 2017 e metà febbraio 2018.
+
+La ricompensa del miner può quindi variare molto, inoltre essendo pagati in Bitcoin segue l'andamento del prezzo del bene stesso. A dicembre 2017 quando Bitcoin raggiunse quota 20.000 la ricompensa per ogni blocco sommando coinbase e fee (che in quel momento erano particolarmente alte), raggiungeva circa trecentomila dollari. Quindi ogni 10 minuti i miner competevano tra di loro per vincere un premio da 300.000 dollari. A febbraio 2018 con il prezzo che scese fino a 6.000 dollari, e le fee tornate a pochi centesimi a transazione, la ricompensa totale per blocco è scesa fino a circa 100.000 dollari a blocco.
+
+[.text-center]
+image:images/fee_costi.png[Confronto costo delle fee]
+[.text-center]
+Immagine tratta da: https://bitinfocharts.com/comparison/transactionfees-btc-ltc.html#6m
+I dati in alto a sinistra si riferiscono al punto evidenziato nel grafico, dove il costo medio di transazione per Bitcoin era arrivato a circa 55 $ per singola transazione, mentre LTC era inferiore ad 1 $.
+
+Con queste prospettive di guadagno è scattata una vera e propria corsa agli “armamenti”, per accaparrarsi le risorse di calcolo da destinare all'attività di mining.
+
+Negli anni si è passati da minare Bitcoin con i semplicissimi computer casalinghi, passando poi a sfruttare i processori di potenti schede grafiche, fino ad arrivare alla produzione di dispositivi hardware appositi detti ASIC.
+
+TIP: Tratto da Wikipedia: “In elettronica digitale un application specific integrated circuit (ASIC) è un circuito integrato creato appositamente per risolvere un'applicazione di calcolo ben precisa”.
+Nel nostro caso sono circuiti stampati appositamente per eseguire il calcolo della funzione di hash SHA256. Immaginate una sorta di “computer” in grado di fare esclusivamente quel calcolo, ma farlo in modo estremamente rapido, migliaia e migliaia di volte più veloce di quanto non lo possa fare il processore del vostro PC.
+
+[.text-center]
+image:images/mining_comparisation.jpeg[Confronto potenza di calcolo]
+[.text-center]
+Tratto da: https://hackernoon.com/the-future-of-machine-learning-hardware-c872a0448be8
+
+La crescita delle performance nella capacità di calcolo che c’è stata dal 2009 ad oggi è di tipo esponenziale. Oggi minare un blocco Bitcoin con un PC casalingo richiederebbe centinaia e centinaia di anni, anche perché la potenza di calcolo dell'intera rete Bitcoin è cresciuta a dismisura, quindi la competizione tra i miner è diventata elevatissima.
+
+[width="100%",cols="<,>",frame="topbot",options="header,footer"]
+|===
+| TECNOLOGIA | CAPACITA' DI CALCOLO
+| CPU Singola | 1
+| CPU Multi-core | 10
+| GPU (scheda video) | 100
+| FPGA | 1.000
+| ASIC (hardware dedicato) | 10 000 ~ 1 000 000
+|===
+
+[.text-center]
+Tratta da: https://hackernoon.com/the-future-of-machine-learning-hardware-c872a0448be8
+[.text-center]
+In questa tabella la comparazione delle varie tecnologie, utilizzando come unità di misura la potenza di calcolo di una CPU con unico core. 
+
+Questi dispositivi sono energivori, vanno quindi considerati i costi del consumo elettrico per alimentare l’hardware e quelli per dissipare il calore. Diventa quindi più profittevole minare dove l'energia costa poco. Ad agosto 2017 è stato stimato che il consumo totale di energia da parte della rete Bitcoin fosse equiparabile al consumo dell'intera Tunisia. Questo consumo elettrico imponente, garantisce che nessuno possa modificare il contenuto dei blocchi, perché per farlo, occorrerebbe una quantità di energia almeno doppia rispetto a quella utilizzata attualmente dalla rete Bitcoin. Per approfondimento l'argomento vi consiglio questo interessante articolo: https://aspoitalia.wordpress.com/2017/08/22/bitcoin-la-catastrofe-ecologica/

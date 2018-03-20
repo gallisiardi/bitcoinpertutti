@@ -1,0 +1,45 @@
+#stili per il PDF
+
+font:
+  catalog:
+    OpenSans:
+      normal: OpenSans-Regular.ttf
+      italic: OpenSans-Italic.ttf
+      bold: OpenSans-Bold.ttf
+      bold_italic: OpenSans-BoldItalic.ttf
+      
+link:
+  font_color: 428bca
+  
+heading:
+  font_family: OpenSans      
+      
+base:
+  align: justify
+  font_color: #333333
+  font_family: OpenSans
+  font_size: 12
+  line_height_length: 17
+  line_height: $base_line_height_length / $base_font_size
+
+page:
+  background_color: ffffff
+  layout: portrait
+  margin: [0.75in, 0.75in, 0.75in, 0.75in]
+  size: A4
+
+header:
+  height: 0.75in
+  line_height: 1
+
+footer:
+  height: 0.75in
+  line_height: 1
+  border_color: dddddd
+  border_width: 0.25
+  recto:
+    right:
+      content: '{chapter-title} | *{page-number}*'
+  verso:
+    left:
+      content: '*{page-number}* | {chapter-title}'

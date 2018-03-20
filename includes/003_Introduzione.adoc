@@ -1,0 +1,62 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Introduzione
+
+I contenuti di questo libro verranno trattati in modo semplificato per rendere la lettura fruibile a tutti. Questo libro è pensato per spiegare Bitcoin e tutto ciò che ci ruota attorno, a chi non ne sa nulla. Se siete degli informatici, probabilmente la trattazione di questo libro non è ciò che state cercando. Qui non troverete pezzi di codice o riferimenti a librerie per lo sviluppo di software. Per chi volesse approfondire questi argomenti vi consiglio di leggere Mastering bitcoin di Andreas Antonopoulos, di cui è disponibile gratuitamente una versione in italiano in formato PDF qui https://gallisiardi.github.io/bitcoinbook-italian-translation/ alla quale ho contribuito personalmente sia in qualità di traduttore che di revisore.
+
+I Bitcoin sono una moneta elettronica, generata mediante una serie di regole matematiche e crittografiche (da qui il termine crittovaluta) condivise ed accettate dagli utilizzatori. A differenza dell’euro e del dollaro, il Bitcoin NON è emesso né garantito da un’autorità statale, il suo valore NON è regolato con l’emissione di nuova moneta da nessuna banca centrale, ma definito in modo libero dalla legge della domanda e dell’offerta. Si può quindi affermare con certezza che il valore del Bitcoin corrisponde a quanto il mercato in quel momento è disposto a spendere per acquistarlo, sostanzialmente come qualunque altro prodotto di libera produzione e commercializzazione.
+
+Il numero di Bitcoin attualmente in circolazione è di circa 17.000.000. Tramite una serie di regole matematiche prestabilite, saranno generati 21.000.000 BTC (BTC è la sigla per Bitcoin), avendo quindi un’inflazione predeterminata e calcolabile da chiunque. Ogni Bitcoin può essere diviso in 100.000.000 Satoshi (dal nome del suo creatore, Satoshi Nakamoto), così come un Euro può essere diviso in 100 centesimi. Se un Bitcoin vale ad esempio 10.000 € ogni Satoshi varrà 0,0001 Euro.
+
+Siamo in una fase in cui moltissime persone si chiedono come fare a comprare e vendere Bitcoin e le altre crittovalute, spinti dalla voglia di fare guadagni facili, poche invece sono interessate a comprendere come questo sistema funzioni. Il libro, oltre a spiegare il funzionamento tecnico, approfondirà anche alcuni aspetti finanziari, senza ovviamente fornire consigli su quali monete acquistare o su come fare trading sulle crittovalute. Lo scopo del libro è puramente divulgativo, non vuole essere un invito ad investire in Bitcoin o in crittovalute, ma un mezzo con cui capire i meccanismi che regolano questo sistema e di conseguenza il suo mercato.
+
+Molto spesso sui mass media, Bitcoin è associato a concetti quali: “è una bolla speculativa” “è uno Schema Ponzi” “i Bitcoin non esistono sono solo una serie di numeri”, “vengono usati dei criminali per traffici illeciti”, “siamo contrari al Bitcoin ma favorevoli della blockchain”, ecc
+Nei prossimi capitoli, andremo a confutare queste affermazioni, analizzando punto su punto i meccanismi interni del sistema, fornendo al lettore i mezzi per comprendere quali di queste affermazioni sono corrette e quali no. L’argomento crittovalute è molto ampio e non può essere trattato in modo esaustivo da questo libro, soprattutto per un settore così complesso e con un così forte grado di innovazione tecnologica. 
+
+Molte persone sono spaventate dall’argomento, credo perchè non ne conoscano il funzionamento o perchè spesso viene presentato loro come una sistema complesso, difficile da capire, ecc. Ciò che non conosciamo ci mette paura, fino a quando non iniziamo ad usarlo, poi diventa la normalità e non ci facciamo neppure più caso. Prendiamo ad esempio Internet, oggi chiunque di noi non ne potrebbe più farne a meno, e solo quando ci ritroviamo in zone senza copertura, ci rendiamo conto di quanto ormai ne siamo dipendenti (messaggistica, navigatore satellitare, news, meteo, ecc.). Eppure quanti tra gli utilizzatori conoscono come funziona internet a livello tecnico? Probabilmente solo una piccolissima parte di addetti ai lavori.
+
+La grande innovazione portata avanti da Bitcoin e dalle altre crittovalute deve essere considerata non una rivoluzione tecnologica, ma un cambio di paradigma. Si tratta di un cambiamento fondamentale nei concetti di base e nelle pratiche sperimentali di una disciplina scientifica. In queste fasi di transizione è difficile fare previsioni sia positive che negative; a titolo di esempio vi riporto alcune affermazioni fatte da persone affermate in determinati settori che si sono state clamorosamente disattese. Ci tengo a precisare che si trattava di gente con competenze specifiche del settore:
+
+{empty} +
+{empty} +
+
+[quote,1876: Sir William Preece ingegnere capo delle Poste Britanniche,]
+Gli americani hanno bisogno del telefono; noi no. Abbiamo fattorini in abbondanza
+
+{empty} +
+{empty} +
+
+[quote,1943: Thomas J. Watson Jr in seguito diventato presidente dell'IBM,]
+Penso che ci sia richiesta mondiale per circa cinque computer
+
+{empty} +
+{empty} +
+
+[quote,1977: Kenneth Olsen fondatore della Digital Equipment Corporation,]
+Non c'è motivo per un privato di avere un computer in casa propria
+
+{empty} +
+{empty} +
+
+[quote,1996: Robert Metcalfe fondatore della 3Com inventore dello standard Ethernet per le reti informatiche locali,]
+Internet... ben presto esploderà in modo spettacolare, come una supernova, e nel 1996 collasserà catastroficamente
+
+{empty} +
+{empty} +
+
+Trovate altre citazioni simili ed ulteriori dettagli sul sito: https://attivissimo.blogspot.it/2012/05/frasi-celebri-da-rimangiare.html
+
+Queste persone avevano competenze specifiche in materia eppure hanno sbagliato la loro previsione in modo eclatante. Questi sono veri e propri cambi di paradigma difficili da valutare anche dagli addetti ai lavori.
+
+Personalmente non posso dire dove arriveranno le crittovalute tra 10 anni, nessuno può dirlo con certezza, certamente hanno le potenzialità per cambiare radicalmente il modo con cui usufruiamo di molti servizi finanziari e non solo, potrebbero addirittura stravolgere alcune istituzioni economiche e politiche che ora ci appaiono indispensabili, fino ad arrivare a rivoluzionare completamente il sistema economico internazionale.
+

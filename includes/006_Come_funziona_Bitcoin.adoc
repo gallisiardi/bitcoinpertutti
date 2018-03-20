@@ -1,0 +1,134 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== Come funziona Bitcoin
+Vediamo ora come funziona il Bitcoin; partiamo con degli esempi molto semplici e poi andiamo a approfondire i singoli concetti alla base del sistema.
+
+=== Aprire un conto
+Alice deve ricevere da Bob €10. Negli ultimi mesi ha sentito parlare di Bitcoin, e sa che Bob ne possiede, decide quindi di farsi pagare con questa nuova moneta. Per ricevere i Bitcoin occorre avere un “posto” dove farseli inviare, in sostanza le serve l'equivalente di un conto corrente ed il suo relativo IBAN, in modo da potere comunicare a Bob le coordinate a cui inviare il denaro.
+
+La prima grande novità rispetto al sistema bancario tradizionale è che per aprire un nuovo “conto corrente” per ricevere Bitcoin, non serve il permesso di nessuno, basta scaricarsi una semplice app. Questo fa sì che chiunque possa crearsi uno o più “conti correnti”, in modo gratuito, senza costi fissi di gestione, senza richiedere l'autorizzazione a nessuno, senza dover fornire alcun dato, neppure un indirizzo e-mail. Le App che permettono di aprire e gestire i pagamenti in crittovalute vengono chiamate wallet che in inglese significa portafogli.
+
+TIP: Non è corretto considerarle dei portafogli di Bitcoin, in quanto i wallet contengono esclusivamente i codici di accesso al conto corrente, e non i Bitcoin. Infatti è possibile installare l’app su più dispositivi, e in tutti questi vi verrà mostrato il medesimo saldo. Se viceversa acquistate 10 portafogli, le banconote potranno essere depositate solo in uno di questi. I wallet sono dei portachiavi, permettono di “tenere assieme” un certo numero di chiavi che ci permettono di spendere i nostri Bitcoin.
+
+Alice quindi procede con il download dell'app sul proprio smartphone. Quando l’app viene eseguita per la prima volta, propone una serie di 12 parole (alcuni wallet ne richiedono 24). Queste servono per generare la chiave privata, che come abbiamo illustrato in precedenza, è un codice alfanumerico fondamentale per poter crittografare i dati. Alice dovrà semplicemente scriverle su un foglio di carta e ridigitarle all’interno dell’app quando verrà richiesto.
+
+Proviamo a eseguire passo a passo l'installazione e backup del wallet scaricato da bitcoin.com. Si tratta di un wallet che permette di gestire sia i Bitcoin (BTC) che i Bitcoin Cash (BCH), lo potete scaricare gratuitamente dal sito bitcoin.com. Ho scelto questo, per la  semplicità di utilizzo e per le istruzioni passo a passo presenti all'interno dell'app. Altri wallet adottano procedure molto simili.
+
+[.text-center]
+image:images/wallet12.png[Installazione Wallet,400]
+
+Nel primo screenshot troviamo la schermata di benvenuto, che ci invita a creare un nuovo portafoglio. Proseguendo verrà visualizzata la seconda schermata che mostra i due wallet BCH e BTC, ovviamente avranno entrambi con saldo 0.
+
+[.text-center]
+image:images/wallet34.png[Installazione Wallet,400]
+
+Selezionando il portafoglio Bitcoin (BTC) apparirà la schermata di sinistra, con i dettagli e le impostazioni del singolo portafoglio. Prima di proseguire è *fondamentale* effettuare il backup della chiave privata, per farlo, andare in Impostazioni, cliccare sul portafoglio di cui si desidera creare il backup e successivamente cliccare su "backup necessario". L'app vi mostrerà quindi un elenco di 12 parole, prendete nota su un pezzo di carta, facendo molta attenzione a non commettere errori ed a rispettare il corretto ordine.
+
+[.text-center]
+image:images/wallet56.png[Installazione Wallet,400]
+
+A questo punto l'app vorrà verificare che abiate eseguito il backup su carta, e vi chiederà di selezionare le 12 parole, per ricreare la medesima lista generata nella schermata precedente. Terminato il controllo, l'app confermerà il buon esito dell'inserimento e sarà quindi possibile iniziare ad utilizzare il wallet. 
+
+CAUTION: E’ buona norma, farne subito una duplice copia, in modo da poter conservare in modo sicuro, magari in due posti differenti, i due foglietti. Chiunque abbia a disposizione questo parole, potrà accedere ai vostri bitcoin.
+
+Con questa chiave Alice, o chiunque entri in possesso di questo elenco di parole, potrà accedere al conto e disporre dei fondi in esso contenuti, da qualsiasi PC, cellulare o tablet sul quale sia installato un wallet Bitcoin. Nel caso le venisse rubato il telefono, basterà installare nuovamente l'app sul nuovo dispositivo e inserire le famose 12 parole. Il ladro potrebbe però eseguire l’app e avere quindi il controllo dei fondi di Alice. Molti wallet permettono di inserire un pin, per impedire che un malintenzionato possa utilizzare l’app senza il consenso del proprietario. In caso di furto o smarrimento, è comunque buona norma, creare una nuovo conto e trasferire tutti i fondi dal vecchio conto (che potrebbe essere stata compromesso) al nuovo.
+
+WARNING: A differenza di ciò che accade per le banche o per dei semplici account on-line, dove, in caso di perdita delle password, è possibile fare una procedura di recupero, in questo caso la perdita delle 12 parole comporta la perdita totale di tutti i Bitcoin ad essi collegati. Non esiste  un centro assistenza, perchè non esiste più un intermediario. Siete voi la vostra banca. Questa è un'altra grande innovazione che garantisce grandissima libertà, ma ovviamente comporta anche grandi responsabilità e cognizione di causa. Dovete preoccuparvi voi stessi della sicurezza in modo diretto; se non lo fate, mettete a rischio il vostro denaro e nessuno potrà ridarvelo indietro.
+
+Alice ha quindi scritto su un pezzo di carta le 12 parole e, come indicato dall’app, le ha inserite nuovamente. Questo passaggio è richiesto per essere certi che le parole siano state scritte senza errori e nell’ordine corretto. Se anche solo uno dei caratteri è diverso (ricordate la funzione di hash?), o l’ordine delle parole è diverso, l’app non le accetterà, meglio vi creerà un nuovo portafoglio con bilancio zero. Se viceversa le parole inserite sono corrette Alice accederà al suo conto che ovviamente, al primo accesso, avrà saldo zero. Il tempo richiesto per questa operazione è di circa 5 minuti. 
+
+Esistono moltissime app che possono fare da wallet per Bitcoin. Vista la delicatezza dell'argomento e la sicurezza che esse richiedono è fondamentale accertarsi di non scaricare la prima app che capita. Per gestire i vostri Bitcoin, affidatevi a soluzioni sicure, Open Source (il codice di programmazione è pubblico e chiunque può verificare come funziona l’app), ampiamente utilizzate e recensite da moltissimi utenti. Il rischio è quello di scaricare un app “farlocca” nata con il solo scopo di rubarvi le famose 12 parole e quindi poter disporre dei vostri Bitcoin. Siete voi la vostra banca, ricordatelo sempre. Nessuno a parte voi, deve avere la vostra chiave privata.
+
+=== Gli indirizzi
+Entrando nell'app sarà possibile visualizzare il proprio address, cioè l’indirizzo al quale è possibile farvi inviare Bitcoin. E’ l'equivalente dell'IBAN per un conto corrente bancario tradizionale.
+Si tratta di una stringa di lettere e numeri, per praticità viene visualizzata a video con un QR Code come quello riportato nella figura sottostante.
+
+[.text-center]
+image:images/qrcode_donazione_btc.jpg[QRCODE donazione btc, 300]
+[.text-center]
+Quello sopra riportato, ad esempio, è il QR Code del mio indirizzo Bitcoin: 13t6zL7Z7pqoW3wL3jpbqKUMWYNVduX118
+
+Se il libro vi sta piacendo, potete scansionare il QR Code con il vostro wallet, indicare la cifra in Bitcoin equivalente ad 1 € e confermare l’invio. Donandomi un euro, potete fare pratica con il wallet ed io potrò verificare l’apprezzamento del libro da parte dei lettori. Se il tempo da me impegnato a scrivere questo libro sarà stato ripagato, sarò più incentivato a scriverne altri e a renderli pubblicamente disponibili a chiunque in forma gratuita.
+
+Il compito del QR code è evitare di dover eseguire manualmente l’operazione di lettura e digitazione dell’address che porterebbe a compiere errori di battitura e di conseguenza a non ricevere i fondi.
+
+Per inviare l'equivalente di € 10, Bob non dovrà far altro che far scansionare il QR Code di Alice, indicare l’importo che desidera trasferire, e confermare la volontà appunto, di voler trasferire i fondi.  Se Bob non è fisicamente accanto ad Alice, può farsi inviare l’address via E-mail, WhatsApp, Facebook o qualsiasi altro sistema. Bob lo copierà e lo inserirà nella proprio wallet come destinatario a cui inviare il denaro. Nel giro di pochi secondi Alice vedrà sul proprio smartphone la transazione di Bob. In realtà per avere la certezza matematica occorre attendere almeno un paio di “conferme”. Approfondiremo nei prossimi paragrafi questo argomento.
+
+Alice si ritroverà quindi con l’equivalente in Bitcoin di € 10, e potrà spenderli per acquistare prodotti e servizi o per scambiare denaro con lo stesso Bob o con altri amici e conoscenti.
+
+Sostanzialmente se due persone sono nello stesso luogo, devono semplicemente lanciare le rispettive app. Chi deve ricevere il pagamento deve mostrare l’address in formato QR Code a chi deve effettuare il pagamento, che non deve far altro che fotografarlo con il proprio wallet, indicare la cifra e confermare la volontà di effettuare il pagamento.
+
+[.text-center]
+image:images/funzionamentobitcoin.png[Funzionamento di base di Bitcoin]
+
+Se le due persone non sono fisicamente vicine, il ricevente dovrà inviare l'address in formato testuale via e-mail, via chat o in qualsiasi altro modo. Per assurdo potrebbe stampare il QR Code su un foglio e inviarlo tramite posta tradizionale. È possibile creare un’immagine del proprio QR code ed inviarla via e-mail, WhatsApp o tramite altri sistemi, anche se solitamente si preferisce sfruttare le stringhe testuali in questi casi, per una maggior comodità di copia e incolla, molto più pratici ad esempio se si sta usando il PC.
+
+Ora che abbiamo visto un tipico caso di pagamento, scendiamo nel dettaglio di come tutto ciò avvenga tecnicamente e di quali soluzioni sono state adottate per evitare che Alice o Bob o una terza persona possano accreditarsi o spendere più Bitcoin di quelli che in realtà possiedono.
+
+=== Le transazioni
+Una transazione è il semplice trasferimento tra due persone (ognuna con il suo address), di una determinata quantità di Bitcoin.
+Ogni volta che il wallet esegue un operazione di pagamento, la quantità di Bitcoin, l’address di partenza e quello di destinazione vengono inglobati in una transazione che successivamente viene immessa nella rete Bitcoin. Come abbiamo visto in precedenza, si tratta di una rete distribuita P2P; nel giro di pochi secondi tutti i nodi della rete riceveranno la transazione, contenente l’informazione che potremo parafrasare in questo modo: trasferire 0.001 Bitcoin dall’address 1Aq78kKWfSJ... all’address 1PGWeexxucf... . Grazie alla crittografia, come abbiamo visto in precedenza, è possibile firmare queste informazioni, in modo da poter garantire che gli 0.001 Bitcoin che Bob sta mandando ad Alice siano effettivamente di proprietà di Bob e che a sua volta li abbia precedentemente ricevuti da un altro utente, e così via.
+
+[.text-center]
+image:images/transazione.png[Transazione]
+
+Nell’immagine vediamo Alice mostrare a Bob il proprio QR CODE. Bob, dopo averlo fotografato con il suo smartphone, digiterà l'importo in euro o in Bitcoin che desidera trasferire ad Alice e confermerà l'operazione. Nasce così una nuova transazione che possiamo riassumere tradurre così: "dall'address di Bob devono essere trasferiti 0.001 Bitcoin all'address di Alice". La transazione viene inviata dallo smartphone di Bob nella rete P2P di Bitcoin, e nel giro di pochi istanti viene trasferita a tutti i nodi connessi, tra cui anche il tablet di Alice, che a quel punto vedrà la transazione di Bob. 
+
+CAUTION: I Bitcoin non sono ancora nella disponibilità di Alice, per ora, la transazione deve essere considerata come "in lavorazione" o "in corso". Vedremo nei paragrafi successivi quando Alice potrà avere effettivamente la disponibilità di questi fondi. 
+
+[.text-center]
+image:images/transazione_explorer.png[Transazione visualizzata tramite explorer]
+[.text-center]
+Nell’immagine vediamo la struttura della transazione così come viene mostrata dal sito: https://blockchain.info/it/
+
+In questa immagine è riportata una transazione che invia da un address 6,5 bitcoin ad un altro address e 0.57 ad un altro address. In ogni transazione possono esserci più input e più output. Ipotizziamo di aver ricevuto in passato 10 BTC con 10 transazioni differenti ognuna da 1 BTC. Se dobbiamo eseguire un pagamento di 9,5 BTC, la transazione che il nostro wallet creerà avrà come INPUT le 10 transazioni da 1 BTC, e 2 transazioni di OUTPUT, una da 9,5 verso chi dobbiamo pagare ed una da 0,5 BTC verso noi stessi, come resto. Più input ed output sono presenti nella transazione, più lo spazio occupato dalla transazione aumenta. Questo parametro è importante per calcolare i costi di commissione che chi paga dovrà sostenere per inviare la transazione. Approfondiremo questo aspetto nel capitolo successivo, per ora accontentiamoci di sapere che ogni transazione che immettiamo nella rete Bitcoin richiede un piccolo costo di commissione.
+
+=== I miner
+I miner raccolgono, analizzano e aggregano le transazioni che viaggiano sulla rete peer to peer di Bitcoin. Il loro compito è quello di verificare le singole transazioni, controllando che la firma crittografica di ognuna sia valida e che quindi i Bitcoin che si stanno spendendo appartengano effettivamente alla persona che sta cercando di trasferirli. Tutte le transazioni valide vengono quindi inserite in un blocco, che non è altro che un insieme di transazioni. A questo punto il miner deve calcolare la funzione di hash del blocco, che come abbiamo visto in precedenza, ha lo scopo di garantire che questo insieme di transazioni non subisca modifiche. Nel caso ciò avvenisse, la funzione di hash del blocco genererà un output differente, e tutti potranno verificarlo ed accorgersi che qualcosa è stato modificato.
+Il miner trasmetterà quindi il blocco e il relativo codice hash, sulla rete Bitcoin e tutti gli altri nodi nel giro di alcuni secondi lo riceveranno. A questo punto i nodi dovranno leggere il contenuto del blocco, calcolare che l’hash sia corretto, altrimenti il blocco sarà scartato dal sistema in quanto non rispetta il protocollo. Oltre a controllare il blocco nel suo complesso, i nodi aprono il blocco e controllano la correttezza di ogni singola transazione.
+
+[.text-center]
+image:images/miner.png[Miner]
+[.text-center]
+Nell’immagine vediamo come i miner, raccolgano le transazioni che circolando sulla rete Bitcoin, per aggregarle in un blocco, che a sua volta viene distribuito sulla rete peer to peer. 
+
+=== La blockchain
+La blockchain è un insieme di blocchi accodati l’uno all'altro. Una transazione si dice confermata quando il blocco che la contiene viene accodato alla blockchain. Ogni blocco successivo a quello contenente la transazione costituisce un‘ulteriore conferma. Maggiore è il numero di conferme, maggiore è la sicurezza che questa transazione sia sicura ed immutabile. Una transazione viene comunemente considerata immutabile dopo 6 conferme. Per piccoli importi normalmente viene ritenuta sufficiente una sola transazione.
+
+CAUTION: Fino a quando la transazione non è inserita nella blockchain, e confermata da una serie di blocchi, non si ha la matematica certezza di poter disporre dei fondi. La transazione potrebbe infatti essere stata generata per spendere dei fondi che in realtà Bob non ha a disposizione. 
+
+Immaginate un treno in cui ogni vagone, oltre ad avere la propria targa, riporta l'indicazione della targa del vagone che lo precede. Quindi il primo vagone avrà la propria targa e riporterà l’indicazione della targa della motrice. Il secondo vagone avrà la propria targa e riporterà la targa del primo vagone, ecc. Queste targhe sono in realtà le funzioni di hash dei singoli blocchi. Chiunque possiede i vagoni, anche se questi sono stati mescolati in un ordine casuale, può ripristinare l’ordine corretto a partire dalla motrice. La motrice nel caso della blockchain di Bitcoin prende il nome di "Genesis Block", il blocco da cui tutto ebbe inizio il 3 gennaio del 2009. Attaccato a questo blocco sono stati aggregati ad oggi oltre 500.000 blocchi, in media uno ogni 10 minuti.
+
+[.text-center]
+image:images/blockchain.png[Blockchain]
+
+Nell'immagine possiamo vedere come il Blocco 1 contenga al suo interno, la funzione di hash del Blocco 0, rappresentato con la lettera G (in realtà l'output della funzione è una stringa di 64 caratteri). Nel Blocco 2, oltre alle nuove transazione sarà presente l'hash del Blocco 1, rappresentato con la lettera B, e così via.
+
+In questo modo tutte le transazioni in Bitcoin, da quando questo è stato creato, sono archiviate nella Blockchain, che è quindi un grandissimo libro mastro, composto dall’archivio completo di tutte le transazioni che sono state realizzate in Bitcoin dal 2009 ad oggi. Parliamo di oltre 150 GB di dati, in continua crescita.
+
+Qui sfatiamo uno dei tanti miti che circolano in rete e sui mass media: “Bitcoin è anonimo”
+La definizione corretta è PSEUDOANONIMO, in quanto non c’è una correlazione diretta tra gli address e un persona, però tutte le transazioni di un singolo address sono visibili a chiunque. E’ come se chiunque potesse accedere ai nostri conti correnti bancari, vedere ogni singola transazione, il saldo, ecc. Non esiste una connessione tra il conto corrente e la persona. Se ad esempio Alice volesse, può in modo semplice, risalire tramite l’address da cui ha ricevuto i Bitcoin, a tutte le transazioni che Bob ha fatto con quel conto, e a quanto ammonta il suo saldo su quello specifico address. I siti che permettono di consultare la blockchain si chiamano BLOCK EXPLORER o semplicemente EXPLORER; nei prossimi capitoli ne descriveremo in modo dattagliato il funzionamento.
+
+=== I blocchi
+I blocchi sono un insieme di transazioni, che vengono accorpate in un unico "file". Il protocollo della rete Bitcoin stabilisce che ogni blocco non può avere dimensione superiore ad 1 MB (megabyte), che equivale circa a 3.000 transazioni. Immaginate il blocco come una cartella sul pc dove potete inserire i vostri file (le transazioni). Questa cartella può arrivare a pesare al massimo un megabyte. Ogni blocco è accompagnato dal proprio hash, ovvero da quella stringa alfanumerica generata dalla funzione di hash. I blocchi vengono quindi creati e distribuiti sulla rete Bitcoin dai miner.
+
+[.text-center]
+image:images/Blocco.png[Blocco]
+[.text-center]
+Nell’immagine vediamo la struttura del blocco così come viene mostrata dal sito: https://blockchain.info/it/block/0000000000000000004b049bdffd3982fa669f8567c2dd0088bae4660fd185bf In alto a sinistra il numero del blocco, preceduto dal cancelletto, nella tabella sottostante tutti i dati relativi al blocco. In alto a destra l’hash del blocco seguito da quello del blocco precedente e di quello successivo. Nella parte inferiore inizia la lunga lista delle transazioni. 
+
+Proviamo ora a riepilogare i vari passaggi che avvengono da quando creiamo una nuova transazione con il nostro wallet, fino a quando questa viene scritta nella blockchain.
+
+Tramite l’utilizzo del wallet gli utenti generano transazioni ogni volta che eseguono un pagamento. Queste transazione vengono immesse dal wallet, nella rete Bitcoin. La rete è l’interconnessione di tutti i dispositivi che utilizzano Bitcoin principalmente wallet e miner. Le transazioni vengono quindi raccolte, verificate e accorpate dai miner in blocchi. Assieme al blocco viene generata la funzione di hash che permette di verificare che il blocco non subirà variazioni, altrimenti ciò comporterebbe una variazione del suo hash. Ogni blocco viene quindi nuovamente immesso nella rete peer to peer di Bitcoin dove i nodi lo ricevono, lo verificano e lo accodano alla blockchain, che di fatto è un unico grande file con all’interno tutte le transazioni in bitcoin da quando questo è nato ad oggi.
+
+Tutto chiaro fino a qui? E’ importante comprendere bene i concetti descritti in questo capitolo in quanto sono la base del funzionamento del Bitcoin. Se hai qualche dubbio, prenditi il tuo tempo e rileggi questo capitolo con calma, prima di proseguire. A prima vista può sembrare un sistema complesso, ma in realtà, compresi i ruoli dei singoli soggetti che operano sulla rete, e avendo preso dimestichezza con i termini tecnici, il tutto si dimostrerà molto più semplice di quanto possa sembrare dopo una prima lettura.

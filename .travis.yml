@@ -1,0 +1,37 @@
+sudo: required
+
+services:
+  - docker                  
+
+before_install:            
+  - mkdir -p output
+  - docker pull asciidoctor/docker-asciidoctor
+
+script:
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -D /documents/output *.adoc -a stylesheet=base-style.css -a stylesdir=resources/themes
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor asciidoctor-pdf -D /documents/output *.adoc -a pdf-stylesdir=resources/themes -a pdf-style=base -a pdf-fontsdir=resources/fonts
+
+after_error: 
+  - docker logs asciidoc-to-html
+  - docker logs asciidoc-to-pdf
+
+after_failure:
+  - docker logs asciidoc-to-html
+  - docker logs asciidoc-to-pdf
+
+after_success:      
+  - cd output ; mv ../index.html index.html ; cp -R ../images images ;  cp -R ../resources resources
+  - git init
+  - git config user.name "${GH_USER_NAME}"
+  - git config user.email "{GH_USER_EMAIL}"
+  - git add . ; git commit -m "Deploy to GitHub Pages"
+  - git push --force --verbose "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+  - md5sum Bitcoin_per_tutti.pdf > MD5_Bitcoin_per_tutti_pdf.txt
+  - md5sum Bitcoin_per_tutti.html > MD5_Bitcoin_per_tutti_html.txt
+  - cat MD5_Bitcoin_per_tutti_pdf.txt
+  - cat MD5_Bitcoin_per_tutti_html.txt
+  - ls -l
+  - curl -T Bitcoin_per_tutti.pdf -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+  - curl -T MD5_Bitcoin_per_tutti_pdf.txt -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+  - curl -T Bitcoin_per_tutti.html -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+  - curl -T MD5_Bitcoin_per_tutti_html.txt -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
