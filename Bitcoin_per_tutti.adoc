@@ -5,12 +5,6 @@
 :contatti: https://www.bitcoinpertutti.org/contatti.php
 :donazioni: https://www.bitcoinpertutti.org/donazioni.php
 :donazioneaddress: 13t6zL7Z7pqoW3wL3jpbqKUMWYNVduX118
-:donazioneqrcode: 
-:revisori:
-:grafico:
-:graficolink:
-:fiscalista:
-:fiscalistalink:
 
 ifdef::env-github[]
 :tip-caption: :bulb:
