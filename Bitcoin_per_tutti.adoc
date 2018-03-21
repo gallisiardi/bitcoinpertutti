@@ -36,7 +36,7 @@ v 0.0.1, {docdate}: Bozza
 :toc:
 :toc-title: Indice
 :toclevels: 2
-:preface-title: _
+:preface-title: .
 
 {empty} +
 {empty} +
