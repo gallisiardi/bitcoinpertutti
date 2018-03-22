@@ -31,7 +31,7 @@ after_success:
   - cat MD5_Bitcoin_per_tutti_pdf.txt
   - cat MD5_Bitcoin_per_tutti_html.txt
   - ls -l
-  - curl -H transfer-encoding:chunked -T Bitcoin_per_tutti.pdf -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
-  - curl -H transfer-encoding:chunked -T MD5_Bitcoin_per_tutti_pdf.txt -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
-  - curl -H transfer-encoding:chunked -T Bitcoin_per_tutti.html -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
-  - curl -H transfer-encoding:chunked -T MD5_Bitcoin_per_tutti_html.txt -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+#  - curl -H transfer-encoding:chunked -T Bitcoin_per_tutti.pdf -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+#  - curl -H transfer-encoding:chunked -T MD5_Bitcoin_per_tutti_pdf.txt -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+#  - curl -H transfer-encoding:chunked -T Bitcoin_per_tutti.html -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
+#  - curl -H transfer-encoding:chunked -T MD5_Bitcoin_per_tutti_html.txt -u $FTP_USER:$FTP_PASS ftp://ftp.bitcoinpertutti.org/bitcoinpertutti.org/download/
