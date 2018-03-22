@@ -19,8 +19,11 @@ Una buona idea può essere quella di stampare su un semplicissimo foglio di cart
 Potrebbe essere saggio condividere con una persona *fidata* ad esempio il vostro partner, la prima metà della vostra chiave privata (le prime 6 parole), mentre condividere con altri, ad esempio i vostri genitori, la seconda parte (le successive 6 parole). In questo modo, anche in caso di una vostra eventuale prematura dipartita, queste persone possono entrare in possesso dei vostri Bitcoin per cederli ai vostri figli o a chi ne ha diritto. Se non lo fate perché siete scaramantici, meglio per noi, in quanto i vostri Bitcoin rimarranno bloccati sulla blockchain e creeranno ulteriore deflazione e quindi incrementando il valore di quelli in nostro possesso.
 
 Esistono wallet in grado di gestire portafogli multifirma, che funzionano allo stesso modo dei conti correnti bancari con più firmatari. Sono possibili diverse configurazioni, ad esempio:
+
 - conto con due firme in cui per muovere i fondi sono necessarie entrambe le firme
+
 - conto con due firme in cui per spostare i fondi è necessaria una sola firma
+
 - conto con più firme in cui è possibile decidere quante firme, siano necessarie per spendere i Bitcoin, ad esempio è possibile creare un portafoglio 5 di 7, cioè un wallet in cui è possibile inserire 7 firme e dove per spostare i fondi ne sono necessari almeno 5.
 
 È chiaro che si possono anche creare portafogli ad esempio da 7 di 7. Se nel malaugurato caso uno solo dei sette possessori di chiavi private perdesse la propria, i fondi rimarrebbero bloccati sulla blockchain per sempre [line-through]*creando ulteriore deflazione e accrescendo il valore dei nostri Bitcoin*.
@@ -65,13 +68,20 @@ Acquistando Bitcoin in modi differenti, ad esempio usando exchange diversi, o co
 
 Vediamo due esempi concreti. 
 
-[big red yellow-background]*TODO immagine acquisti in sequenza da unica fonte*
+[.text-center]
+image:images/privacy1.png[Usare sempre lo stesso address]
 
-Alice acquista 11.000 € in Bitcoin su un unico exchange, 10.000 come investimento, e 1.000 per le spese correnti. Utilizza sempre lo stesso address, per tutte le transazioni. Tutti quelli che ricevono o inviano Bitcoin ad Alice, possono vedere il suo estratto conto e potranno continuare a seguirlo per sempre. Se ad esempio Alice si fa spedire della merce a casa dopo aver effettuato un acquisto online, il venditore potrà collegare tutti i dati anagrafici di Alice, con tutti i suoi dati finanziari, ad esempio quanti Bitcoin ha in un determinato momento, quanti ne ha acquistati e quando, quando riceverà dei pagamenti ecc. A quel punto potrà usare questa mole enorme di informazioni per ad esempio, inviare della pubblicità quando Alice ha più disponibilità economica.
+Alice acquista 11.000 € in Bitcoin su un unico exchange, 10.000 come investimento, e 1.000 per le spese correnti. Utilizza sempre lo stesso address, per tutte le transazioni. Tutti quelli che ricevono o inviano Bitcoin ad Alice, possono vedere il suo estratto conto e potranno continuare a seguirlo per sempre. Se ad esempio Alice si fa spedire della merce a casa dopo aver effettuato un acquisto online, il venditore potrà collegare tutti i dati anagrafici di Alice, con tutti i suoi dati finanziari, ad esempio quanti Bitcoin ha in un determinato momento, quanti ne ha acquistati e quando, quando riceverà dei pagamenti ecc. A quel punto potrà usare questa mole enorme di informazioni, ad esempio, per inviare della pubblicità quando Alice ha più disponibilità economica.
 
-[big red yellow-background]*TODO immagine acquisti da più fonti*
+[.text-center]
+image:images/privacy2.png[Usare address diversi ma collegati tra loro]
 
-Bob ha diviso il suo indirizzo dove detiene i Bitcoin come investimento, da quello che utilizza per pagare spese correnti. Addirittura ha creato un indirizzo apposito da utilizzare per gli acquisti che prevedono l’invio di prodotti a casa da un determinato negozio online, in modo da isolare queste transazioni da tutte le altre. Bob evita accuratamente di eseguire transazioni tra gli address in suo possesso in modo da rendere impossibile per un malintenzionato, tracciare tutte le sue operazioni in bitcoin. 
+Bob ha diviso il suo indirizzo dove detiene i Bitcoin come investimento, da quello che utilizza per pagare spese correnti. Addirittura ha creato un indirizzo apposito da utilizzare per gli acquisti che prevedono l’invio di prodotti a casa da un determinato negozio online, in modo da isolare queste transazioni da tutte le altre. Questi tre address ricevono transazioni in ingresso provendienti sempre dallo stesso indirizzo. Il collegamento tra i 4 address, quello da cui partono i fondi e i tre che li ricevono, non è un dato certo, ma più operazioni si ripetono seguendo questo schema, più un osservatore esterno, può presumere che Bob abbia il controllo anche di questi altri indirizzi.
+
+[.text-center]
+image:images/privacy3.png[Usare address diversi NON collegati tra loro]
+
+Bob, per mantenere un maggiore grado di anonimato e ridurre la tracciabilità dei suoi movimenti, decide quindi di evitare accuratamente di eseguire transazioni tra gli address in suo possesso in modo da rendere impossibile per un malintenzionato, tracciare tutte le sue operazioni in Bitcoin. Sicuramente tutte le persone che inviano e ricevono transazioni da e verso Bob, potranno attribuire a lui un address, e avere una visione parziale delle sue operazioni, ma non avranno la possibilità di avere un quadro completo della sua situazione finanziaria.
 
 === I mixer
 Esistono alcuni servizi che permettono di ottenere un maggiore privacy, interponendosi tra noi e il destinatario dei fondi, ovviamente dietro un compenso che può arrivare anche a diversi punti percentuale. 
