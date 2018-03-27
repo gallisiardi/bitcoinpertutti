@@ -17,8 +17,9 @@ La documentazione in lingua inglese sulle crittovalute abbonda, ma anche nel pan
 === Sito del libro
 Il sito del progetto: https://www.bitcoinpertutti.org
 
-=== White Paper di Bitcoin
+=== White Paper di Bitcoin 
 Inglese: https://bitcoin.org/bitcoin.pdf
+
 Italiano: https://bitcoin.org/files/bitcoin-paper/bitcoin_it.pdf
 
 === Telegram
