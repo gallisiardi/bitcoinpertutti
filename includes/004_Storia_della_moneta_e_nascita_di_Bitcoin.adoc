@@ -54,7 +54,7 @@ Approfondiamo ora, alcune caratteristiche che dovrebbe avere una moneta ideale, 
 
 *Portabilità*: devo poterle trasportare facilmente
 
-*Fungibilità*: monete dello stesso valore devono essere interscambiabili, uguali le une alle altre senza assumere un valore diverso rispetto alla loro storia (esempio chi le ha possedute, se sono state oggetto di crimini sanguinari o truffe).
+*Fungibilità*: monete dello stesso valore devono essere interscambiabili, uguali le une alle altre senza assumere un valore diverso rispetto alla loro storia. Ad esempio monete che sono state oggetto di crimini o truffe, potrebbero essere identificate tramite i numeri di serie, o per quanto riguarda le crittovalute, tramite wallet tramite le quali sono transitate.
 
 *Fiducia*: per essere accettata, chi la riceve come pagamento deve avere la ragionevole certezza che possa a sua volta spenderla per comprare altri beni o servizi.
 
@@ -75,7 +75,7 @@ Sotto i voti che vanno da 1 a 5, sono espresse alcune motivazioni che hanno infl
 | *FISICITA’* |5 |5 |3 -materiale, ma con valore intrinseco nullo |1 
 -immateriale, valore intrinseco nullo |1 -immateriale, valore intrinseco nullo
 | *PORTABILITA’* |1 -poco pratico |4 |4 |5 +immateriale |5 +immateriale
-| *FUNGIBILITA’* |1 -tutte diverse |4 -alterazioni |5 |4 |3
+| *FUNGIBILITA’* |1 -tutte diverse |4 -alterazioni |5 |4 |4
 | *SICUREZZA* |3 |4 -alterazioni | 4 -banconote false | 5 |5
 | *LIBERO DA POTERE POLITICO* |5 |5 +indipendente |1 -sotto il controllo politico |
 1 -sotto il controllo politico/governativo | 5 +indipendente
