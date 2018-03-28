@@ -125,8 +125,8 @@ Alice cifra un file con la propria chiave privata ottenendo quindi un file firma
 image:images/Crittografia1.png[Crittografia asimmetrica caso 1]
 
 ==== Caso 2: garantire la riservatezza del contenuto
-Bob cifra un file con la chiave pubblica di Alice e trasmette il file cifrato sulla rete dove nessuno può decifrare il contenuto a meno che non sia in possesso della chiave privata di Alice.
-Alice quindi con la sua chiave privata può decifrare il messaggio e leggere il contenuto, ma non può essere certa che il messaggio sia stato inviato proprio da Bob. Chiunque infatti può accedere alla sua chiave pubblica, che come ricorda il nome è disponibile a chiunque per definizione.
+Alice cifra un file con la chiave pubblica di Bob e trasmette il file cifrato sulla rete dove nessuno può decifrare il contenuto a meno che non sia in possesso della chiave privata di Bob.
+Bob quindi con la sua chiave privata può decifrare il messaggio e leggere il contenuto, ma non può essere certo che il messaggio sia stato inviato proprio da Alice. Chiunque infatti può accedere alla sua chiave pubblica, che come ricorda il nome è disponibile a tutti per definizione.
 
 [.text-center]
 image:images/Crittografia2.png[Crittografia asimmetrica caso 2]
