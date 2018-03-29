@@ -22,36 +22,61 @@ TIP: Non è corretto considerarle dei portafogli di Bitcoin, in quanto i wallet 
 
 Alice quindi procede con il download dell'app sul proprio smartphone. Quando l’app viene eseguita per la prima volta, propone una serie di 12 parole (alcuni wallet ne richiedono 24). Queste servono per generare la chiave privata, che come abbiamo illustrato in precedenza, è un codice alfanumerico fondamentale per poter crittografare i dati. Alice dovrà semplicemente scriverle su un foglio di carta e ridigitarle all’interno dell’app quando verrà richiesto.
 
-Proviamo a eseguire passo a passo l'installazione e backup del wallet scaricato da bitcoin.com. Si tratta di un wallet che permette di gestire sia i Bitcoin (BTC) che i Bitcoin Cash (BCH), lo potete scaricare gratuitamente dal sito bitcoin.com. Ho scelto questo, per la  semplicità di utilizzo e per le istruzioni passo a passo presenti all'interno dell'app. Altri wallet adottano procedure molto simili.
+Proviamo a eseguire passo a passo l'installazione del wallet MyCelium. Si tratta di un wallet che potete scaricare gratuitamente tramite il Play Store per Android qui: 
+https://play.google.com/store/apps/details?id=com.mycelium.wallet
+o tramite l’App Store di IOS qui:
+https://itunes.apple.com/en/app/mycelium-bitcoin-wallet/id943912290
+
+Ho scelto questo wallet, perchè è tra i più diffusi, con ottime recensioni, è open source, permette l’esportazione della chiave privata garantendo quindi il pieno controllo diretto sui propri fondi, ed è disponibile in lingua italiana. Purtroppo non sono molti i wallet che hanno tutte queste caratteristiche. Descriverò ora, passo a passo, le operazioni da compiere; i wallet sono tutti diversi, ma adottano, in realtà, procedure molto simili tra loro.
 
 [.text-center]
 image:images/wallet12.png[Installazione Wallet,400]
 
-Nel primo screenshot troviamo la schermata di benvenuto, che ci invita a creare un nuovo portafoglio. Proseguendo verrà visualizzata la seconda schermata che mostra i due wallet BCH e BTC, ovviamente avranno entrambi con saldo 0.
+Iniziamo cercando l’app “MyCelium” sullo store. Clicchiamo su Installa, e successivamente su Apri.
 
 [.text-center]
 image:images/wallet34.png[Installazione Wallet,400]
 
-Selezionando il portafoglio Bitcoin (BTC) apparirà la schermata di sinistra, con i dettagli e le impostazioni del singolo portafoglio. Prima di proseguire è *fondamentale* effettuare il backup della chiave privata, per farlo, andare in Impostazioni, cliccare sul portafoglio di cui si desidera creare il backup e successivamente cliccare su "backup necessario". L'app vi mostrerà quindi un elenco di 12 parole, prendete nota su un pezzo di carta, facendo molta attenzione a non commettere errori ed a rispettare il corretto ordine.
+L’app ci chiederà se vogliamo ripristinare un wallet salvato in precedenza o se vogliamo crearne uno nuovo. 
+Come vedremo negli step successivi, dopo aver creato il wallet sarà FONDAMENTALE fare subito un backup, ed archiviarlo in un posto sicuro, in modo da poter accedere ai nostri Bitcoin anche nel caso in cui il nostro smartphone andasse distrutto, ci venisse rubato o semplicemente si guastasse.
+Scegliendo “Crea nuovo”, ci verrà mostrata la schermata di destra.
 
 [.text-center]
 image:images/wallet56.png[Installazione Wallet,400]
 
-A questo punto l'app vorrà verificare che abiate eseguito il backup su carta, e vi chiederà di selezionare le 12 parole, per ricreare la medesima lista generata nella schermata precedente. Terminato il controllo, l'app confermerà il buon esito dell'inserimento e sarà quindi possibile iniziare ad utilizzare il wallet. 
+Diligentemente seguiamo il consiglio degli sviluppatori e clicchiamo sui tre pallini verticali in alto a destra per aprire il menu, dove andremo a scegliere la voce Backup.
+A questo punto seguiamo passo a passo le istruzioni in italiano che appaiono a video, leggetele con attenzione, anche se è un’operazione che avete già effettuato altre volte. 
 
-CAUTION: E’ buona norma, farne subito una duplice copia, in modo da poter conservare in modo sicuro, magari in due posti differenti, i due foglietti. Chiunque abbia a disposizione questo parole, potrà accedere ai vostri bitcoin.
+[.text-center]
+image:images/wallet78.png[Installazione Wallet,400]
 
-Con questa chiave Alice, o chiunque entri in possesso di questo elenco di parole, potrà accedere al conto e disporre dei fondi in esso contenuti, da qualsiasi PC, cellulare o tablet sul quale sia installato un wallet Bitcoin. Nel caso le venisse rubato il telefono, basterà installare nuovamente l'app sul nuovo dispositivo e inserire le famose 12 parole. Il ladro potrebbe però eseguire l’app e avere quindi il controllo dei fondi di Alice. Molti wallet permettono di inserire un pin, per impedire che un malintenzionato possa utilizzare l’app senza il consenso del proprietario. In caso di furto o smarrimento, è comunque buona norma, creare una nuovo conto e trasferire tutti i fondi dal vecchio conto (che potrebbe essere stata compromesso) al nuovo.
+L'app vi mostrerà quindi un elenco di 12 parole, dovete scriverle su un pezzo di carta, facendo molta attenzione a non commettere errori ed a rispettare il corretto ordine. Dopo avervi mostrato la dodicesima parola, vi verrà chiesto di digitare l’intera sequenza di termini, uno ad uno, per essere certi che la copia di backup cartacea che avete appena eseguito sia corretta.
+
+[.text-center]
+image:images/wallet910.png[Installazione Wallet,400]
+
+Terminato il controllo, l'app confermerà il buon esito dell'inserimento e vi inviterà ad impostare un PIN di 6 cifre per poter utilizzare questo wallet.
+
+IMPORTANT: il PIN non ha nulla a che fare con il protocollo Bitcoin. Il PIN serve esclusivamente ad evitare che, qualora il vostro smartphone finisse nelle mani sbagliate, anche solo per pochi minuti, un malintenzionato possa accedere al vostro wallet ed utilizzare i vostri Bitcoin.
+
+CAUTION: E’ buona norma, farne subito una duplice copia sia delle 12 parole, sia del PIN, in modo da poter conservare in modo sicuro, magari in due lughi differenti, i foglietti. Ricordate: chiunque abbia a disposizione l’elenco di queste 12 parole, potrà accedere ai vostri Bitcoin, anche senza conoscere il PIN.
+
+L’elenco delle parole permette di generare la chiave privata con la quale Alice, o chiunque entri in possesso di questa lista, potrà accedere al conto e disporre dei fondi in esso contenuti, da qualsiasi PC, cellulare o tablet sul quale sia installato un wallet Bitcoin. Nel caso le venisse rubato il telefono, Alice potrà installare nuovamente l'app sul nuovo dispositivo e inserire le famose 12 parole per tornare in possesso dei propri Bitcoin.
+
+Se Alice non avesse impostato il PIN, il ladro potrebbe eseguire l’app e avere quindi il controllo dei fondi di Alice, compresa la possibilità di esportare la chiave privata. Quasi tutti i wallet permettono di inserire un pin, per impedire che un malintenzionato possa utilizzare l’app senza il consenso del proprietario. In caso di furto o smarrimento, è comunque buona norma, creare una nuovo conto e trasferire tutti i fondi dal vecchio conto (che potrebbe essere stata compromesso) al nuovo conto.
 
 WARNING: A differenza di ciò che accade per le banche o per dei semplici account on-line, dove, in caso di perdita delle password, è possibile fare una procedura di recupero, in questo caso la perdita delle 12 parole comporta la perdita totale di tutti i Bitcoin ad essi collegati. Non esiste  un centro assistenza, perchè non esiste più un intermediario. Siete voi la vostra banca. Questa è un'altra grande innovazione che garantisce grandissima libertà, ma ovviamente comporta anche grandi responsabilità e cognizione di causa. Dovete preoccuparvi voi stessi della sicurezza in modo diretto; se non lo fate, mettete a rischio il vostro denaro e nessuno potrà ridarvelo indietro.
 
 Alice ha quindi scritto su un pezzo di carta le 12 parole e, come indicato dall’app, le ha inserite nuovamente. Questo passaggio è richiesto per essere certi che le parole siano state scritte senza errori e nell’ordine corretto. Se anche solo uno dei caratteri è diverso (ricordate la funzione di hash?), o l’ordine delle parole è diverso, l’app non le accetterà, meglio vi creerà un nuovo portafoglio con bilancio zero. Se viceversa le parole inserite sono corrette Alice accederà al suo conto che ovviamente, al primo accesso, avrà saldo zero. Il tempo richiesto per questa operazione è di circa 5 minuti. 
 
-Esistono moltissime app che possono fare da wallet per Bitcoin. Vista la delicatezza dell'argomento e la sicurezza che esse richiedono è fondamentale accertarsi di non scaricare la prima app che capita. Per gestire i vostri Bitcoin, affidatevi a soluzioni sicure, Open Source (il codice di programmazione è pubblico e chiunque può verificare come funziona l’app), ampiamente utilizzate e recensite da moltissimi utenti. Il rischio è quello di scaricare un app “farlocca” nata con il solo scopo di rubarvi le famose 12 parole e quindi poter disporre dei vostri Bitcoin. Siete voi la vostra banca, ricordatelo sempre. Nessuno a parte voi, deve avere la vostra chiave privata.
+Esistono moltissime app che possono fare da wallet per Bitcoin. Vista la delicatezza dell'argomento e la sicurezza che esse richiedono è fondamentale accertarsi di non scaricare la prima app che capita. Per gestire i vostri Bitcoin, affidatevi a soluzioni sicure, Open Source (il codice di programmazione è pubblico e chiunque può verificare come funziona l’app), ampiamente utilizzate e recensite da moltissimi utenti. Il rischio è quello di scaricare un’app “farlocca” nata con il solo scopo di rubarvi le famose 12 parole e quindi poter disporre dei vostri Bitcoin. Siete voi la vostra banca, ricordatelo sempre. Nessuno a parte voi, deve avere la vostra chiave privata, se qualcuno ve la sta chiedendo sta cercando di rubarvi i Bitcoin. La chiave privata è da usare ESCLUSIVAMENTE nel caso volgliate ripristinare il vostro wallet su un nuovo dispositivo.
 
 === Gli indirizzi
-Entrando nell'app sarà possibile visualizzare il proprio address, cioè l’indirizzo al quale è possibile farvi inviare Bitcoin. E’ l'equivalente dell'IBAN per un conto corrente bancario tradizionale.
-Si tratta di una stringa di lettere e numeri, per praticità viene visualizzata a video con un QR Code come quello riportato nella figura sottostante.
+
+[.text-center]
+image:images/wallet1112.png[Installazione Wallet,400]
+
+Entrando nell'app sarà possibile visualizzare il proprio address, cioè l’indirizzo al quale è possibile farvi inviare Bitcoin. E’ l'equivalente dell'IBAN per un conto corrente bancario tradizionale. Si tratta di una stringa di lettere e numeri, per praticità viene visualizzata a video con un QR Code come quello riportato nella figura sottostante.
 
 [.text-center]
 image:images/qrcode_donazione_btc.jpg[QRCODE donazione btc, 300]
