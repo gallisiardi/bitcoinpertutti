@@ -22,17 +22,17 @@ TIP: Non è corretto considerarle dei portafogli di Bitcoin, in quanto i wallet 
 
 Alice quindi procede con il download dell'app sul proprio smartphone. Quando l’app viene eseguita per la prima volta, propone una serie di 12 parole (alcuni wallet ne richiedono 24). Queste servono per generare la chiave privata, che come abbiamo illustrato in precedenza, è un codice alfanumerico fondamentale per poter crittografare i dati. Alice dovrà semplicemente scriverle su un foglio di carta e ridigitarle all’interno dell’app quando verrà richiesto.
 
-Proviamo a eseguire passo a passo l'installazione del wallet MyCelium. Si tratta di un wallet che potete scaricare gratuitamente tramite il Play Store per Android qui: 
+Proviamo a eseguire passo a passo l'installazione del wallet Mycelium. Si tratta di un wallet che potete scaricare gratuitamente tramite il Play Store per Android qui: 
 https://play.google.com/store/apps/details?id=com.mycelium.wallet
 o tramite l’App Store di IOS qui:
 https://itunes.apple.com/en/app/mycelium-bitcoin-wallet/id943912290
 
-Ho scelto questo wallet, perchè è tra i più diffusi, con ottime recensioni, è open source, permette l’esportazione della chiave privata garantendo quindi il pieno controllo diretto sui propri fondi, ed è disponibile in lingua italiana. Purtroppo non sono molti i wallet che hanno tutte queste caratteristiche. Descriverò ora, passo a passo, le operazioni da compiere; i wallet sono tutti diversi, ma adottano, in realtà, procedure molto simili tra loro.
+Ho scelto questo wallet, perchè è tra i più diffusi, con ottime recensioni, è open source, permette l’esportazione della chiave privata garantendo quindi il pieno controllo diretto sui propri fondi, ed è disponibile in lingua italiana. Purtroppo non sono molti i wallet che hanno tutte queste caratteristiche. Descriverò ora, passo a passo, le operazioni da compiere; i wallet sono tutti diversi, ma adottano in realtà, procedure molto simili tra loro.
 
 [.text-center]
 image:images/wallet12.png[Installazione Wallet,400]
 
-Iniziamo cercando l’app “MyCelium” sullo store. Clicchiamo su Installa, e successivamente su Apri.
+Iniziamo cercando l’app “Mycelium” sullo store. Clicchiamo su Installa e successivamente su Apri.
 
 [.text-center]
 image:images/wallet34.png[Installazione Wallet,400]
@@ -59,7 +59,7 @@ Terminato il controllo, l'app confermerà il buon esito dell'inserimento e vi in
 
 IMPORTANT: il PIN non ha nulla a che fare con il protocollo Bitcoin. Il PIN serve esclusivamente ad evitare che, qualora il vostro smartphone finisse nelle mani sbagliate, anche solo per pochi minuti, un malintenzionato possa accedere al vostro wallet ed utilizzare i vostri Bitcoin.
 
-CAUTION: E’ buona norma, farne subito una duplice copia sia delle 12 parole, sia del PIN, in modo da poter conservare in modo sicuro, magari in due lughi differenti, i foglietti. Ricordate: chiunque abbia a disposizione l’elenco di queste 12 parole, potrà accedere ai vostri Bitcoin, anche senza conoscere il PIN.
+CAUTION: E’ buona norma, fare subito una duplice copia sia delle 12 parole, sia del PIN, in modo da poter conservare i foglietti in modo sicuro, magari in due lughi differenti. Ricordate: chiunque abbia a disposizione l’elenco di queste 12 parole, potrà accedere ai vostri Bitcoin, anche senza conoscere il PIN.
 
 L’elenco delle parole permette di generare la chiave privata con la quale Alice, o chiunque entri in possesso di questa lista, potrà accedere al conto e disporre dei fondi in esso contenuti, da qualsiasi PC, cellulare o tablet sul quale sia installato un wallet Bitcoin. Nel caso le venisse rubato il telefono, Alice potrà installare nuovamente l'app sul nuovo dispositivo e inserire le famose 12 parole per tornare in possesso dei propri Bitcoin.
 
@@ -76,7 +76,7 @@ Esistono moltissime app che possono fare da wallet per Bitcoin. Vista la delicat
 [.text-center]
 image:images/wallet1112.png[Installazione Wallet,400]
 
-Entrando nell'app sarà possibile visualizzare il proprio address, cioè l’indirizzo al quale è possibile farvi inviare Bitcoin. E’ l'equivalente dell'IBAN per un conto corrente bancario tradizionale. Si tratta di una stringa di lettere e numeri, per praticità viene visualizzata a video con un QR Code come quello riportato nella figura sottostante.
+Entrando nell'app sarà possibile visualizzare il proprio address, cioè l’indirizzo al quale è possibile farvi inviare Bitcoin; è l'equivalente dell'IBAN per un conto corrente bancario tradizionale. Si tratta di una stringa di lettere e numeri, che per praticità può essere visualizzata anche con un QR Code come quello riportato nella figura sottostante.
 
 [.text-center]
 image:images/qrcode_donazione_btc.jpg[QRCODE donazione btc, 300]
