@@ -42,8 +42,6 @@ Elenco wallet per Windows Phone: https://bitcoin.org/it/wallets/mobile/windowsph
 
 Elenco wallet per Blackberry: https://bitcoin.org/it/wallets/mobile/blackberry/
 
-Wallet che gestisce sia Bitcoin che Bitcoin Cash: https://www.bitcoin.com/
-
 === Exchange
 Lista degli exchange ordinata per volumi generati nelle ultime 24 ore: https://coinmarketcap.com/exchanges/volume/24-hour/
 
