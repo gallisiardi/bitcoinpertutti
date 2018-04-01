@@ -20,7 +20,7 @@ endif::[]
 
 = **Bitcoin per tutti**, __Bitcoin e le crittovalute spiegate in modo veloce e semplice, alla portata di tutti__
 Gianmaria Allisiardi {contatti}
-v 0.0.6, {docdate}: Bozza completa in fase di revisione finale
+v 0.0.7, {docdate}: Bozza completa in fase di revisione finale
 :doctype: book
 :icons: font
 :homepage: https://www.bitcoinpertutti.org
