@@ -10,7 +10,7 @@ ifdef::env-github[]
 :imagesdir: /
 endif::[]
 
-== Aspetti legale e fiscali
+== Aspetti legali e fiscali
 
 WARNING: Non sono un legale né un commercialista, tutto ciò che è espresso in questo capitolo va preso con beneficio di inventario. Per maggiori informazioni consultate il vostro professionista di fiducia prima di effettuare qualsiasi tipo di operazione. Non esiste alcuna legge che regolamenta esplicitamente questo mercato, per cui siamo nell’ambito dell’interpretazione.
 
