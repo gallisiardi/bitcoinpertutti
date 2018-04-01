@@ -67,7 +67,7 @@ Prendiamo ad esempio il caso delle piramidi: per essere costruite hanno richiest
 [.text-center]
 image:images/piramide.jpg[Piramide di Cheope]
 
-Testiamo la prof of work con un semplice gioco.
+Testiamo la proof of work con un semplice gioco.
 Immaginiamo una sala con 100 persone, ognuna di esse ha in mano 10 dadi.
 
 Lanciando 10 dadi contemporaneamente ogni partecipante può ottenere un numero compreso nell’intervallo tra 10 e 60:
