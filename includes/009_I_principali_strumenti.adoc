@@ -11,7 +11,20 @@ ifdef::env-github[]
 endif::[]
 
 == I principali strumenti: wallet, explorer, exchange
-Per spiegare il funzionamento di Bitcoin abbiamo già visto che cos'è e come funziona un wallet, si tratta di un portachiavi, cioè un sistema per memorizzare le chiavi private da utilizzare per poter disporre dei Bitcoin. Più di una volta mi è stato sollevata la domanda: "Cosa succede se qualcuno genera le mie stesse 12 parole? Può accedere ai miei Bitcoin?" La risposta è SI, ma è altamente improbabile praticamente impossibile. La quantità di chiavi private generabili è di (2^256) si avvicina al numero di atomi presenti nell'universo conosciuto (stimato all’incirca in un numero che va da  2^240 e 2^280), sicuramente è più semplice per due persone trovare lo stesso granello di sabbia sul pianeta terra (che in base ad una stima molto approssimativa risulta essere 2^63), rispetto a trovare una chiave privata già utilizzata da qualcun altro. Per chi avesse poca dimestichezza con gli elementi potenza, in questo caso parliamo di un raddoppio ogni unità espressa nell’elevamento. 
+Per spiegare il funzionamento di Bitcoin abbiamo già visto che cos'è e come funziona un wallet, si tratta di un portachiavi, cioè un sistema per memorizzare le chiavi private da utilizzare per poter disporre dei Bitcoin. Più di una volta mi è stato sollevata la domanda: "Cosa succede se qualcuno genera le mie stesse 12 parole? Può accedere ai miei Bitcoin?" La risposta è SI, ma è altamente improbabile praticamente impossibile. La quantità di chiavi private generabili è di (2^256) si avvicina al numero di atomi presenti nell'universo conosciuto (stimato all’incirca in un numero che va da  2^240 e 2^280), sicuramente è più semplice per due persone trovare lo stesso granello di sabbia sul pianeta terra (che in base ad una stima molto approssimativa risulta essere 2^63), rispetto a trovare una chiave privata già utilizzata da qualcun altro.
+
+In realtà, a causa del formato più piccolo utilizzato dall'address bitcoin (160 bit rispetto ai 256 bit delle chiavi private), più chiavi private possono accedere ai Bitcoin depositati sul medesimo address. Il numero di queste chiavi è di circa 2^96! A prima vista, un numero così grande potrebbe spaventare, significa infatti che esistono moltissime chiavi private che possono accedere ai miei Bitcoin. Il punto è che, nonostante siano tantissime, si perdono all'interno delle 2^256 esistenti. In particolare si stima che, tramite un attacco di tipo brute force, cioè un sistema automatico che prova tutte le possibili soluzioni ad un determinato problema, si riesca a trovare una chiave privata in grado di sbloccare un determinato address una volta ogni 2^160 tentativi, che sono comunque un numero considerevole per il livello tecnologico attuale. Per completezza di informazione, va inoltre detto che quando effettuiamo un trasferimento da un nostro address verso un altro address, esponiamo a terzi la chiave pubblica relativa al nostro address.
+Questa ulteriore informazione "facilita" l'attività di chi volesse cercare di accedere ai Bitcoin rimasti nel nostro address, riducendo di fatto il numero di tentativi medi per riuscire a sbloccare i fondi a 2^128. Anche per questo (oltre che per una questione di maggiore privacy) si consiglia di utilizzare un address una sola volta (si consiglia cioè di svuotarlo completamente la prima volta che si devono utilizzare anche solo una parte dei suoi fondi).
+
+Da un punto di vista della sicurezza del sistema, è corretto dire che servono quindi mediamente:
+
+- 2^160 tentativi per riuscire a rubare i Bitcoin depositati su un address dal quale non è mai stato effettuato un prelievo
+
+- 2^128 tentativi per riuscire a rubare i Bitcoin depositati su un address dal quale è stata effettuata almeno una transazione di spesa
+
+Per approfondire l'argomento, trovate ulteriori informazioni qui: https://bitcointalk.org/index.php?topic=1339031.0
+
+Per chi avesse poca dimestichezza con gli elementi potenza, in questo caso parliamo di un raddoppio ogni unità espressa nell’elevamento. 
 
 ```
 2^1=2
@@ -27,7 +40,11 @@ Per spiegare il funzionamento di Bitcoin abbiamo già visto che cos'è e come fu
 …
 2^40=1.099.511.627.776 
 …
-2^256= 115.792.089.237.316.195.423.570.985.008.687.907.853.269.984.665.640.564.039.457.584.007.913.129.639.936
+2^128=340.282.366.920.938.000.000.000.000.000.000.000.000
+…
+2^160=1.461.501.637.330.900.000.000.000.000.000.000.000.000.000.000.000
+…
+2^256=115.792.089.237.316.195.423.570.985.008.687.907.853.269.984.665.640.564.039.457.584.007.913.129.639.936
 ```
 
 Esistono diversi tipi di wallet: software, hardware, cartacei. Analizziamoli ora uno ad uno evidenziando le rispettive caratteristiche.
