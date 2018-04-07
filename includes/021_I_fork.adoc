@@ -190,3 +190,6 @@ Se vi chiedono una chiave privata, assicuratevi che su questa NON ci siano altri
 
 [.text-center]
 image:images/sicurezza_fork2.png[Sicurezza e gestione chiavi private prima di un fork]
+
+Se il libro o questo approfondimento ti sono stati utili, valuta la possibilità di sostenere questo progetto donando un euro in Bitcoin. Nella prefazione del libro e nella quarta di copertina (l'ultima pagina), è presente l'indirizzo Bitcoin al quale inviare la donazione. 
+In questo modo sarò più incentivato a scrivere utleriori approfondimenti. 
