@@ -146,11 +146,11 @@ include::./includes/017_Link_vari.adoc[Link vari]
 
 <<<
 
-include::./includes/021_Le_mining_pool.adoc[Le mining pool]
+include::./includes/021_I_fork.adoc[I fork]
 
 <<<
 
-include::./includes/022_I_fork.adoc[I fork]
+include::./includes/022_Le_mining_pool.adoc[Le mining pool]
 
 <<<
 
