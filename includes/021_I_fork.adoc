@@ -1,0 +1,181 @@
+== APPROFONDIMENTO: I fork
+
+Nei capitoli precedenti, ho accennato al fatto che alcune crittovalute sono nate da un fork di Bitcoin; proviamo ora ad approfondire l’argomento, cercando di andare maggiormente nel dettaglio, di che cos’è un fork, quali tipi di fork esistono e perché vengono fatti.
+
+=== Introduzione ai fork
+Il termine fork si potrebbe tradurre in italiano con biforcazione, in informatica viene utilizzato per descrivere un nuovo software che nasce dal codice sorgente di un progetto già esistente. Entrambi i codici, sono quindi identici fino al fork e successivamente proseguono il loro sviluppo come due progetti indipendenti. 
+
+Il concetto di fork è molto comune nei software open source, in quanto proprio per la natura aperta del codice, accade spesso che gruppi di sviluppatori con visioni diverse sull’implementazione del progetto siano in conflitto. In questi casi, uno dei due gruppi può decidere di creare un fork del codice sorgente e proseguire con lo sviluppo in modo completamente indipendente, recuperando però tutto il codice esistente scritto da entrambe i gruppi fino a quel punto.
+
+Chiunque creda di poter migliorare il codice sorgente di qualsiasi software open source, può provare a promuovere le proprie ragioni all’interno della community degli sviluppatori; se questa proposta non venisse presa in considerazione, lo sviluppatore in questione potrebbe “forkare” il codice e iniziare ad implementare la propria idea.
+
+E’ un sistema che garantisce una grande libertà ed è a mio avviso molto meritocratico; se penso di poter fare una cosa meglio, nessuno mi vieta di farlo, e di dimostrare a tutti che la soluzione adottata da me è migliore di quella scelta dagli altri sviluppatori. Questo processo può far nascere una forte competizione tra i due rami di sviluppo che può quindi giovare ulteriormente alla qualità dei software sviluppati.
+
+Spesso questi fork nascono in seguito a vere e proprie guerre interne, a volte si tratta di scontri personali tra gli sviluppatori che poi degenerano fino a coinvolgere l’intera community. Alla base possono esserci sia ragioni tecniche che economiche; il fatto che il codice del software venga diffuso gratuitamente, non significa che dietro alla sua produzione non si nascondano anche grandi interessi economici secondari, ad esempio legati all’assistenza sul software o all’implementazione di software complementari, a pagamento, che si “appoggiano” al software open source oggetto del fork. 
+
+[.text-center]
+image:images/fork_unix.png[Fork Unix]
+[.text-center]
+Tratto da https://it.wikipedia.org/wiki/Unix#/media/File:Unix_timeline.it.svg
+
+In questa immagine potete vedere una versione semplificata dello sviluppo dei progetti derivati da UNIX, avuta dal 1970 fino al 2010. Tra quelli più conosciuti ci sono OS X da cui derivano i sistemi operativi utilizzati dalla Apple, ed il ramo GNU/Linux, da cui deriva il sistema operativo Android.
+
+[.text-center]
+image:images/fork_linux.png[Fork Linux]
+[.text-center]
+Tratto da: https://www.quora.com/What-are-CentOS-Red-Hat-Enterprise-Linux-Linux-Mint-Debian-Linux-and-Ubuntu-What-are-their-differences
+
+Questa invece è l’evoluzione del solo ramo di Linux citato nell’immagine precedente. Si tratta di un’infinità di progetti e sottoprogetti, alcuni sono nati e morti nel giro di pochi mesi, altri sono sopravvissuti per anni, venendo a loro volta forkati ripetutamente.
+
+Il fork oltre ai molti aspetti positivi, portano con sé anche aspetti negativi, come ad esempio la spaccatura della community degli sviluppatori, spesso condita con grandi dosi di astio e delegittimazione reciproca. Inoltre c’è da considerare una dispersione di energie legate allo sviluppo del codice. Venti programmatori che lavorano ad un singolo progetto, riescono a sviluppare nuove funzionalità molto più velocemente, rispetto a due gruppi distinti di sviluppatori su due progetti separati.
+
+Quando si parla di fork di Bitcoin, purtroppo si possono intendere concetti anche molto differenti tra loro.
+Cercherò quindi di descriverli nel dettaglio, in base alla loro natura e alle conseguenze che questi possono avere sul protocollo e sugli utenti.
+
+Questa catalogazione rappresenta un mio personale modo di schematizzare questi concetti, NON si tratta di una catalogazione ufficiale.
+
+=== Fork natuali della blockchain
+Nel capitoli precedenti, abbiamo visto come i miner, dopo aver raccolto le transazioni presenti nella rete P2P, generino un blocco con tanto di hash. Questo blocco ed il relativo hash, vengono quindi diffusi sulla rete P2P di Bitcoin raggiungendo tutti i nodi connessi.
+E’ possibile che, prima che il blocco prodotto dal miner A raggiunga tutti i nodi della rete, un altro miner, il miner B, riesca a trovare la funzione di hash per il proprio blocco.
+
+[.text-center]
+image:images/rete_2_blocchi_simultanei.png[Fork naturali della blockchain]
+
+In questo caso tutti e due i blocchi generati e le relative funzioni di hash, risultano validi a tutti gli effetti, entrambi infatti contengono una serie di transazioni valide ed una funzione di hash corretta.
+In queste condizioni, i miner che ricevono prima il blocco dal miner A, considereranno questo come il blocco corretto ed inizieranno a lavorare alla ricerca del blocco successivo, che chiameremo A1. Viceversa quelli che riceveranno il blocco prima dal miner B, considereranno questo blocco come corretto ed inizieranno a minare un nuovo blocco, che chiameremo B1, da accodare al blocco B.
+
+[.text-center]
+image:images/blockchain_2_blocchi_da_calcolare.png[Fork naturali della blockchain blocchi da calcolare]
+
+Nasce quindi una biforcazione nella blockchain.
+Questo tipo di fork è del tutto naturale, infatti il protocollo prevede questo tipo di eventualità. Ogni nodo della rete, deve ritenere valida la catena con il maggior numero di blocchi, questo perchè dove ci sono più blocchi, significa che c’è stata più proof of work e quindi semplificando più potenza di calcolo. 
+
+TIPS: Tutti i nodi delle rete Bitcoin ricevono sia il blocco generato dal miner A che il blocco generato dal miner B. I miner però, a differenza degli altri nodi, quando vengono avvisati della presenza di un nuovo blocco concorrenziale a quello a cui stavano lavorando, interrompono il calcolo della funzione di hash di quest’ultimo, creano un nuovo blocco da accodare a quello appena ricevuto, e ricominciano a calcolare una funzione di hash per questo nuovo blocco.
+
+Come spiegato nel capiti precedenti, ogni blocco porta al suo interno l’hash del blocco che lo ha preceduto, quindi il blocco A e il blocco B non potranno mai, in nessun caso, diventare entrambe parte della stessa blockchain, in quanto la catena di blocchi non prevede la possibilità che sia presente una biforcazione. Ogni blocco deve essere accodato all’altro, come un vagone dietro l’altro, non possono esistere due vagoni affiancati. Il blocco A ed il blocco B contengono entrambe al loro interno l’hash del blocco che li ha preceduti, perciò solo uno dei due potrà essere accodato in modo definitivo alla blockchain.
+
+Nella situazione attuale, entrambe i rami della blockchain sono da ritenersi validi a tutti gli effetti, ed entrambe hanno lo stesso numeri di blocchi. Questa situazione è solo temporanea e dovrà essere risolta con la pubblicazione dei prossimi blocchi. 
+Possiamo semplificare dicendo che tutta la potenza di calcolo sarà quindi divisa in due grandi gruppi, il primo cercherà di calcolare il blocco successivo nel ramo A, mentre il secondo cercherà di trovare l’hash del prossimo blocco nel ramo B. Non è detto che la divisione della potenza di calcolo sia suddivisa esattamente al 50% per gruppo, anzi è difficile che ciò avvenga; la distribuzione della potenza di calcolo sui due rami, dipende da quanti miner hanno ricevuto il blocco A prima del blocco B e viceversa.
+Ipotizziamo che un miner del ramo B, trovi per primo l’hash di un nuovo blocco che chiameremo B1. Una volta trasmesso sulla rete l’esito della sua elaborazione, tutti i nodi, seguendo la regola descritta precedentemente, e cioè, che la catena valida è quella con il maggior numero di blocchi, si adegueranno e considereranno questa catena, come la catena principale. Il blocco del ramo A sarà quindi abbandonato, non potrà fare parte della blockchain, per questa ragione viene definito blocco orfano.
+
+[.text-center]
+image:images/blockchain_blocchi_orfani.png[Fork naturali della blockchain blocco orfano]
+
+Tutte le transazioni presenti nel blocco A, non si possono considerare confermate, a meno che non siano a loro volta state inserite nel blocco B o nel blocco B1, ecc. E’ per questa ragione che occorre attendere di ricevere più conferme (cioè blocchi accodati a quello contenente la propria transazione), per essere certi che una transizione sia effettivamente scritta in modo indelebile nella blockchain. Per assurdo, potrebbero infatti generarsi più blocchi contemporaneamente su entrambe i rami, dando vita a due rami con 2, 3 o 4 blocchi per uno. Si tratta di una situazione teoricamente possibile, ma altamente improbabile. 
+
+[.text-center]
+image:images/blockchain_2_blocchi.png[Fork naturali della blockchain 2 blocchi]
+
+L’elenco sempre aggiornato degli ultimi blocchi orfani è disponibilie qui: https://blockchain.info/it/orphaned-blocks
+
+Dal punto di vista dell’usabilità di Bitcoin come mezzo di pagamento, va detto che la stragrande maggioranza degli utenti, non si accorgerà di nulla. Se si adotta la regola di attendere più conferme, non può nascere alcun tipo di problema legato alla presenza del tutto naturale di questo tipo di biforcazioni.
+
+
+=== Fork amichevole della sola blockchain
+Uno dei problemi maggiori per chi crea una nuova moneta è quello di mettere questa nuova coin in circolazione, nelle mani dei possibili utilizzatori, in modo che questi possa iniziare a spenderla. Abbiamo visto come funziona una ICO; oltre ad essere un mezzo per finanziare un progetto, in realtà si tratta di un modo per distribuire una moneta, in modo che le persone possano iniziare ad utilizzarla.
+Per fork amichevole della sola blockchain, intendo una foto, una istantanea, della blockchain in un determinato momento. Può accadere infatti che per distribuire una nuova crittovaluta, si scelga di regalare una determinata quantità di monete a chi in un determinato momento, possedeva dei Bitcoin. La quantità di nuova moneta regalata solitamente è proporzionale alla quantità di Bitcoin posseduti in occasione del fork.
+
+TIPS: Spesso si indica una data ed un’ora per indicare quando ci sarà un fork, in realtà è più corretto ragionare in termini di numero di blocco, infatti quando viene annunciato un fork, si indica sempre il numero del blocco di riferimento. Solitamente, adottando la regola dei 10 minuti per blocco, si riesce ad avere una stima di massima della data e dell’ora, ma questa ipotetica data e ora può anticipare se i blocchi vengono estratti più velocemente o posticipare se vengono estratti più lentamente.
+
+Questa strategia ha due grandi vantaggi:
+
+- diffondere la moneta; una coin che nessuno ha, non può essere utilizzata
+
+- farsi pubblicità; se regalo monete a chi già è in possesso di Bitcoin, faccio parlare di me, nei forum e nelle chat si parlerà della nuova moneta, di come ottenerla, ecc.
+
+Una strategia simile è stata adotta ad esempio da ByteBall, che ha deciso di regalare la propria coin a tutti gli utenti che erano in possesso di Bitcoin fino ad un determinato blocco. Come vedremo in seguito, solitamente il fork della blockchain si accompagna con il fork del codice sorgente di Bitcoin.
+
+Questo tipo di fork non presenta alcun rischio per l’utente, anzi, può essere un’opportunità per ricevere monete alternative a Bitcoin gratuitamente a patto che siate stati in possesso di Bitcoin prima del blocco indicato. Solitamente queste nuove monete hanno un valore iniziale quasi nullo.
+
+WARNING: Nel caso in cui si decidesse di rivendicare queste nuove monete, procedere con la massima cautela, in quanto vi verrà richiesto di inserire la vostra chiave privata in un ipotetico nuovo wallet. Questa operazione è ovviamente ad altissimo rischio. Al fondo di questo capitolo trovate un paragrafo che vi illustra come comportarvi in questi casi, in modo da agire nella massima sicurezza, e non cadere vittime di truffe architettate ad arte per rubare la vostra chiave privata.
+
+=== Fork amichevole del solo codice sorgente
+Quando il codice sorgente di Bitcoin viene “forkato”, teoricamente il nuovo software dovrebbe partire da un nuovo Genesis Block. In questa situazione però nessuno possiede alcuna moneta, e queste verranno distribuite esclusivamente ai miner, blocco dopo blocco, man mano che questi verranno minati, secondo i parametri stabiliti dal protocollo, proprio come è successo con la nascita di Bitcoin. Nel Genesis Block, infatti non sono presenti Bitcoin, i primi 50 furono creati dal miner che minò il primo blocco, che fatalmente non conteneva alcuna transazione. 
+ 
+Diffondere la moneta è un’operazione complessa, solitamente vengono fatte delle ICO (vedi capitoli precedenti); il fork della blockchain a mio avviso resta un sistema semplice e veloce per distribuirla e farsi conoscere. Per queste ragioni il fork del codice solitamente si accompagna con il fork della blockchain.
+
+La nascita di Litecoin è avvenuta con un fork del solo codice sorgente, partendo da zero con un nuovo Genesis Block. In questi casi l’utente Bitcoin non corre alcun rischio, in quanto non esiste alcun tipo di correlazione tra i Bitcoin in suo possesso e la nuova moneta creata in seguito al fork.
+
+=== Fork amichevole della blockchain e del codice sorgente
+Questo è il caso più comune, si tratta del tipo di fork che ha fatto nascere Bitcoin Cash e Bitcoin Gold.
+In questi casi, i promotori delle nuove monete, hanno copiato e modificato il codice sorgente di Bitcoin ed hanno regalato la loro moneta a chi possedeva Bitcoin prima del blocco indicato per la nascita del fork.
+
+[.text-center]
+image:images/fork_blockchain_amichevole.png[Fork amichevole della blockchain e del codice sorgente]
+
+Chiunque possiede delle coin nella blockchain fino al blocco 4 compreso, continuerà a disporre delle sue monete presenti nella blockchain originale, ed in più avrà delle nuove monete sulla blockchain della nuova crittovaluta, che si baserà su una blockchain composta dai blocchi dall’1 al 4 (identici a quelli della blockchain da cui è stata “forkata”) seguiti dei blocchi completamente indipendenti.
+
+In occasione, ad esempio, del fork di Bitcoin Cash, tutti quelli che avevano una determinata quantità di Bitcoin, si sono ritrovati la medesima quantità di Bitcoin Cash, in modo completamente gratuito. 
+
+TIPS: Il valore della nuova coin, è stabilito dalla domanda e dall’offerta, quindi non ha nulla a che fare con il valore della coin da cui viene “forkata”. Ipotizziamo quindi di “forkare” Bitcoin con un progetto di fondo strampalato, probabilmente nessuno acquisterà la nuova moneta. Se molti di quelli che la possiedono decidono di venderla, il prezzo crollerà. Se per assurdo, non ci fosse nessuno disposto ad acquistarla, la moneta varrà 0. 
+
+Ho usato il temine amichevole, per differenziare questi fork da quello ostile, che vedremo nel paragrafo successivo. In realtà, come abbiamo visto nell’introduzione di questo capitolo, la nascita di un fork, non è mai un processo amichevole, anzi è una vera e propria battaglia a volte con strascichi legali.
+Questi tipi di fork però, creano CHIARAMENTE un nuovo progetto, una nuova entità separata da quella precedente, cambiando nome, cambiando loghi, sito di riferimento, repository del software, si appoggiano su una nuova rete P2P indipendente, ecc. 
+
+=== Fork ostili della blockchain e del codice sorgente
+I fork ostili della blockchain e del codice sorgente, sono i tipi di fork più pericolosi per l’utente e vanno seguiti con molta attenzione da parte di chiunque abbia dei Bitcoin. Si tratta di eventi rari, ma che possono avere conseguenze gravi sia sull’andamento del prezzo sia sulla funzionalità di tutta l’infrastruttura.
+Capire il contesto in cui nasce e si sviluppa questo tipo di fork è fondamentale per sapere come muoversi. Se avete investito in Bitcoin dovete necessariamente seguire gli sviluppi di questi avvenimenti con la massima attenzione; se nei casi elencati precedentemente, l’utente non corre rischi, in questo caso specifico, bisogna porre la massima attenzione.
+
+Il fork Segwit2x, doveva essere di questo tipo, era previsto per il 16/11/2017 (blocco numero 494784), ma venne poi abbandonato dai suoi stessi promotori due giorni prima, con un messaggio su una mailing list. Su questi specifici avvenimenti, ci sarà uno specifico approfondimento nelle pagine successive.
+
+Ho adottato il termine ostile perché mentre per gli altri fork, la separazione tra il nuovo ed il vecchio progetto è ben chiara, in questo caso invece abbiamo una situazione ambigua, dove la nascente blockchain punta a diventare lei Bitcoin, a discapito dell’altra. 
+
+Cercherò di descrivere gli ipotetici scenari tecnico/pratici che potrebbero nascere in seguito a questo tipo di fork, si tratta però di ipotesi, in quanto ci sono moltissimi fattori in gioco ed è impossibile stabilire a priori cosa accadrà in questo tipo di situazioni. 
+
+IMPORTANT: La parte che segue è un puro esercizio di fantasia utilizzato per spiegare come potrebbe avvenire in pratica, un fork ostile. I fatti che seguono non si riferiscono in alcun modo ai fatti accaduti a Novembre 2017, su cui ci sarà un futuro approfondimento specifico.
+
+Ipotizziamo di essere un gruppo di sviluppatori e di voler creare un fork ostile di Bitcoin. 
+
+Creiamo una copia dei sorgenti di Bitcoin ed iniziamo a lavorarci, in modo da applicare le nostre modifiche al protocollo con l’intenzione di migliorarlo (a nostro giudizio).
+
+Sempre a titolo di mero esempio, decidiamo che la grande differenza che vogliamo apportare rispetto alla versione originale di Bitcoin, è quella di incrementare la dimensione del blocco a 30 MB, anziché 1 MB.
+
+Dopo aver modificato il codice sorgente, dobbiamo distribuire questo software tra i nodi della rete, e qui nasce la prima grande incognita, quanti nodi decideranno di migrare dal vecchio al nuovo software? 
+Ipotizziamo che le nostre idee risultano appoggiate dal 10% dei nodi, che quindi installeranno il nuovo software abbandonano la rete P2P di Bitcoin Legacy (quello che esisteva prima del fork), migrando verso il nostro nuovo Bitcoin, che per praticità chiameremo Bitcoin New.
+A questo punto abbiamo dalla nostra parte, una rete P2P distribuita indipendente, molto più piccola di quella del legacy,ma comunque funzionante e sufficientemente distribuita; ci serve però la potenza di calcolo dei miner, per garantire la sicurezza delle transazioni, ed è proprio qui che si gioca la grande partita: riusciremo a convincere i miner a minare i nostri blocchi anzichè quelli di Bitcoin Legacy? 
+
+Ipotizziamo che i miner si dividano al 50% tra i due progetti, il Bitcoin New può quindi partire, abbiamo i nodi P2P, abbiamo i miner, non ci resta che attendere che vengano minati i primi blocchi ed il gioco è fatto.
+
+Cosa succede intanto sulla blockchain di Bitcoin Legacy? Dalla rete P2P sono spariti il 10% dei nodi, non è una buona notizia, ma possiamo definirlo tranquillamente come un fatto ininfluente, proprio per via della sua natura distribuita. Viceversa, l’abbandono del 50% dei miner, ha creato un ritardo importante nella generazione dei blocchi, che non verranno più generatio ogni 10 minuti, ma potremmo ipotizzare che il tempo raddoppi, raggiungendo una media di 20 minuti tra un blocco e l’altro. Questo rallentamento durerebbe fino al retarget della difficoltà, che come abbiamo visto, avviene ogni 2016 blocchi, cioè due settimane se i blocchi vengono estratti ogni 10 minuti, che però potrebbero diventare 4 o più nel caso in cui ci fosse un rallentamento nella generazione dei nuovi blocchi. Inoltre c’è da considerare il fatto che potrebbe non bastare un retargert, ma potrebbero volercene più di uno, per riuscire a tornare ad una produzione di blocchi ogni 10 minuti. 
+
+Questo causerebbe quindi una grande disparità di performance tra le due blockchain. La Legacy si troverebbe rallentata, congestionata, con un incremento delle fee, mentre la New, probabilmente genererebbe blocchi in modo molto più rapido di 10 minuti, garantendo, quanto meno in una prima fase, conferme molto rapide e fee bassissime.
+
+Questa situazione potrebbe in realtà tradursi in una sorta di pareggio, che porterebbe alla nascita di due blockchain diverse e di due monete diverse entrambe valide e funzionanti.
+
+Ma cosa succederebbe se anziché avere una divisione al 50% dell’hashpower, la percentuale fosse 80% per il New e 20% per il Legacy? La catena del Legacy diventerebbe inutilizzabile per mesi, rallentando ulteriormente, accumulando sempre più transazioni inevase e vedendo quindi schizzare alle stelle le fee. Gli utenti sarebbero disposti a spendere di più per vedere le proprie transazioni approvate, prima di quelle degli altri, come accaduto ad esempio a Dicembre 2017.
+Inoltre, se i miner fossero uniti e coesi, potrebbero portare un attacco nei confronti della blockchain Legacy, andando a riscrivere gli ultimi blocchi, distruggendo quindi la base su cui si basa Bitcoin, cioè l’immutabilità della blockchain, e di conseguenza la fiducia degli utenti in questa moneta.
+
+A questo punto cosa faranno gli utenti? Sono loro il vero ago della bilancia; se decidessero di fuggire verso Bitcoin New, per via delle fee più basse e conferme più rapide, il Bitcoin Legacy sarebbe destinato ad essere abbandonato. 
+
+E cosa succederebbe al prezzo? Probabilmente nessuno acquisterebbe più Bitcoin Legacy, proprio per via dell’inutilizzabilità. Viceversa, molti migrerebbero al Bitcoin New, in ogni caso si tratterebbe di un terremoto non indifferente per il prezzo.
+
+Questo chiaramente è solo uno dei possibili scenari e delle relative conseguenze che potrebbe creare la nascita di un fork ostile, il tutto dipende sostanzialmente da tre gruppi di figure: i nodi della rete, i miner e gli utenti. 
+
+I nodi sono probabilmente quelli che hanno un peso minore, più sono meglio è sia chiaro, altrimenti la rete P2P distribuita diventa più fragile agli attacchi informatici diretti verso l’infrastruttura. 
+
+I miner hanno un peso molto importante, in quanto se operano in modo coeso possono sostanzialmente decidere in autonomia il futuro di Bitcoin. Per questa e per altre ragioni, è fondamentale che non si creino dei gruppi di potere, dove pochi grandi miner, possano decidere le sorti di Bitcoin. Su questo argomento ci sarà un approfondimento specifico.
+
+Gli utenti sono quelli che hanno la parola finale, a mio avviso, in quanto i loro comportamenti influiscono direttamente sul prezzo, sono loro che creano domanda e offerta, sono loro che decidono chi vive o chi muore. Va anche detto che, in presenza di due catene, una inefficiente e cara (in quanto abbandonata dai miner), mentre l’altra veloce ed economica (in quanto sostenuta dai miner), potrebbero farsi pochi scrupoli e seguire la mera convenienza.
+
+Personalmente credo che i miner siano la figura di maggior peso, soprattutto se operano uniti, magari verso un obiettivo che li accomuna come ad esempio il maggior profitto. Si potrebbe quindi ipotizzare che un cartello di miner, potrebbe sovvenzionare un team di sviluppo, al fine di realizzare un fork di Bitcoin, che preveda delle modifiche al protocollo in modo da garantire loro maggiori profitti.
+
+Questo è uno scenario di “fanta-critto-politica”, qualcosa di simile però si stava per concretizzare a metà Novembre 2017 quando oltre l’80% dei miner si dichiarava favorevole al passaggio a Segwit2x. Non è quindi una cosa così improbabile o impossibile, ed è per questo che la concentrazione dell’hashpower in pochi grandi soggetti può essere molto pericolosa per il futuro di Bitcoin.
+
+=== Sicurezza e gestione delle chiavi private in occasione di un fork
+Abbiamo visto come un fork della blockchain, possa essere un ottimo strumento per diffondere una nuova moneta regalandola a chi già possiede Bitcoin. 
+Si sono registrati, anche in questo caso, diversi tentativi di truffa, che fanno leva sull’avidità delle persone e sul fatto che sia possibile ottenere nuove monete gratuitamente. 
+Il trucco è abbastanza semplice, si annuncia un fork di Bitcoin o di un’altra crittovaluta, si mette su un sito, si fa un po’ di spam nei forum e nelle chat Telegram, dando una parvenza di serietà dietro ad un progetto che di fatto non esiste, o se esiste è anch’esso fittizio. Pochi giorni dopo al fork, si annuncia che per gestire la nuova crittovaluta, occorre ovviamente scaricare il nuovo wallet, oppure eseguire una procedura online per rivendicare le vostre nuove coin. La gente, ingolosita dall’idea di ottenere nuove monete gratis, fornisce la propria chiave privata. A questo punto i truffatori la sfruttano non per rivendicare le nuove coin, ma per prendere possesso dei Bitcoin sulla blockchain originale. Il malcapitato non solo non riceverà le nuove coin, ma perderà irrimediabilmente anche tutti i Bitcoin che aveva sul proprio address.
+
+Per ovviare a questo problema, basta usare la testa, muovendosi con calma e con le dovute cautele. Per evitare di mettere a rischio i propri fondi da questo tipo di truffa, basta spostare i Bitcoin su un altro address PRIMA di provare a rivendicare la nuova coin. In questo caso andremo ad inserire la nostra chiave privata relativa ad un indirizzo che prima del fork, effettivamente possedeva 10 BTC, ma che oggi ha 0 BTC. In questo caso, se il progetto è in realtà una truffa, queste persone riusciranno effettivamente ad accedere al nostro “conto” ma non ci troveranno più nulla sopra. In questo caso dimenticate per sempre il vecchio conto e non utilizzatelo mai più, perché potrebbe risultare compromesso irrimediabilmente. 
+
+[.text-center]
+image:images/sicurezza_fork1.png[Sicurezza e gestione chiavi private dopo un fork]
+
+Prima del fork, nel blocco 3, avevamo depositato su un nostro indirizzo gestito dalla chiave privata A, 10 Bitcoin. Dopo il fork, trasferiamo tutti i nostri Bitcoin sull’indirizzo gestito dalla chiave privata B. A questo punto abbiamo messo al sicuro i nostri fondi, e possiamo tranquillamente utilizzare la nostra chiave privata A per tentare di ottenere le nuove coin presenti sulla blockchain della nuova moneta. Questa blockchain, infatti non contiene la transazione presente nel blocco 5, né quelle nei blocchi successivi, in quanto il fork è avvenuto al blocco 4. Tutte le transazioni avvenute successivamente al fork, riguardano esclusivamente la blockchain originale.
+
+Non abbiate fretta di agire. Se il fork è già avvenuto, avete tutto il tempo per provare a rivendicare le monete. Non fatevi prendere dalla smania, ragionate con calma a cosa state facendo, passo dopo passo.
+
+Se vi chiedono una chiave privata, assicuratevi che su questa NON ci siano altri fondi e che nessuno continui ad usare quell’indirizzo per inviarvi del denaro. Se ad esempio avete pubblicato questo address su un libro per ricevere donazioni, non potete abbandonarlo. Se avete questo tipo di problema, e non potete smettere di utilizzare il vostro address, potete comunque muovervi PRIMA che il fork abbia luogo, creando un nuovo address d’appoggio temporaneo per i vostri Bitcoin, attendere quindi che il fork abbia luogo, e trasferire nuovamente i fondi sul conto originale, dove magari nel frattempo sono arrivati altri pagamenti. A questo punto avrete una chiave privata “B”, relativa al conto d’appoggio, su cui NON sono presenti Bitcoin nella blockchain originale, e che potete utilizzare tranquillamente per rivendicare la nuova crittovaluta, senza mettere a rischio i vostri soldi.
+
+[.text-center]
+image:images/sicurezza_fork2.png[Sicurezza e gestione chiavi private prima di un fork]
