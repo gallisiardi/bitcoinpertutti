@@ -1,5 +1,16 @@
-== APPROFONDIMENTO: I fork
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
 
+ifdef::env-github[]
+:imagesdir: /
+endif::[]
+
+== APPROFONDIMENTO: I fork
 Nei capitoli precedenti, ho accennato al fatto che alcune crittovalute sono nate da un fork di Bitcoin; proviamo ora ad approfondire l’argomento, cercando di andare maggiormente nel dettaglio, di che cos’è un fork, quali tipi di fork esistono e perché vengono fatti.
 
 === Introduzione ai fork
