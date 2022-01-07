@@ -41,7 +41,7 @@ Nella rete distribuita o rete peer to peer (P2P), tutti i dispositivi sono inter
 === Funzioni di hash
 Una funzione è un software che, dato in ingresso un testo o un file di qualsiasi dimensione, lo converte in una stringa alfanumerica composta da lettere e numeri come questa 34ae22f3cbaf0b0adfea0bc52ded6eb4a39c1b325c45c8283ffa04612ed3e273.
 
-Immaginate una lavatrice che, inserendo 10 volte il testo della Divina Commedia vi restituisca sempre la stessa una stringa di caratteri alfanumerici.
+Immaginate una lavatrice che, inserendo 10 volte il testo della Divina Commedia vi restituisca sempre la stessa stringa di caratteri alfanumerici.
 
 [.text-center]
 image:images/funzione_di_hash_lavatrice.png[Funzione di hash]
